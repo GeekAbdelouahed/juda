@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:background="@color/colorAnswerButton"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="النتيجة"
+        android:textColor="#fff"
+        android:textSize="@dimen/_25sdp" />
+
+    <TextView
+        android:id="@+id/text_result_exam"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_weight="0.2"
+        android:gravity="right"
+        android:textColor="#202020"
+        android:textSize="@dimen/_22sdp" />
+
+    <Button
+        android:id="@+id/click_done"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:textSize="@dimen/_18sdp"
+        android:background="#f1f1f1"
+        android:onClick="click_finish_exam"
+        android:text="موافق"
+        android:textColor="#313131" />
+</LinearLayout>

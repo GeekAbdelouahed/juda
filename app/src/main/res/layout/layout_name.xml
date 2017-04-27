@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:background="@color/colorAnswerButton"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="أكتب إسمك"
+        android:textColor="#fff"
+        android:textSize="@dimen/_25sdp" />
+
+    <EditText
+        android:id="@+id/text_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_weight="0.2"
+        android:padding="@dimen/_10sdp"
+        android:hint="الإسم"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/_28sdp" />
+
+    <Button
+        android:id="@+id/button_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:background="#f1f1f1"
+        android:text="موافق"
+        android:textColor="#393939" />
+</LinearLayout>
