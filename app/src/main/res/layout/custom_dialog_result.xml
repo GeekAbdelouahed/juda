@@ -30,9 +30,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.9"
-        android:textSize="@dimen/_18sdp"
         android:background="#f1f1f1"
         android:onClick="click_finish_exam"
         android:text="موافق"
-        android:textColor="#313131" />
+        android:textColor="#313131"
+        android:textSize="@dimen/_18sdp" />
 </LinearLayout>

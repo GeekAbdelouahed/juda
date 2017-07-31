@@ -5,7 +5,7 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "com.academyatinfo.multtable"
-        minSdkVersion 17
+        minSdkVersion 16
         targetSdkVersion 24
         versionCode 4
         versionName "1.3"

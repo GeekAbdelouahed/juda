@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.academyatinfo.multtable.Modules.Results;
+import com.academyatinfo.multtable.modules.Results;
 
 import java.util.ArrayList;
 

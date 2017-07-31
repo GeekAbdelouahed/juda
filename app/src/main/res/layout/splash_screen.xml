@@ -1,80 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.SplashScreen">
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_30sdp"
+    tools:context="com.academyatinfo.multtable.splashscreen.SplashScreen">
 
-    <LinearLayout
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/image_splash_screen"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:layout_marginRight="@dimen/_50sdp"
+        android:layout_weight="0.09"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher" />
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_learn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_weight="0.1"
+        android:background="@drawable/button_shape"
         android:gravity="center"
-        android:orientation="vertical"
-        android:padding="@dimen/_30sdp">
+        android:onClick="click_to_learn"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="تعليم"
+        android:textColor="#ededed"
+        android:textSize="@dimen/_30sdp" />
 
-        <android.support.v7.widget.CardView
-            android:id="@+id/image_splash_screen"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/_20sdp"
-            android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginRight="@dimen/_50sdp"
-            android:layout_weight="0.09"
-            app:cardCornerRadius="50dp"
-            app:cardElevation="8dp">
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_weight="0.1"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:onClick="click_to_result"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="النتائج"
+        android:textColor="#ededed"
+        android:textSize="@dimen/_30sdp" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_launcher" />
-        </android.support.v7.widget.CardView>
-
-        <Button
-            android:id="@+id/btn_learn"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/_15sdp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_shape"
-            android:drawableLeft="@drawable/ic_learn"
-            android:gravity="center"
-            android:onClick="click_to_learn"
-            android:paddingLeft="@dimen/_15sdp"
-            android:text="تعليم"
-            android:textColor="#ededed"
-            android:textSize="@dimen/_30sdp" />
-
-        <Button
-            android:id="@+id/btn_result"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/_15sdp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_shape"
-            android:drawableLeft="@drawable/ic_result"
-            android:gravity="center"
-            android:onClick="click_to_result"
-            android:paddingLeft="@dimen/_15sdp"
-            android:text="النتائج"
-            android:textColor="#ededed"
-            android:textSize="@dimen/_30sdp" />
-
-        <Button
-            android:id="@+id/btn_about"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_margin="@dimen/_15sdp"
-            android:layout_weight="0.1"
-            android:background="@drawable/button_shape"
-            android:drawableLeft="@drawable/ic_about"
-            android:gravity="center"
-            android:onClick="click_to_about"
-            android:paddingLeft="@dimen/_15sdp"
-            android:text="حول التطبيق"
-            android:textColor="#ededed"
-            android:textSize="@dimen/_30sdp" />
-    </LinearLayout>
-</android.support.design.widget.CoordinatorLayout>
+    <Button
+        android:id="@+id/btn_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_weight="0.1"
+        android:background="@drawable/button_shape"
+        android:gravity="center"
+        android:onClick="click_to_about"
+        android:paddingLeft="@dimen/_15sdp"
+        android:text="حول التطبيق"
+        android:textColor="#ededed"
+        android:textSize="@dimen/_30sdp" />
+</LinearLayout>

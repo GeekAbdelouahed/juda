@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.Modules.AboutApp">
+    tools:context="com.academyatinfo.multtable.modules.AboutApp">
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -91,4 +91,4 @@
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
-</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>
