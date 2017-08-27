@@ -1,10 +1,10 @@
-package com.academyatinfo.multtable.learntable;
+package com.academyatinfo.multtable.certification.mvp;
 
 /**
  * Created by geek on 31/07/17.
  */
 
-public interface LearnTableContract {
+public interface CertificationContract {
 
     interface View {
 

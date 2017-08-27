@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.academyatinfo.multtable">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -10,17 +11,22 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="false"
-        android:theme="@style/AppTheme">
-        <activity
-            android:name=".splashscreen.SplashScreen"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme"
+        tools:replace="supportsRtl">
+
+        <activity android:name=".appintro.AppIntroActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity
+            android:name=".splashscreen.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".tables.Tables"
             android:screenOrientation="portrait"
@@ -54,9 +60,9 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".certification.Certification"
+            android:name=".certification.mvp.Certification"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

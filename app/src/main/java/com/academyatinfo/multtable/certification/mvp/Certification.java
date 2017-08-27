@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.certification;
+package com.academyatinfo.multtable.certification.mvp;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -9,14 +9,23 @@ import android.view.WindowManager;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.academyatinfo.multtable.modules.Results;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseResultExam;
+import com.academyatinfo.multtable.modules.Results;
 import com.academyatinfo.multtable.tools.BaseActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Certification extends BaseActivity implements CertificationContract.View {
 
-    private TextView textView, name, soccer;
+    @BindView(R.id.back_certification)
+    TextView textView;
+    @BindView(R.id.name)
+    TextView name;
+    @BindView(R.id.soccer)
+    TextView soccer;
+
     private Intent intent;
     private DataBaseResultExam dataBaseResultExam;
     private Results results;
@@ -25,7 +34,11 @@ public class Certification extends BaseActivity implements CertificationContract
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.certification);
+
+        ButterKnife.bind(this);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         intent = getIntent();
 
         results = new Results();
@@ -37,10 +50,6 @@ public class Certification extends BaseActivity implements CertificationContract
         dataBaseResultExam = new DataBaseResultExam(this);
         dataBaseResultExam.open();
         dataBaseResultExam.insertResult(results);
-
-        textView = (TextView) findViewById(R.id.back_certification);
-        name = (TextView) findViewById(R.id.name);
-        soccer = (TextView) findViewById(R.id.soccer);
 
         name.setText(results.getName());
         soccer.setText(results.getResult() + " من 90");
