@@ -26,6 +26,7 @@ import java.util.Calendar;
 import java.util.Random;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class Exam extends BaseActivity implements ExamContract.View {
 
@@ -41,14 +42,14 @@ public class Exam extends BaseActivity implements ExamContract.View {
     TextView soccer;
     @BindView(R.id.full_soccer)
     TextView full_soccer;
-    @BindView(R.id.text_result_exam)
-    TextView result_exam;
     @BindView(R.id.first_number_exam)
     ImageView firstImage;
     @BindView(R.id.second_number_exam)
     ImageView secondImage;
     @BindView(R.id.chrono)
     Chronometer chronometer;
+
+    private TextView result_exam;
     private Dialog dialog;
     private Button button;
     private int long_table, level, value_random1, value_random2, value_random3, first, second, answer, index_empty, value_soccer;
@@ -63,7 +64,11 @@ public class Exam extends BaseActivity implements ExamContract.View {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.exam);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        ButterKnife.bind(this);
+
         intent = getIntent();
         long_table = intent.getIntExtra("long_table", 0);
         level = intent.getIntExtra("level", 0);
