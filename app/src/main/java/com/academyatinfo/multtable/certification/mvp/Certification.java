@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.certification;
+package com.academyatinfo.multtable.certification.mvp;
 
 import android.content.Intent;
 import android.graphics.Bitmap;

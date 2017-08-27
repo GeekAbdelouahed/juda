@@ -6,7 +6,7 @@
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
     android:orientation="vertical"
-    tools:context="com.academyatinfo.multtable.certification.Certification">
+    tools:context="com.academyatinfo.multtable.certification.mvp.Certification">
 
     <LinearLayout
         android:layout_width="match_parent"

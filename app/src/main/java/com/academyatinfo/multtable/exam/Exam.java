@@ -18,25 +18,44 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.certification.Certification;
+import com.academyatinfo.multtable.certification.mvp.Certification;
 import com.academyatinfo.multtable.tools.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Random;
 
+import butterknife.BindView;
+
 public class Exam extends BaseActivity implements ExamContract.View {
 
-    private ArrayList<Integer> table1, table2;
-    private TextView text1, text2, text3, text4, soccer, full_soccer, result_exam;
-    private ImageView firstImage, secondImage;
-    private Chronometer chronometer;
+    @BindView(R.id.text_card_one)
+    TextView text1;
+    @BindView(R.id.text_card_two)
+    TextView text2;
+    @BindView(R.id.text_card_three)
+    TextView text3;
+    @BindView(R.id.text_card_four)
+    TextView text4;
+    @BindView(R.id.soccer_table_exam)
+    TextView soccer;
+    @BindView(R.id.full_soccer)
+    TextView full_soccer;
+    @BindView(R.id.text_result_exam)
+    TextView result_exam;
+    @BindView(R.id.first_number_exam)
+    ImageView firstImage;
+    @BindView(R.id.second_number_exam)
+    ImageView secondImage;
+    @BindView(R.id.chrono)
+    Chronometer chronometer;
     private Dialog dialog;
     private Button button;
     private int long_table, level, value_random1, value_random2, value_random3, first, second, answer, index_empty, value_soccer;
     private Random random;
     private Calendar calendar;
     private MediaPlayer success, wrong, end;
+    private ArrayList<Integer> table1, table2;
     private boolean section = false;
     private Intent intent;
 
@@ -54,16 +73,6 @@ public class Exam extends BaseActivity implements ExamContract.View {
         success = MediaPlayer.create(this, R.raw.success);
         wrong = MediaPlayer.create(this, R.raw.wrong);
         end = MediaPlayer.create(this, R.raw.finish);
-        chronometer = (Chronometer) findViewById(R.id.chrono);
-        firstImage = (ImageView) findViewById(R.id.first_number_exam);
-        secondImage = (ImageView) findViewById(R.id.second_number_exam);
-        text1 = (TextView) findViewById(R.id.text_card_one);
-        text2 = (TextView) findViewById(R.id.text_card_two);
-        text3 = (TextView) findViewById(R.id.text_card_three);
-        text4 = (TextView) findViewById(R.id.text_card_four);
-        soccer = (TextView) findViewById(R.id.soccer_table_exam);
-        full_soccer = (TextView) findViewById(R.id.full_soccer);
-        result_exam = (TextView) findViewById(R.id.text_result_exam);
 
         createTable(long_table);
         chronometer.start();
