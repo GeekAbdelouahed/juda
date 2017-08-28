@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!-- CardView -->
+    <style name="CardView.Tables" parent="CardView">
+        <item name="android:layout_width">@dimen/dimen_cardView_Tables</item>
+        <item name="android:layout_height">@dimen/dimen_cardView_Tables</item>
+        <item name="android:layout_margin">@dimen/margin_cardView_Tables</item>
+        <item name="cardCornerRadius">@dimen/radius_cardView_Tables</item>
+    </style>
+
+    <!-- ImageView -->
+    <style name="ImageView" parent="ImageView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ImageView.Tables">
+
+    </style>
+
+    <style name="ImageView.ImageBack">
+        <item name="android:layout_height">@dimen/dimen_ic_back</item>
+        <item name="android:layout_width">@dimen/dimen_ic_back</item>
+        <item name="android:padding">@dimen/padding_ic_back</item>
+        <item name="android:src">@drawable/ic_back</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:onClick">clickBack</item>
+    </style>
+
+
+    <!-- RelativeLayout -->
+    <style name="mToolBar" parent="mToolBar">
+        <item name="android:layout_height">?actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+</resources>

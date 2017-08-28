@@ -1,7 +1,8 @@
-package com.academyatinfo.multtable.tools;
+package com.academyatinfo.multtable.ui;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
@@ -10,6 +11,12 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
  */
 
 public class BaseActivity extends AppCompatActivity {
+
+
+    public void clickBack(View view) {
+        finish();
+    }
+
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));

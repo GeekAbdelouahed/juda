@@ -9,4 +9,7 @@
     <color name="colorTextAnswer">#30af94</color>
     <color name="colorButtonKeyboard">#e6e6e6</color>
     <color name="colorButtonHelp">#ececec</color>
+    <color name="text_white">#f4f4f4</color>
+    <color name="color_icLock">#f5f5f5</color>
+    <color name="colorTables">#00897b</color>
 </resources>

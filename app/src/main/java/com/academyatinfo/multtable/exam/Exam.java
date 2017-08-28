@@ -19,7 +19,7 @@ import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.certification.mvp.Certification;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;

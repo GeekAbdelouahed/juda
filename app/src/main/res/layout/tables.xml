@@ -1,285 +1,278 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:paddingLeft="@dimen/_20sdp"
-    android:paddingRight="@dimen/_20sdp"
-    android:paddingTop="@dimen/_50sdp"
     tools:context="com.academyatinfo.multtable.tables.Tables">
 
+    <RelativeLayout style="@style/mToolBar">
+
+        <ImageView style="@style/ImageView.ImageBack" />
+
+    </RelativeLayout>
 
     <android.support.v7.widget.CardView
+        android:id="@+id/layout_tables"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_20sdp"
-        android:layout_weight="0.1"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="10dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_layout_tables"
+        android:layout_marginLeft="@dimen/margin_layout_tables"
+        android:layout_marginRight="@dimen/margin_layout_tables"
+        app:cardBackgroundColor="@color/colorTables"
+        app:cardCornerRadius="@dimen/radius_cardView_Tables"
         app:cardElevation="5dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="@dimen/_5sdp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_layout"
+            android:paddingLeft="@dimen/padding_layout"
+            android:paddingRight="@dimen/padding_layout">
 
-            <LinearLayout
+            <TextView
+                android:id="@+id/title_tables"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:orientation="horizontal">
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/margin_textView"
+                android:gravity="center"
+                android:padding="@dimen/padding_title_tables"
+                android:text="@string/tables"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_large"
+                android:verticalScrollbarPosition="left" />
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_one"
+                style="@style/CardView.Tables"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/title_tables"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/three"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:onClick="three"
-                        android:src="@drawable/ic_three_g" />
+                <ImageView
+                    android:id="@+id/one"
+                    style="@style/ImageView.Tables"
+                    android:onClick="one"
+                    android:src="@drawable/ic_one_g" />
 
-                    <ImageView
-                        android:id="@+id/lock_three"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_two"
+                style="@style/CardView.Tables"
+                android:layout_below="@+id/title_tables"
+                android:layout_toLeftOf="@id/layout_one"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/two"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:onClick="two"
-                        android:src="@drawable/ic_two_g" />
+                <ImageView
+                    android:id="@+id/two"
+                    style="@style/ImageView.Tables"
+                    android:onClick="two"
+                    android:src="@drawable/ic_two_g" />
 
-                    <ImageView
-                        android:id="@+id/lock_two"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/lock_two"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            </android.support.v7.widget.CardView>
 
-                    <ImageView
-                        android:id="@+id/one"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:onClick="one"
-                        android:src="@drawable/ic_one_g" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_three"
+                style="@style/CardView.Tables"
+                android:layout_below="@+id/title_tables"
+                android:layout_toLeftOf="@+id/layout_two"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                </android.support.v7.widget.CardView>
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/three"
+                    style="@style/ImageView.Tables"
+                    android:onClick="three"
+                    android:src="@drawable/ic_three_g" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/lock_three"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
+            </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_four"
+                style="@style/CardView.Tables"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layout_one"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/six"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="six"
-                        android:src="@drawable/ic_six_g" />
+                <ImageView
+                    android:id="@+id/four"
+                    style="@style/ImageView.Tables"
+                    android:onClick="four"
+                    android:src="@drawable/ic_four_g" />
 
-                    <ImageView
-                        android:id="@+id/lock_six"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/lock_four"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
+            </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_five"
+                style="@style/CardView.Tables"
+                android:layout_below="@+id/layout_two"
+                android:layout_toLeftOf="@+id/layout_four"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/five"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="five"
-                        android:src="@drawable/ic_five_g" />
+                <ImageView
+                    android:id="@+id/five"
+                    style="@style/ImageView.Tables"
+                    android:onClick="five"
+                    android:src="@drawable/ic_five_g" />
 
 
-                    <ImageView
-                        android:id="@+id/lock_five"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/lock_five"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            </android.support.v7.widget.CardView>
 
-                    <ImageView
-                        android:id="@+id/four"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:onClick="four"
-                        android:src="@drawable/ic_four_g" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_six"
+                style="@style/CardView.Tables"
+                android:layout_below="@+id/layout_three"
+                android:layout_toLeftOf="@+id/layout_five"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/lock_four"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
-            </LinearLayout>
+                <ImageView
+                    android:id="@+id/six"
+                    style="@style/ImageView.Tables"
+                    android:onClick="six"
+                    android:src="@drawable/ic_six_g" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.1"
-                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/lock_six"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
+            </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_seven"
+                style="@style/CardView.Tables"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/layout_five"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/nine"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="nine"
-                        android:src="@drawable/ic_nine_g" />
+                <ImageView
+                    android:id="@+id/seven"
+                    style="@style/ImageView.Tables"
+                    android:onClick="seven"
+                    android:src="@drawable/ic_seven_g" />
 
-                    <ImageView
-                        android:id="@+id/lock_nine"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/lock_seven"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
+            </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_eight"
+                style="@style/CardView.Tables"
+                android:layout_below="@+id/layout_five"
+                android:layout_toLeftOf="@id/layout_seven"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/eight"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="eight"
-                        android:src="@drawable/ic_eight_g" />
+                <ImageView
+                    android:id="@+id/eight"
+                    style="@style/ImageView.Tables"
+                    android:onClick="eight"
+                    android:src="@drawable/ic_eight_g" />
 
-                    <ImageView
-                        android:id="@+id/lock_eight"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
+                <ImageView
+                    android:id="@+id/lock_eight"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
+            </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp"
-                    android:layout_weight="0.1"
-                    app:cardCornerRadius="5dp">
 
-                    <ImageView
-                        android:id="@+id/seven"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="seven"
-                        android:src="@drawable/ic_seven_g" />
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_nine"
+                style="@style/CardView.Tables"
+                android:layout_below="@id/layout_six"
+                android:layout_toLeftOf="@+id/layout_eight"
+                app:cardBackgroundColor="@color/color_icLock"
+                app:contentPadding="@dimen/padding_image_tables">
 
-                    <ImageView
-                        android:id="@+id/lock_seven"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="#f2f2f2"
-                        android:src="@drawable/ic_lock" />
-                </android.support.v7.widget.CardView>
-            </LinearLayout>
-        </LinearLayout>
+                <ImageView
+                    android:id="@+id/nine"
+                    style="@style/ImageView.Tables"
+                    android:onClick="nine"
+                    android:src="@drawable/ic_nine_g" />
+
+                <ImageView
+                    android:id="@+id/lock_nine"
+                    style="@style/ImageView.Tables"
+                    android:background="@color/color_icLock"
+                    android:src="@drawable/ic_lock" />
+            </android.support.v7.widget.CardView>
+
+
+        </RelativeLayout>
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_tables"
+        android:layout_marginBottom="@dimen/margin_layout_tables"
+        android:layout_marginLeft="@dimen/margin_layout_tables"
+        android:layout_marginRight="@dimen/margin_layout_tables"
         android:onClick="click_exam"
         app:cardBackgroundColor="@color/colorAccent"
-        app:cardCornerRadius="10dp"
-        app:cardElevation="5dp">
+        app:cardCornerRadius="@dimen/radius_cardView_Tables">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/img_lock_certification"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:background="#fff"
-                android:padding="@dimen/_5sdp"
+                style="@style/ImageView.Tables"
+                android:layout_width="@dimen/width_ic_lock"
+                android:layout_height="@dimen/width_ic_lock"
+                android:layout_alignParentLeft="true"
+                android:background="@color/color_icLock"
+                android:padding="@dimen/padding_ic_lock"
                 android:src="@drawable/ic_lock" />
 
             <TextView
+                android:id="@+id/text_exam"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.1"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_lock_certification"
                 android:gravity="center"
                 android:text="إمتحان الشهادة"
-                android:textColor="#f4f4f4"
-                android:textSize="@dimen/_25sdp" />
-        </LinearLayout>
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_large" />
+        </RelativeLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+</RelativeLayout>

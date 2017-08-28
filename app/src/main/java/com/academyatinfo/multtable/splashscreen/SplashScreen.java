@@ -13,7 +13,7 @@ import com.academyatinfo.multtable.tables.Tables;
 import com.academyatinfo.multtable.modules.AboutApp;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.previewresults.mvp.PreviewResults;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class SplashScreen extends BaseActivity {
 

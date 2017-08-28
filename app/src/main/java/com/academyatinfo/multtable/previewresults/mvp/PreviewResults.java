@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.academyatinfo.multtable.modules.MyAdapter;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseResultExam;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class PreviewResults extends BaseActivity implements PreviewResultContract.View {
 

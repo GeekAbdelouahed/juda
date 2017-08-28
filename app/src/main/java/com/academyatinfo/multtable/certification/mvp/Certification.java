@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseResultExam;
 import com.academyatinfo.multtable.modules.Results;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

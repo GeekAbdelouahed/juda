@@ -7,7 +7,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

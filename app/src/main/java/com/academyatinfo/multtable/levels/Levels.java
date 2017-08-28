@@ -12,7 +12,7 @@ import com.academyatinfo.multtable.tablelevels.TableLevels;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearn;
 import com.academyatinfo.multtable.exam.Exam;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class Levels extends BaseActivity implements LevelsContract.View {
 

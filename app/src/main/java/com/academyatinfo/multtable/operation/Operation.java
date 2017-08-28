@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class Operation extends BaseActivity implements OperationContract.View {
 

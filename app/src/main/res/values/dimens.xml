@@ -1,6 +1,22 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">15sp</dimen>
+
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_layout">5dp</dimen>
+    <dimen name="margin_cardView_Tables">5dp</dimen>
+    <dimen name="radius_cardView_Tables">5dp</dimen>
+    <dimen name="dimen_cardView_Tables">80dp</dimen>
+    <dimen name="margin_layout_tables">20dp</dimen>
+    <dimen name="width_ic_lock">50dp</dimen>
+    <dimen name="padding_title_tables">10dp</dimen>
+    <dimen name="margin_textView">5dp</dimen>
+    <dimen name="padding_ic_lock">7dp</dimen>
+    <dimen name="padding_image_tables">20dp</dimen>
+    <dimen name="dimen_ic_back">40dp</dimen>
+    <dimen name="padding_ic_back">5dp</dimen>
 </resources>

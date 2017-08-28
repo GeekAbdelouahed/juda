@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import com.academyatinfo.multtable.operation.Operation;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class TableLevels extends BaseActivity implements TableLevelsContract.View {
 
