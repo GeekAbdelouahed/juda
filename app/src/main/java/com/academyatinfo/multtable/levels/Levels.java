@@ -7,29 +7,38 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.academyatinfo.multtable.learntable.LearnTable;
-import com.academyatinfo.multtable.tablelevels.TableLevels;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearn;
 import com.academyatinfo.multtable.exam.Exam;
+import com.academyatinfo.multtable.learntable.LearnTable;
+import com.academyatinfo.multtable.tablelevels.TableLevels;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class Levels extends BaseActivity implements LevelsContract.View {
+
+    /*@BindView(R.id.image_back)
+    ImageView imageBack;*/
+    @BindView(R.id.table_number)
+    TextView table_number;
 
     private DataBaseLearn dataBaseLearn;
     private int table;
     private Intent intent;
-    private ImageView imageBack;
-    private TextView table_number;
+    private int result = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.levels);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        ButterKnife.bind(this);
+
         dataBaseLearn = new DataBaseLearn(this);
-        imageBack = (ImageView) findViewById(R.id.image_back);
-        table_number = (TextView) findViewById(R.id.table_number);
         intent = getIntent();
         table = intent.getIntExtra("index_table", 0);
         table_number.setText(table + "");
@@ -89,16 +98,11 @@ public class Levels extends BaseActivity implements LevelsContract.View {
         }
     }
 
-    public void back_main(View view) {
-        setResult(1);
-        finish();
-    }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == 1) {
-            int result = data.getIntExtra("level", 0);
+            result = data.getIntExtra("level", 0);
             dataBaseLearn.updateData(table, result);
             add_image_check(result);
         }
@@ -133,9 +137,14 @@ public class Levels extends BaseActivity implements LevelsContract.View {
                 break;
             case 6:
                 ((ImageView) findViewById(R.id.img_review)).setImageResource(R.drawable.ic_check_true);
-                imageBack.setVisibility(View.VISIBLE);
                 break;
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (result == 6)
+            setResult(1);
+    }
 }

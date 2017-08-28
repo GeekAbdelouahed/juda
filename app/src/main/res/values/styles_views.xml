@@ -7,17 +7,29 @@
         <item name="android:layout_width">@dimen/dimen_cardView_Tables</item>
         <item name="android:layout_height">@dimen/dimen_cardView_Tables</item>
         <item name="android:layout_margin">@dimen/margin_cardView_Tables</item>
-        <item name="cardCornerRadius">@dimen/radius_cardView_Tables</item>
+        <item name="cardCornerRadius">@dimen/radius_cardView</item>
+    </style>
+
+    <style name="CardView.Levels" parent="CardView">
+        <item name="android:layout_height">@dimen/height_cardView_levels</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/marginTB_cardView_levels</item>
+        <item name="android:layout_marginBottom">@dimen/marginTB_cardView_levels</item>
+        <item name="android:layout_marginRight">@dimen/marginRL_cardView_levels</item>
+        <item name="android:layout_marginLeft">@dimen/marginRL_cardView_levels</item>
+        <item name="cardBackgroundColor">@color/colorLevels</item>
+        <item name="cardCornerRadius">@dimen/radius_cardView</item>
     </style>
 
     <!-- ImageView -->
     <style name="ImageView" parent="ImageView">
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <style name="ImageView.Tables">
-
+    <style name="ImageView.Lock">
+        <item name="android:background">@color/color_icLock</item>
+        <item name="android:src">@drawable/ic_lock</item>
     </style>
 
     <style name="ImageView.ImageBack">
@@ -37,5 +49,16 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:layout_alignParentTop">true</item>
+    </style>
+
+    <dimen name="marginRL_cardView_levels">20dp</dimen>
+
+    <!-- TextView -->
+    <style name="mTextViewLevels" parent="mTextViewLevels">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:textSize">@dimen/text_large</item>
     </style>
 </resources>

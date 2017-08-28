@@ -1,293 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    android:orientation="vertical"
     tools:context="com.academyatinfo.multtable.levels.Levels">
 
+    <RelativeLayout
+        android:id="@+id/toolBar_Levels"
+        style="@style/mToolBar">
 
-    <LinearLayout
+        <ImageView style="@style/ImageView.ImageBack" />
+
+        <TextView
+            android:id="@+id/name_table_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_textView"
+            android:text="@string/table_number"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large" />
+
+        <TextView
+            android:id="@+id/table_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/margin_textView"
+            android:layout_toLeftOf="@id/name_table_number"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="0.1"
-        android:orientation="vertical">
+        android:layout_below="@+id/toolBar_Levels"
+        android:gravity="center">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:paddingBottom="@dimen/_5sdp"
-            android:paddingTop="@dimen/_5sdp">
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_level_one"
+            style="@style/CardView.Levels"
+            android:onClick="level_one">
 
-            <ImageView
-                android:id="@+id/image_back"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:onClick="back_main"
-                android:src="@drawable/ic_back"
-                android:visibility="invisible" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/result_one"
+                    style="@style/ImageView.Lock"
+                    android:layout_width="@dimen/dimen_ic_lock_levels"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/padding_ic_lock"
+                    android:src="@drawable/ic_check_false" />
 
                 <TextView
-                    android:id="@+id/table_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="@dimen/_5sdp"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="#eaeaea"
-                    android:textSize="@dimen/_30sdp" />
+                    style="@style/mTextViewLevels"
+                    android:layout_toRightOf="@id/result_one"
+                    android:text="@string/save_mult_table" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_level_two"
+            style="@style/CardView.Levels"
+            android:layout_below="@+id/layout_level_one"
+            android:onClick="level_two">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_two"
+                    style="@style/ImageView.Lock"
+                    android:layout_width="@dimen/dimen_ic_lock_levels"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/padding_ic_lock" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    style="@style/mTextViewLevels"
+                    android:layout_toRightOf="@id/result_two"
+                    android:text="@string/solve_mut_table" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_level_three"
+            style="@style/CardView.Levels"
+            android:layout_below="@+id/layout_level_two"
+            android:onClick="level_three">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_three"
+                    style="@style/ImageView.Lock"
+                    android:layout_width="@dimen/dimen_ic_lock_levels"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/padding_ic_lock" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toRightOf="@+id/result_three"
+                    android:text="@string/first_exam" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_level_four"
+            style="@style/CardView.Levels"
+            android:layout_below="@+id/layout_level_three"
+            android:onClick="level_four">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_four"
+                    style="@style/ImageView.Lock"
+                    android:layout_width="@dimen/dimen_ic_lock_levels"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/padding_ic_lock" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toRightOf="@id/result_four"
+                    android:text="@string/second_exam" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_level_five"
+            style="@style/CardView.Levels"
+            android:layout_below="@+id/layout_level_four"
+            android:onClick="level_five">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_five"
+                    style="@style/ImageView.Lock"
+                    android:layout_width="@dimen/dimen_ic_lock_levels"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/padding_ic_lock" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toRightOf="@id/result_five"
+                    android:text="@string/third_exam" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            style="@style/CardView.Levels"
+            android:layout_below="@+id/layout_level_five"
+            app:cardBackgroundColor="@color/colorAccent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_review"
+                    style="@style/ImageView.Lock"
+                    android:layout_width="@dimen/dimen_ic_lock_levels"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/padding_ic_lock" />
+
+                <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_review"
                     android:gravity="center"
-                    android:text="جدول رقم"
-                    android:textColor="#e4e4e4"
-                    android:textSize="@dimen/_25sdp" />
-            </LinearLayout>
-        </RelativeLayout>
+                    android:onClick="review"
+                    android:text="@string/review"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_large" />
+            </RelativeLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="0.1"
-                android:onClick="level_one"
-                app:cardBackgroundColor="@color/colorIndexMult"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/result_one"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:background="#fff"
-                        android:padding="@dimen/_5sdp"
-                        android:src="@drawable/ic_check_false" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center"
-                        android:text="حفظ الجدول"
-                        android:textColor="#f7f7f7"
-                        android:textSize="@dimen/_30sdp" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="0.1"
-                android:onClick="level_two"
-                app:cardBackgroundColor="@color/colorIndexMult"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/result_two"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:background="#fff"
-                        android:padding="@dimen/_5sdp"
-                        android:src="@drawable/ic_lock" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center"
-                        android:text="حل الجدول"
-                        android:textColor="#f1f1f1"
-                        android:textSize="@dimen/_30sdp" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="0.1"
-                android:onClick="level_three"
-                app:cardBackgroundColor="@color/colorIndexMult"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/result_three"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:background="#fff"
-                        android:padding="@dimen/_5sdp"
-                        android:src="@drawable/ic_lock" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center"
-                        android:text="الإختبار الأول"
-                        android:textColor="#f7f7f7"
-                        android:textSize="@dimen/_30sdp" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="0.1"
-                android:onClick="level_four"
-                app:cardBackgroundColor="@color/colorIndexMult"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/result_four"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:background="#fff"
-                        android:padding="@dimen/_5sdp"
-                        android:src="@drawable/ic_lock" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center"
-                        android:text="الإختبار الثاني"
-                        android:textColor="#f7f7f7"
-                        android:textSize="@dimen/_30sdp" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="0.1"
-                android:onClick="level_five"
-                app:cardBackgroundColor="@color/colorIndexMult"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:id="@+id/result_five"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:background="#fff"
-                        android:padding="@dimen/_5sdp"
-                        android:src="@drawable/ic_lock" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:gravity="center"
-                        android:text="الإختبار الثالث"
-                        android:textColor="#f7f7f7"
-                        android:textSize="@dimen/_30sdp" />
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginBottom="@dimen/_10sdp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="0.1"
-                app:cardCornerRadius="@dimen/_10sdp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-
-                    <ImageView
-                        android:id="@+id/img_review"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:padding="@dimen/_5sdp"
-                        android:src="@drawable/ic_lock" />
-
-                    <Button
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:background="@color/colorAccent"
-                        android:onClick="review"
-                        android:text="المراجعة"
-                        android:textColor="#fff"
-                        android:textSize="@dimen/_30sdp" />
-                </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-        </LinearLayout>
-
-    </LinearLayout>
-</LinearLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>
