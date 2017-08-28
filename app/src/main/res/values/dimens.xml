@@ -3,6 +3,7 @@
 
     <dimen name="text_large">23sp</dimen>
     <dimen name="text_medium">18sp</dimen>
+    <dimen name="size_text_learn">27sp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -22,4 +23,6 @@
     <dimen name="height_cardView_levels">50dp</dimen>
     <dimen name="marginTB_cardView_levels">10dp</dimen>
     <dimen name="dimen_ic_lock_levels">50dp</dimen>
+    <dimen name="marginRL_cardView_levels">20dp</dimen>
+
 </resources>

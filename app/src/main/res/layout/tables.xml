@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/app_name"
+            android:text="@string/tables"
             android:textColor="@color/text_white"
             android:textSize="@dimen/text_large" />
 
@@ -37,27 +37,14 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingBottom="@dimen/padding_layout"
-            android:paddingLeft="@dimen/padding_layout"
-            android:paddingRight="@dimen/padding_layout">
-
-            <TextView
-                android:id="@+id/title_tables"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:layout_margin="@dimen/margin_textView"
-                android:gravity="center"
-                android:padding="@dimen/padding_title_tables"
-                android:text="@string/tables"
-                android:textColor="@color/text_white"
-                android:textSize="@dimen/text_medium" />
+            android:gravity="center"
+            android:padding="@dimen/padding_layout">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_one"
                 style="@style/CardView.Tables"
                 android:layout_alignParentRight="true"
-                android:layout_below="@+id/title_tables"
+                android:layout_alignParentTop="true"
                 app:cardBackgroundColor="@color/color_icLock"
                 app:contentPadding="@dimen/padding_image_tables">
 
@@ -72,7 +59,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_two"
                 style="@style/CardView.Tables"
-                android:layout_below="@+id/title_tables"
+                android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@id/layout_one"
                 app:cardBackgroundColor="@color/color_icLock"
                 app:contentPadding="@dimen/padding_image_tables">
@@ -92,7 +79,7 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_three"
                 style="@style/CardView.Tables"
-                android:layout_below="@+id/title_tables"
+                android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@+id/layout_two"
                 app:cardBackgroundColor="@color/color_icLock"
                 app:contentPadding="@dimen/padding_image_tables">
@@ -230,15 +217,10 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/CardView.Levels"
         android:layout_below="@+id/layout_tables"
-        android:layout_marginBottom="@dimen/margin_layout_tables"
-        android:layout_marginLeft="@dimen/margin_layout_tables"
-        android:layout_marginRight="@dimen/margin_layout_tables"
         android:onClick="click_exam"
-        app:cardBackgroundColor="@color/colorAccent"
-        app:cardCornerRadius="@dimen/radius_cardView">
+        app:cardBackgroundColor="@color/colorAccent">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -247,22 +229,13 @@
             <ImageView
                 android:id="@+id/img_lock_certification"
                 style="@style/ImageView.Lock"
-                android:layout_width="@dimen/width_ic_lock"
-                android:layout_height="@dimen/width_ic_lock"
-                android:layout_alignParentLeft="true"
-
                 android:padding="@dimen/padding_ic_lock" />
 
             <TextView
                 android:id="@+id/text_exam"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
+                style="@style/mTextViewLevels"
                 android:layout_toRightOf="@+id/img_lock_certification"
-                android:gravity="center"
-                android:text="إمتحان الشهادة"
-                android:textColor="@color/text_white"
-                android:textSize="@dimen/text_large" />
+                android:text="إمتحان الشهادة" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>

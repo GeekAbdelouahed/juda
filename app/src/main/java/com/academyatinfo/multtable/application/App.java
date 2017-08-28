@@ -22,7 +22,7 @@ public class App extends Application {
         super.onCreate();
 
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
-                .setDefaultFontPath("fonts/nat.ttf")
+                .setDefaultFontPath("fonts/font.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );

@@ -28,8 +28,10 @@
     </style>
 
     <style name="ImageView.Lock">
+        <item name="android:layout_width">@dimen/dimen_ic_lock_levels</item>
         <item name="android:background">@color/color_icLock</item>
         <item name="android:src">@drawable/ic_lock</item>
+        <item name="android:layout_gravity">center</item>
     </style>
 
     <style name="ImageView.ImageBack">
@@ -51,7 +53,6 @@
         <item name="android:layout_alignParentTop">true</item>
     </style>
 
-    <dimen name="marginRL_cardView_levels">20dp</dimen>
 
     <!-- TextView -->
     <style name="mTextViewLevels" parent="mTextViewLevels">
@@ -60,5 +61,15 @@
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/text_white</item>
         <item name="android:textSize">@dimen/text_medium</item>
+    </style>
+
+    <style name="mTextViewSaveTables" parent="mTextViewSaveTables">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_text_learn</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:layout_marginRight">@dimen/margin_textView</item>
+        <item name="android:layout_marginLeft">@dimen/margin_textView</item>
+        <item name="fontPath">fonts/num_font.ttf</item>
     </style>
 </resources>

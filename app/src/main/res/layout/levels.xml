@@ -81,7 +81,6 @@
                 <ImageView
                     android:id="@+id/result_two"
                     style="@style/ImageView.Lock"
-                    android:layout_width="@dimen/dimen_ic_lock_levels"
                     android:layout_alignParentLeft="true"
                     android:padding="@dimen/padding_ic_lock" />
 
@@ -176,7 +175,6 @@
                 <ImageView
                     android:id="@+id/img_review"
                     style="@style/ImageView.Lock"
-                    android:layout_width="@dimen/dimen_ic_lock_levels"
                     android:layout_alignParentLeft="true"
                     android:padding="@dimen/padding_ic_lock" />
 
