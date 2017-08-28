@@ -12,6 +12,14 @@
 
         <ImageView style="@style/ImageView.ImageBack" />
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/app_name"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_large" />
+
     </RelativeLayout>
 
     <android.support.v7.widget.CardView
@@ -22,7 +30,7 @@
         android:layout_marginBottom="@dimen/margin_layout_tables"
         android:layout_marginLeft="@dimen/margin_layout_tables"
         android:layout_marginRight="@dimen/margin_layout_tables"
-        app:cardBackgroundColor="@color/colorTables"
+        app:cardBackgroundColor="@color/colorLevels"
         app:cardCornerRadius="@dimen/radius_cardView"
         app:cardElevation="5dp">
 
@@ -43,7 +51,7 @@
                 android:padding="@dimen/padding_title_tables"
                 android:text="@string/tables"
                 android:textColor="@color/text_white"
-                android:textSize="@dimen/text_large" />
+                android:textSize="@dimen/text_medium" />
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_one"
@@ -194,7 +202,7 @@
 
                 <ImageView
                     android:id="@+id/lock_eight"
-                    style="@style/ImageView.Lock"/>
+                    style="@style/ImageView.Lock" />
             </android.support.v7.widget.CardView>
 
 

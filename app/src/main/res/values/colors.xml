@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#009688</color>
-    <color name="colorLevels">#03d1bd</color>
+    <color name="colorLevels">#00796b</color>
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorAnswerButton">#FF4081</color>
@@ -11,5 +11,4 @@
     <color name="colorButtonHelp">#ececec</color>
     <color name="text_white">#f4f4f4</color>
     <color name="color_icLock">#f5f5f5</color>
-    <color name="colorTables">#00897b</color>
 </resources>

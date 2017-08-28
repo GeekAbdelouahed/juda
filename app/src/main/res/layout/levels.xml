@@ -181,15 +181,10 @@
                     android:padding="@dimen/padding_ic_lock" />
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_centerVertical="true"
+                    style="@style/mTextViewLevels"
                     android:layout_toRightOf="@+id/img_review"
-                    android:gravity="center"
                     android:onClick="review"
-                    android:text="@string/review"
-                    android:textColor="@color/text_white"
-                    android:textSize="@dimen/text_large" />
+                    android:text="@string/review" />
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>
