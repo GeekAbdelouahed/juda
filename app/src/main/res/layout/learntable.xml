@@ -14,12 +14,8 @@
         <ImageView style="@style/ImageView.ImageBack" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/save_mult_table"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_large" />
+            style="@style/mTextToolBar"
+            android:text="@string/save_mult_table"/>
 
     </RelativeLayout>
 
@@ -29,8 +25,7 @@
         android:layout_below="@+id/toolBar_saveTable"
         android:layout_margin="@dimen/margin_layout_tables"
         android:background="@drawable/blackboard"
-        android:gravity="center"
-        android:padding="@dimen/padding_layout">
+        android:gravity="center">
 
         <RelativeLayout
             android:id="@+id/layout_save_zero"

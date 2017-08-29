@@ -266,9 +266,10 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
         }
     }
 
-    public void back_learn(View view) {
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
         if (dataBaseLearnTable.getData(10, index_table))
             setResult(1, (new Intent()).putExtra("level", 2));
-        finish();
     }
 }

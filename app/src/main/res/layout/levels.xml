@@ -16,14 +16,8 @@
 
         <TextView
             android:id="@+id/name_table_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:layout_margin="@dimen/margin_textView"
-            android:text="@string/table_number"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_large" />
+            style="@style/mTextToolBar"
+            android:text="@string/table_number"/>
 
         <TextView
             android:id="@+id/table_number"
@@ -55,9 +49,6 @@
                 <ImageView
                     android:id="@+id/result_one"
                     style="@style/ImageView.Lock"
-                    android:layout_width="@dimen/dimen_ic_lock_levels"
-                    android:layout_alignParentLeft="true"
-                    android:padding="@dimen/padding_ic_lock"
                     android:src="@drawable/ic_check_false" />
 
                 <TextView
@@ -80,9 +71,7 @@
 
                 <ImageView
                     android:id="@+id/result_two"
-                    style="@style/ImageView.Lock"
-                    android:layout_alignParentLeft="true"
-                    android:padding="@dimen/padding_ic_lock" />
+                    style="@style/ImageView.Lock" />
 
                 <TextView
                     style="@style/mTextViewLevels"
@@ -103,16 +92,15 @@
 
                 <ImageView
                     android:id="@+id/result_three"
-                    style="@style/ImageView.Lock"
-                    android:layout_width="@dimen/dimen_ic_lock_levels"
-                    android:layout_alignParentLeft="true"
-                    android:padding="@dimen/padding_ic_lock" />
+                    style="@style/ImageView.Lock"/>
 
                 <TextView
                     style="@style/mTextViewLevels"
                     android:layout_toRightOf="@+id/result_three"
                     android:text="@string/first_exam" />
+
             </RelativeLayout>
+
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
@@ -127,10 +115,7 @@
 
                 <ImageView
                     android:id="@+id/result_four"
-                    style="@style/ImageView.Lock"
-                    android:layout_width="@dimen/dimen_ic_lock_levels"
-                    android:layout_alignParentLeft="true"
-                    android:padding="@dimen/padding_ic_lock" />
+                    style="@style/ImageView.Lock"/>
 
                 <TextView
                     style="@style/mTextViewLevels"
@@ -151,10 +136,7 @@
 
                 <ImageView
                     android:id="@+id/result_five"
-                    style="@style/ImageView.Lock"
-                    android:layout_width="@dimen/dimen_ic_lock_levels"
-                    android:layout_alignParentLeft="true"
-                    android:padding="@dimen/padding_ic_lock" />
+                    style="@style/ImageView.Lock" />
 
                 <TextView
                     style="@style/mTextViewLevels"
@@ -174,15 +156,14 @@
 
                 <ImageView
                     android:id="@+id/img_review"
-                    style="@style/ImageView.Lock"
-                    android:layout_alignParentLeft="true"
-                    android:padding="@dimen/padding_ic_lock" />
+                    style="@style/ImageView.Lock" />
 
                 <TextView
                     style="@style/mTextViewLevels"
                     android:layout_toRightOf="@+id/img_review"
                     android:onClick="review"
                     android:text="@string/review" />
+
             </RelativeLayout>
 
         </android.support.v7.widget.CardView>

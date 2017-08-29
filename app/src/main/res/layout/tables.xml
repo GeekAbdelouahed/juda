@@ -13,12 +13,8 @@
         <ImageView style="@style/ImageView.ImageBack" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:text="@string/tables"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_large" />
+            style="@style/mTextToolBar"
+            android:text="@string/tables" />
 
     </RelativeLayout>
 
@@ -45,8 +41,7 @@
                 style="@style/CardView.Tables"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/one"
@@ -61,8 +56,7 @@
                 style="@style/CardView.Tables"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@id/layout_one"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/two"
@@ -81,8 +75,7 @@
                 style="@style/CardView.Tables"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@+id/layout_two"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/three"
@@ -100,8 +93,7 @@
                 style="@style/CardView.Tables"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/layout_one"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/four"
@@ -119,8 +111,7 @@
                 style="@style/CardView.Tables"
                 android:layout_below="@+id/layout_two"
                 android:layout_toLeftOf="@+id/layout_four"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/five"
@@ -140,8 +131,7 @@
                 style="@style/CardView.Tables"
                 android:layout_below="@+id/layout_three"
                 android:layout_toLeftOf="@+id/layout_five"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/six"
@@ -159,8 +149,7 @@
                 style="@style/CardView.Tables"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/layout_five"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/seven"
@@ -178,8 +167,7 @@
                 style="@style/CardView.Tables"
                 android:layout_below="@+id/layout_five"
                 android:layout_toLeftOf="@id/layout_seven"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/eight"
@@ -198,8 +186,7 @@
                 style="@style/CardView.Tables"
                 android:layout_below="@id/layout_six"
                 android:layout_toLeftOf="@+id/layout_eight"
-                app:cardBackgroundColor="@color/color_icLock"
-                app:contentPadding="@dimen/padding_image_tables">
+                app:cardBackgroundColor="@color/color_icLock">
 
                 <ImageView
                     android:id="@+id/nine"
