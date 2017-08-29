@@ -54,6 +54,14 @@
         <item name="android:tint">@color/colorButtonHelp</item>
     </style>
 
+    <style name="ImageView.ButtonClick" parent="ImageView.ButtonClick">
+        <item name="android:layout_width">@dimen/dimen_ic_click</item>
+        <item name="android:layout_height">@dimen/dimen_ic_click</item>
+        <item name="android:layout_marginTop">@dimen/marginTB_ic_click</item>
+        <item name="android:layout_marginBottom">@dimen/marginTB_ic_click</item>
+        <item name="android:layout_marginRight">@dimen/marginRL_ic_click</item>
+        <item name="android:layout_marginLeft">@dimen/marginRL_ic_click</item>
+    </style>
 
     <!-- RelativeLayout -->
     <style name="mToolBar" parent="mToolBar">

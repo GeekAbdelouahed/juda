@@ -1,295 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    android:padding="@dimen/_10sdp"
     tools:context="com.academyatinfo.multtable.operation.Operation">
 
+
+    <RelativeLayout
+        android:id="@+id/toolBar_operation"
+        style="@style/mToolBar">
+
+        <ImageView style="@style/ImageView.ImageBack" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/operation" />
+
+    </RelativeLayout>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:cardCornerRadius="20dp"
-        app:cardElevation="5dp">
+        android:layout_below="@id/toolBar_operation"
+        android:layout_margin="@dimen/margin_layout_tables"
+        app:cardBackgroundColor="@color/colorAnswerLayout"
+        app:cardCornerRadius="@dimen/radius_cardView_operation">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <RelativeLayout
+                android:id="@+id/layout_info_operation"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.92"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/_20sdp"
-                android:paddingRight="@dimen/_20sdp">
+                android:paddingLeft="@dimen/margin_layout_tables"
+                android:paddingRight="@dimen/margin_layout_tables">
 
-                <LinearLayout
+
+                <TextView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:orientation="horizontal">
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_textView"
+                    android:layout_marginTop="@dimen/margin_textView"
+                    android:text="عدد الأسئلة 10"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_medium" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="10"
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_25sdp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="عدد الأسئلة "
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_20sdp" />
-                </LinearLayout>
-
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/soccer_table"
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:orientation="horizontal">
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_textView"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_medium" />
 
-                    <TextView
-                        android:id="@+id/soccer_table"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="0"
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_25sdp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="النقاط "
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_20sdp" />
-                </LinearLayout>
             </RelativeLayout>
 
-            <LinearLayout
+            <RelativeLayout
                 android:id="@+id/layout_answer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.5"
-                android:background="@color/colorAnswerLayout"
-                android:orientation="vertical">
+                android:layout_above="@+id/layout_buttons_operation"
+                android:layout_below="@+id/layout_info_operation"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_layout_answer"
+                android:gravity="center">
 
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/first_number"
+                    android:layout_width="@dimen/dimen_ic_operation"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                    android:layout_above="@id/cardView_answer"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/ic_mul_operation"
+                    android:src="@drawable/ic_one_g" />
 
-                    <ImageView
-                        android:id="@+id/second_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.4"
-                        android:src="@mipmap/ic_launcher" />
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.59"
-                        android:src="@drawable/ic_mul"
-                        android:tint="@color/colorButtonHelp" />
-
-                    <ImageView
-                        android:id="@+id/first_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.4"
-                        android:src="@mipmap/ic_launcher" />
-                </LinearLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
+                <ImageView
+                    android:id="@+id/ic_mul_operation"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.1">
+                    android:layout_above="@id/cardView_answer"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="@dimen/padding_ic_lock"
+                    android:src="@drawable/ic_mul"
+                    android:tint="@color/colorButtonHelp" />
 
-                    <android.support.v7.widget.CardView
+                <ImageView
+                    android:id="@+id/second_number"
+                    android:layout_width="@dimen/dimen_ic_operation"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/cardView_answer"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toLeftOf="@id/ic_mul_operation"
+                    android:src="@drawable/ic_one_b" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardView_answer"
+                    android:layout_width="@dimen/width_cardAnswer"
+                    android:layout_height="@dimen/height_cardAnswer"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_textView"
+                    app:cardBackgroundColor="@color/background_white"
+                    app:cardCornerRadius="@dimen/radius_cardView">
+
+                    <TextView
+                        android:id="@+id/answer"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_centerInParent="true"
-                        android:layout_marginBottom="@dimen/_10sdp"
-                        android:layout_marginLeft="@dimen/_50sdp"
-                        android:layout_marginRight="@dimen/_50sdp"
-                        android:layout_marginTop="@dimen/_10sdp"
-                        app:cardBackgroundColor="#ededed"
-                        app:cardCornerRadius="10dp"
-                        app:cardElevation="5dp">
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:padding="@dimen/padding_textView"
+                        android:textColor="@color/colorTextAnswer"
+                        android:textSize="@dimen/text_very_large" />
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="#fff"
-                            android:orientation="vertical">
+                </android.support.v7.widget.CardView>
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0.45"
-                                android:background="@color/colorAnswerButton"
-                                android:orientation="horizontal"
-                                android:padding="@dimen/_5sdp">
-
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.1"
-                                    android:onClick="click_delete"
-                                    android:src="@drawable/ic_delete" />
+            </RelativeLayout>
 
 
-                                <ImageView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="0.1"
-                                    android:onClick="click_help"
-                                    android:src="@drawable/ic_help" />
-                            </LinearLayout>
-
-
-                            <TextView
-                                android:id="@+id/answer"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_weight="0.3"
-                                android:gravity="center"
-                                android:maxLength="2"
-                                android:textColor="@color/colorTextAnswer"
-                                android:textSize="@dimen/_50sdp" />
-                        </LinearLayout>
-                    </android.support.v7.widget.CardView>
-                </RelativeLayout>
-
-            </LinearLayout>
-
-
-            <LinearLayout
+            <RelativeLayout
+                android:id="@+id/layout_buttons_operation"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:background="@color/colorAnswerButton"
-                android:orientation="vertical"
+                android:gravity="center"
                 android:padding="@dimen/_10sdp">
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
+                <ImageView
+                    android:id="@+id/ic_one_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentRight="true"
+                    android:onClick="answer_one"
+                    android:src="@drawable/ic_one_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_one"
-                        android:src="@drawable/ic_one_c" />
+                <ImageView
+                    android:id="@+id/ic_two_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_toLeftOf="@id/ic_one_click"
+                    android:onClick="answer_two"
+                    android:src="@drawable/ic_two_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_two"
-                        android:src="@drawable/ic_two_c" />
+                <ImageView
+                    android:id="@+id/ic_three_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_toLeftOf="@id/ic_two_click"
+                    android:onClick="answer_three"
+                    android:src="@drawable/ic_three_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_three"
-                        android:src="@drawable/ic_three_c" />
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/ic_four_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ic_one_click"
+                    android:onClick="answer_four"
+                    android:src="@drawable/ic_four_c" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
+                <ImageView
+                    android:id="@+id/ic_five_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_two_click"
+                    android:layout_toLeftOf="@+id/ic_four_click"
+                    android:onClick="answer_five"
+                    android:src="@drawable/ic_five_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_four"
-                        android:src="@drawable/ic_four_c" />
+                <ImageView
+                    android:id="@+id/ic_six_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@id/ic_three_click"
+                    android:layout_toLeftOf="@+id/ic_five_click"
+                    android:onClick="answer_six"
+                    android:src="@drawable/ic_six_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_five"
-                        android:src="@drawable/ic_five_c" />
+                <ImageView
+                    android:id="@+id/ic_seven_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/ic_four_click"
+                    android:onClick="answer_seven"
+                    android:src="@drawable/ic_seven_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_six"
-                        android:src="@drawable/ic_six_c" />
-                </LinearLayout>
+                <ImageView
+                    android:id="@+id/ic_eight_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_five_click"
+                    android:layout_toLeftOf="@+id/ic_seven_click"
+                    android:onClick="answer_eight"
+                    android:src="@drawable/ic_eight_c" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
+                <ImageView
+                    android:id="@+id/ic_nine_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_six_click"
+                    android:layout_toLeftOf="@+id/ic_eight_click"
+                    android:onClick="answer_nine"
+                    android:src="@drawable/ic_nine_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_seven"
-                        android:src="@drawable/ic_seven_c" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_eight"
-                        android:src="@drawable/ic_eight_c" />
+                <ImageView
+                    android:id="@+id/ic_delete_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/ic_seven_click"
+                    android:onClick="click_delete"
+                    android:src="@drawable/ic_delete" />
 
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_nine"
-                        android:src="@drawable/ic_nine_c" />
-                </LinearLayout>
+                <ImageView
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_eight_click"
+                    android:layout_toLeftOf="@id/ic_delete_click"
+                    android:onClick="answer_zero"
+                    android:src="@drawable/ic_zero_c" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.1"
-                    android:orientation="horizontal"
-                    android:padding="@dimen/_5sdp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.1"
-                        android:onClick="answer_zero"
-                        android:src="@drawable/ic_zero_c" />
-
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
+</RelativeLayout>

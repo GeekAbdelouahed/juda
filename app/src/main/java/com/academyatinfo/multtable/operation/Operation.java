@@ -51,7 +51,7 @@ public class Operation extends BaseActivity implements OperationContract.View {
             }
         }
 
-        soccer_table.setText(soccer + "");
+        soccer_table.setText(getResources().getString(R.string.count_points) + " " + soccer);
 
         success = MediaPlayer.create(this, R.raw.success);
         wrong = MediaPlayer.create(this, R.raw.wrong);
@@ -85,7 +85,7 @@ public class Operation extends BaseActivity implements OperationContract.View {
 
     private void check_answer(int result) {
         if (this.result == result) {
-            soccer_table.setText((soccer + 1) + "");
+            soccer_table.setText(getResources().getString(R.string.count_points) + " " + (soccer + 1));
             intent.putExtra("check", true);
             intent.putExtra("index_mult", mult_in);
             setResult(1, intent);
@@ -168,7 +168,7 @@ public class Operation extends BaseActivity implements OperationContract.View {
             answer.setText(answer.getText().toString().substring(0, answer.getText().toString().length() - 1));
     }
 
-    public void click_help(View view) {
+    /*public void click_help(View view) {
         dialog_help = new Dialog(this);
         dialog_help.requestWindowFeature(Window.FEATURE_NO_TITLE);
         DisplayMetrics metrics = getResources().getDisplayMetrics();
@@ -176,7 +176,7 @@ public class Operation extends BaseActivity implements OperationContract.View {
         dialog_help.getWindow().setLayout(width - 10, LinearLayoutCompat.LayoutParams.WRAP_CONTENT);
         dialog_help.setContentView(R.layout.custom_layout_help);
         dialog_help.show();
-    }
+    }*/
 
 
     private void setImageNumberTable(int number, ImageView imageView) {

@@ -23,4 +23,8 @@
     <string name="first_exam">الإختبار الأول</string>
     <string name="second_exam">الإختبار الثاني</string>
     <string name="third_exam">الإختبار الثالث</string>
+    <string name="operation">حل العملية</string>
+    <string name="count_points">النقاط</string>
+    <string name="text_delete">مسح</string>
+    <string name="text_result">النتيجة</string>
 </resources>

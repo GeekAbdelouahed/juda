@@ -2,6 +2,7 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
 
     <dimen name="text_large">23sp</dimen>
+    <dimen name="text_very_large">40sp</dimen>
     <dimen name="text_medium">18sp</dimen>
     <dimen name="size_text_learn">27sp</dimen>
 
@@ -10,7 +11,7 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="padding_layout">5dp</dimen>
     <dimen name="margin_cardView_Tables">5dp</dimen>
-    <dimen name="radius_cardView">5dp</dimen>
+    <dimen name="radius_cardView">10dp</dimen>
     <dimen name="dimen_cardView_Tables">80dp</dimen>
     <dimen name="margin_layout_tables">20dp</dimen>
     <dimen name="width_ic_lock">50dp</dimen>
@@ -24,5 +25,15 @@
     <dimen name="marginTB_cardView_levels">10dp</dimen>
     <dimen name="dimen_ic_lock_levels">50dp</dimen>
     <dimen name="marginRL_cardView_levels">20dp</dimen>
+    <dimen name="radius_cardView_operation">20dp</dimen>
+    <dimen name="dimen_ic_operation">80dp</dimen>
+    <dimen name="padding_textView">5dp</dimen>
+    <dimen name="padding_textView_answer">10dp</dimen>
+    <dimen name="margin_layout_answer">20dp</dimen>
+    <dimen name="dimen_ic_click">40dp</dimen>
+    <dimen name="marginTB_ic_click">3dp</dimen>
+    <dimen name="marginRL_ic_click">20dp</dimen>
+    <dimen name="width_cardAnswer">100dp</dimen>
+    <dimen name="height_cardAnswer">80dp</dimen>
 
 </resources>
