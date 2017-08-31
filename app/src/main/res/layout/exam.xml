@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,27 +9,27 @@
     android:orientation="vertical"
     tools:context="com.academyatinfo.multtable.exam.Exam">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="0.9"
-        android:background="@color/colorPrimary"
-        android:gravity="center"
-        android:orientation="horizontal">
+    <RelativeLayout
+        android:id="@+id/toolBar_exam"
+        style="@style/mToolBar">
+
+        <ImageView style="@style/ImageView.ImageBack" />
 
         <Chronometer
             android:id="@+id/chrono"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_centerInParent="true"
             android:gravity="center"
             android:textColor="@color/colorButtonKeyboard"
-            android:textSize="@dimen/_30sdp" />
+            android:textSize="@dimen/text_large" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_exam"
         android:layout_marginBottom="@dimen/_20sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
@@ -51,56 +51,32 @@
                 android:paddingLeft="@dimen/_20sdp"
                 android:paddingRight="@dimen/_20sdp">
 
-                <LinearLayout
+                <TextView
+                    android:id="@+id/soccer_table_exam"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:orientation="horizontal">
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_textView"
+                    android:layout_marginTop="@dimen/margin_textView"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_medium" />
 
-                    <TextView
-                        android:id="@+id/soccer_table_exam"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="0"
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_27sdp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="النقاط "
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_20sdp" />
-                </LinearLayout>
-
-                <LinearLayout
+                <TextView
+                    android:id="@+id/full_soccer"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_alignParentLeft="true"
-                    android:layout_centerInParent="true"
-                    android:orientation="horizontal">
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_textView"
+                    android:layout_marginTop="@dimen/margin_textView"
+                    android:gravity="center"
+                    android:text="90"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_medium" />
 
-                    <TextView
-                        android:id="@+id/full_soccer"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:text="90"
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_27sdp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="عدد الأسئلة "
-                        android:textColor="@color/colorButtonKeyboard"
-                        android:textSize="@dimen/_20sdp" />
-
-                </LinearLayout>
 
             </RelativeLayout>
 
@@ -109,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="0.5"
-                android:background="@color/colorAnswerLayout"
+                android:background="@color/colorLevels"
                 android:orientation="vertical">
 
 
@@ -240,4 +216,4 @@
             </LinearLayout>
         </LinearLayout>
     </android.support.v7.widget.CardView>
-</LinearLayout>
+</RelativeLayout>

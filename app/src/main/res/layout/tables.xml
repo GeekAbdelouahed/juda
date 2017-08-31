@@ -222,7 +222,7 @@
                 android:id="@+id/text_exam"
                 style="@style/mTextViewLevels"
                 android:layout_toRightOf="@+id/img_lock_certification"
-                android:text="إمتحان الشهادة" />
+                android:text="@string/final_exam" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>

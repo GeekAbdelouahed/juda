@@ -86,6 +86,8 @@ public class Exam extends BaseActivity implements ExamContract.View {
         answer = prepare_game(table1, table2);
         inputByIndex(index_empty, answer);
         value_soccer = 0;
+
+        soccer.setText("النقاط 0");
     }
 
     private void createTable(int long_table) {
@@ -100,26 +102,26 @@ public class Exam extends BaseActivity implements ExamContract.View {
                     table2.add(j);
                 }
             }
-            full_soccer.setText((long_table * 10) + "");
+            full_soccer.setText("عدد الأسئلة " + (long_table * 10));
         } else {
             if (level == 3) {
                 for (int j = 0; j <= 4; j++) {
                     table1.add(long_table);
                     table2.add(j);
                 }
-                full_soccer.setText("5");
+                full_soccer.setText("عدد الأسئلة 5");
             } else if (level == 4) {
                 for (int j = 5; j <= 9; j++) {
                     table1.add(long_table);
                     table2.add(j);
                 }
-                full_soccer.setText("5");
+                full_soccer.setText("عدد الأسئلة 5");
             } else {
                 for (int j = 0; j <= 9; j++) {
                     table1.add(long_table);
                     table2.add(j);
                 }
-                full_soccer.setText(10 + "");
+                full_soccer.setText("عدد الأسئلة 10");
             }
         }
     }
@@ -178,7 +180,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
     public void play_game(boolean wine, final TextView text) {
         if (wine) {
             value_soccer++;
-            soccer.setText(value_soccer + "");
+            soccer.setText("النقاط " + value_soccer);
             text.setBackgroundColor(Color.parseColor("#03d1bd"));
             text.setTextColor(Color.parseColor("#FFF1F1F1"));
             success.start();

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#009688</color>
-    <color name="colorLevels">#00796b</color>
+    <color name="colorLevels">#00bfa5</color>
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorAnswerButton">#FF4081</color>
