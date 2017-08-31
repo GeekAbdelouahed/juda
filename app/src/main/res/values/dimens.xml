@@ -1,10 +1,11 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
 
-    <dimen name="text_large">23sp</dimen>
-    <dimen name="text_very_large">40sp</dimen>
     <dimen name="text_medium">18sp</dimen>
     <dimen name="size_text_learn">27sp</dimen>
+    <dimen name="text_large">23sp</dimen>
+    <dimen name="text_very_large">40sp</dimen>
+    <dimen name="text_exam">50dp</dimen>
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
@@ -35,5 +36,6 @@
     <dimen name="marginRL_ic_click">20dp</dimen>
     <dimen name="width_cardAnswer">100dp</dimen>
     <dimen name="height_cardAnswer">80dp</dimen>
+    <dimen name="height_layout_answer">240dp</dimen>
 
 </resources>

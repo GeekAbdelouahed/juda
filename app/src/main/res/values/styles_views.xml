@@ -21,6 +21,13 @@
         <item name="cardCornerRadius">@dimen/radius_cardView</item>
     </style>
 
+    <style name="CardView.Exam" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/margin_cardView_Tables</item>
+        <item name="android:layout_weight">0.1</item>
+        <item name="cardCornerRadius">@dimen/radius_cardView</item>
+    </style>
     <!-- ImageView -->
     <style name="ImageView" parent="ImageView">
         <item name="android:layout_width">wrap_content</item>
