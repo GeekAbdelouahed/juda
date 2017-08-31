@@ -3,10 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/_4sdp"
-    android:layout_marginLeft="@dimen/_7sdp"
-    android:layout_marginRight="@dimen/_7sdp"
-    android:layout_marginTop="@dimen/_4sdp"
+    android:layout_margin="@dimen/margin_layout_answer"
     android:orientation="vertical"
     app:cardCornerRadius="10dp"
     app:cardElevation="3dp">
@@ -22,17 +19,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="@dimen/_5sdp"
+            android:padding="@dimen/padding_textView"
             android:text="التاريخ"
             android:textColor="#f1f1f1"
-            android:textSize="@dimen/_17sdp" />
+            android:textSize="@dimen/text_medium" />
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#f1f1f1"
             android:orientation="horizontal"
-            android:padding="@dimen/_10sdp">
+            android:padding="@dimen/padding_layout">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -49,7 +46,7 @@
                     android:gravity="right"
                     android:text="النتيجة"
                     android:textColor="@color/colorAccent"
-                    android:textSize="@dimen/_22sdp" />
+                    android:textSize="@dimen/text_large" />
 
                 <TextView
                     android:id="@+id/text_time"
@@ -59,7 +56,7 @@
                     android:gravity="right"
                     android:text="الوقت"
                     android:textColor="#565656"
-                    android:textSize="@dimen/_22sdp" />
+                    android:textSize="@dimen/text_large" />
             </LinearLayout>
 
             <TextView
@@ -70,7 +67,7 @@
                 android:layout_weight="0.2"
                 android:text="الإسم"
                 android:textColor="@color/colorAccent"
-                android:textSize="@dimen/_30sdp" />
+                android:textSize="@dimen/text_very_large" />
         </RelativeLayout>
     </LinearLayout>
 </android.support.v7.widget.CardView>

@@ -10,64 +10,56 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/_50sdp"
-        android:layout_marginLeft="@dimen/_20sdp"
-        android:layout_marginRight="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_layout_answer"
         android:elevation="5dp"
-        android:padding="@dimen/_10sdp"
         app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="@dimen/radius_cardView">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/_20sdp">
+            android:orientation="vertical">
 
             <ScrollView
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_above="@+id/button_about"
-                android:layout_alignParentTop="true">
+                android:layout_alignParentTop="true"
+                android:scrollbars="none">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_textView_answer">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginLeft="@dimen/_10sdp"
                         android:gravity="right"
                         android:lineSpacingMultiplier="1.2"
                         android:text="تعلم جدول الضرب أصبح سهلا سريعا وممتعا مع تطبيق"
                         android:textColor="#efefef"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/text_medium" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_10sdp"
                         android:gravity="right"
-                        android:text="جداء"
+                        android:text="@string/app_name"
                         android:textColor="#ffffff"
-                        android:textSize="@dimen/_30sdp" />
+                        android:textSize="@dimen/text_very_large" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="@dimen/_10sdp"
-                        android:layout_marginLeft="@dimen/_10sdp"
                         android:gravity="right"
                         android:lineSpacingMultiplier="1.2"
                         android:text="حيث يتوافر على العديد من الميزات التي تجعلك تستمتع وتتعلم في نفس الوقت من بينها :\nتعلم جدول الضرب خطوة بخطوة بطريقة سهلة وممتعة مع أصوات خاصة بالإجابة الصحيحة أوالخاطئة\nأيضا التطبيق يعطيك تقييما لمستواك خلال التعلم تقيم لكل الجداول معا وتقيم خاص لكل جدول\nكما يمكنك التطبيق من إجراء إمتحان مباشر لتحديد المستوى ويقوم بحفظ كل نتائجك مع التقييم والتاريخ وبالتالي يمكنك الرجوع لها في أي وقت للإطلاع عليها وملاحظة مراحل تطورك مع الوقت وبعد تجاوز الإمتحان يمكنك الحصول على شهادة تشجيعية باسمك الخاص"
                         android:textColor="#efefef"
-                        android:textSize="@dimen/_20sdp" />
+                        android:textSize="@dimen/text_medium" />
                 </LinearLayout>
 
             </ScrollView>
@@ -81,13 +73,10 @@
                 android:drawableLeft="@drawable/ic_mail"
                 android:gravity="center"
                 android:onClick="send_mail"
-                android:paddingBottom="@dimen/_10sdp"
-                android:paddingLeft="@dimen/_30sdp"
-                android:paddingRight="@dimen/_10sdp"
-                android:paddingTop="@dimen/_10sdp"
+                android:padding="@dimen/padding_textView_answer"
                 android:text="راسلنا عبر الإيميل"
                 android:textColor="#efefef"
-                android:textSize="@dimen/_20sdp" />
+                android:textSize="@dimen/text_medium" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 

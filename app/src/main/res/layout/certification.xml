@@ -24,7 +24,7 @@
             android:onClick="save_certification"
             android:text="حفظ الشهادة"
             android:textColor="#f4f4f4"
-            android:textSize="@dimen/_30sdp" />
+            android:textSize="@dimen/text_medium" />
 
         <TextView
             android:id="@+id/back_certification"
@@ -35,7 +35,7 @@
             android:onClick="click_back"
             android:text="رجوع"
             android:textColor="#f4f4f4"
-            android:textSize="@dimen/_30sdp"
+            android:textSize="@dimen/text_medium"
             android:visibility="invisible" />
     </LinearLayout>
 
@@ -43,7 +43,7 @@
         android:id="@+id/layout_certification"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/_10sdp"
+        android:layout_margin="@dimen/margin_layout_answer"
         android:layout_weight="0.1"
         android:background="@drawable/certification"
         android:orientation="vertical">
@@ -51,9 +51,9 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_50sdp"
-            android:layout_marginRight="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/margin_layout_answer"
+            android:layout_marginRight="@dimen/margin_layout_answer"
+            android:layout_marginTop="@dimen/margin_layout_answer"
             android:orientation="vertical">
 
             <TextView
@@ -62,34 +62,14 @@
                 android:gravity="center"
                 android:text="شهادة نجاح"
                 android:textColor="@color/colorPrimaryDark"
-                android:textSize="@dimen/_35sdp" />
+                android:textSize="@dimen/text_large" />
 
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="3dp"
-                android:layout_margin="@dimen/_2sdp"
-                android:background="@color/colorPrimary" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_margin="@dimen/_2sdp"
-                android:background="@color/colorPrimary" />
-
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_margin="@dimen/_2sdp"
-                android:background="@color/colorPrimary" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_margin="@dimen/margin_layout_answer"
             android:orientation="vertical">
 
             <TextView
@@ -99,7 +79,7 @@
                 android:lineSpacingMultiplier="1.1"
                 android:text="نهدي هاته الشهادة للتلميذ(ة) "
                 android:textColor="#454545"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/text_large" />
 
             <TextView
                 android:id="@+id/name"
@@ -109,7 +89,7 @@
                 android:lineSpacingMultiplier="1.1"
                 android:text="عبد الواحد مجوجة"
                 android:textColor="@color/colorAccent"
-                android:textSize="@dimen/_25sdp" />
+                android:textSize="@dimen/text_very_large" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -118,7 +98,7 @@
                 android:lineSpacingMultiplier="1.1"
                 android:text="وهذا تقديرا لمجهوداته(ا) خلال الإمتحان النهائي في تطبيق جداء لجدول الضرب وحصوله(ا) على علامة"
                 android:textColor="#454545"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/text_large" />
 
             <TextView
                 android:id="@+id/soccer"
@@ -128,7 +108,7 @@
                 android:lineSpacingMultiplier="1.1"
                 android:text="90 من 90"
                 android:textColor="@color/colorAccent"
-                android:textSize="@dimen/_25sdp" />
+                android:textSize="@dimen/text_very_large" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -137,13 +117,12 @@
                 android:lineSpacingMultiplier="1.1"
                 android:text="متمنين له(ا) المزيد من التوفيق والنجاح"
                 android:textColor="#454545"
-                android:textSize="@dimen/_18sdp" />
+                android:textSize="@dimen/text_large" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="@dimen/_20sdp"
                 android:src="@mipmap/ic_launcher" />
         </LinearLayout>
 

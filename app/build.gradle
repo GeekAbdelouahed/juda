@@ -46,9 +46,6 @@ dependencies {
     // Fonts
     compile 'uk.co.chrisjenx:calligraphy:2.2.0'
 
-    // MultiScreen Support
-    compile 'com.intuit.sdp:sdp-android:1.0.4'
-
     // External DataBase Sqlite
     compile 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
 

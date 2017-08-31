@@ -140,7 +140,7 @@
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAnswerButton"
                 android:gravity="center"
-                android:padding="@dimen/_10sdp">
+                android:padding="@dimen/padding_layout">
 
                 <ImageView
                     android:id="@+id/ic_one_click"

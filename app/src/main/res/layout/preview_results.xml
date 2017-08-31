@@ -20,7 +20,7 @@
             android:gravity="center"
             android:text="لا توجد نتائج"
             android:textColor="#efefef"
-            android:textSize="@dimen/_30sdp" />
+            android:textSize="@dimen/text_large" />
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/recycler"

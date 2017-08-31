@@ -52,7 +52,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
     private TextView result_exam;
     private Dialog dialog;
     private Button button;
-    private int long_table, level, value_random1, value_random2, value_random3, first, second, answer, index_empty, value_soccer;
+    private int long_table, level, value_random1, value_random2, value_random3, first, second, answer, index_empty, value_soccer , val_full_soccer;
     private Random random;
     private Calendar calendar;
     private MediaPlayer success, wrong, end;
@@ -91,6 +91,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
     }
 
     private void createTable(int long_table) {
+        val_full_soccer = long_table;
         if (level >= 6) {
             for (int i = 0; i <= 9; i++) {
                 for (int j = 1; j <= long_table; j++) {
@@ -102,7 +103,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
                     table2.add(j);
                 }
             }
-            full_soccer.setText("عدد الأسئلة " + (long_table * 10));
+            full_soccer.setText("عدد الأسئلة " + (val_full_soccer * 10));
         } else {
             if (level == 3) {
                 for (int j = 0; j <= 4; j++) {
@@ -209,21 +210,21 @@ public class Exam extends BaseActivity implements ExamContract.View {
                     result_exam = (TextView) dialog.findViewById(R.id.text_result_exam);
 
 
-                    if (value_soccer >= (Integer.parseInt(full_soccer.getText().toString()) * 0.7))
-                        result_exam.setText("ممتاز لقد حصلت على معدل\n" + value_soccer + " من " + full_soccer.getText().toString() + "\nفي وقت قدره " + chronometer.getText() +
+                    if (value_soccer >= (val_full_soccer* 0.7))
+                        result_exam.setText("ممتاز لقد حصلت على معدل\n" + value_soccer + " من " + val_full_soccer + "\nفي وقت قدره " + chronometer.getText() +
                                 "\nواصل على هذا المنوال");
-                    else if (value_soccer < (Integer.parseInt(full_soccer.getText().toString()) * 0.7) && value_soccer >= (Integer.parseInt(full_soccer.getText().toString()) * 0.5))
-                        result_exam.setText("لقد حصلت على معدل\n" + value_soccer + " من " + full_soccer.getText().toString() + "\nفي وقت قدره " + chronometer.getText() +
+                    else if (value_soccer < (val_full_soccer * 0.7) && value_soccer >= (val_full_soccer * 0.5))
+                        result_exam.setText("لقد حصلت على معدل\n" + value_soccer + " من " + val_full_soccer + "\nفي وقت قدره " + chronometer.getText() +
                                 "\nأعد المراجعة للحصول على علامة ممتاز");
-                    else if (value_soccer < (Integer.parseInt(full_soccer.getText().toString()) * 0.5))
-                        result_exam.setText("لقد حصلت على معدل\n" + value_soccer + " من " + full_soccer.getText().toString() + "\nفي وقت قدره " + chronometer.getText() +
+                    else if (value_soccer < (val_full_soccer * 0.5))
+                        result_exam.setText("لقد حصلت على معدل\n" + value_soccer + " من " + val_full_soccer + "\nفي وقت قدره " + chronometer.getText() +
                                 "\nيمكنك تحسين مهاراتك بالتعلم أكثر");
 
                     button = (Button) dialog.findViewById(R.id.click_done);
                     button.setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
-                            if (Integer.parseInt(full_soccer.getText().toString()) == 90 && level == 7) {
+                            if (val_full_soccer == 90 && level == 7) {
                                 intent = new Intent(Exam.this, Certification.class);
                                 intent.putExtra("time", chronometer.getText().toString());
                                 intent.putExtra("soccer", value_soccer + "");
@@ -247,7 +248,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
                                     }
                                 });
                             } else {
-                                if (value_soccer >= (Integer.parseInt(full_soccer.getText().toString()) * 0.7))
+                                if (value_soccer >= (val_full_soccer * 0.7))
                                     setResult(1, intent.putExtra("level", level));
                                 dialog.hide();
                                 finish();

@@ -37,5 +37,6 @@
     <dimen name="width_cardAnswer">100dp</dimen>
     <dimen name="height_cardAnswer">80dp</dimen>
     <dimen name="height_layout_answer">240dp</dimen>
+    <dimen name="padding_layout_home">50dp</dimen>
 
 </resources>
