@@ -14,10 +14,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:background="@drawable/background_logo"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/marginTB_cardView_levels"
         android:layout_marginTop="@dimen/marginTB_cardView_levels"
-        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_logo"
         android:src="@drawable/logo" />
 
     <RelativeLayout
