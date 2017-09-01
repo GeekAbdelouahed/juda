@@ -21,12 +21,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
     private ArrayList<Results> results;
     private Context context;
-    private int lastPosition;
 
     public MyAdapter(Context context, ArrayList<Results> results) {
         this.context = context;
         this.results = results;
-        this.lastPosition = 0;
     }
 
     @Override
@@ -46,11 +44,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public void onBindViewHolder(final ViewHolder holder, final int position) {
 
         final Results results = this.results.get(position);
-
-        Animation animation = AnimationUtils.loadAnimation(context, (position > lastPosition) ? R.anim.up_from_bottom
-                : R.anim.down_from_top);
-        holder.itemView.startAnimation(animation);
-        lastPosition = position;
 
         holder.name.setText(results.getName());
         holder.result.setText(results.getResult() + "/90");

@@ -1,52 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    android:gravity="center"
-    android:orientation="vertical"
     android:padding="@dimen/padding_layout_home"
     tools:context="com.academyatinfo.multtable.splashscreen.SplashScreen">
 
-    <Button
-        android:id="@+id/btn_learn"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_layout_answer"
-        android:layout_weight="0.1"
-        android:background="@drawable/button_shape"
-        android:gravity="center"
-        android:onClick="click_to_learn"
-        android:text="تعليم"
-        android:textColor="#ededed"
-        android:textSize="@dimen/text_very_large" />
 
-    <Button
-        android:id="@+id/btn_result"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_layout_answer"
-        android:layout_weight="0.1"
-        android:background="@drawable/button_shape"
-        android:gravity="center"
-        android:onClick="click_to_result"
-        android:text="النتائج"
-        android:textColor="#ededed"
-        android:textSize="@dimen/text_very_large" />
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/background_logo"
+        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
+        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
 
-    <Button
-        android:id="@+id/btn_about"
+    <RelativeLayout
+        android:id="@+id/layout_learn"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_layout_answer"
-        android:layout_weight="0.1"
-        android:background="@drawable/button_shape"
-        android:gravity="center"
-        android:onClick="click_to_about"
-        android:text="حول التطبيق"
-        android:textColor="#ededed"
-        android:textSize="@dimen/text_very_large" />
-</LinearLayout>
+        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_below="@id/ic_logo"
+        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
+        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:background="@drawable/background_learn">
+
+        <ImageView
+            android:id="@+id/ic_splash_learn"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_learn" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@+id/ic_splash_learn"
+            android:background="#25000000"
+            android:onClick="click_to_learn"
+            android:text="@string/text_learn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_below="@+id/layout_learn"
+        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
+        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:background="@drawable/background_results">
+
+        <ImageView
+            android:id="@+id/ic_splash_results"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_results" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@+id/ic_splash_results"
+            android:background="#25000000"
+            android:onClick="click_to_result"
+            android:text="@string/text_results" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_below="@id/layout_result"
+        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
+        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:background="@drawable/background_about">
+
+        <ImageView
+            android:id="@+id/ic_splash_about"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_about" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@id/ic_splash_about"
+            android:background="#25000000"
+            android:onClick="click_to_about"
+            android:text="@string/text_about" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_below="@id/layout_about"
+        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
+        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:background="@drawable/background_exit">
+
+        <ImageView
+            android:id="@+id/ic_splash_exit"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_exit" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@id/ic_splash_exit"
+            android:background="#25000000"
+            android:onClick="clickBack"
+            android:text="@string/text_exit" />
+
+    </RelativeLayout>
+</RelativeLayout>

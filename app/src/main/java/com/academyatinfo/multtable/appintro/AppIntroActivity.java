@@ -25,6 +25,7 @@ public class AppIntroActivity extends AppIntro {
         super.onCreate(savedInstanceState);
 
         startActivity(new Intent(this, SplashScreen.class));
+        finish();
 
         addSlide(Slide1Fragment.newInstance("slide1", "intro1"));
         addSlide(Slide2Fragment.newInstance("slide2", "intro2"));

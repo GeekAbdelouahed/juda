@@ -28,4 +28,8 @@
     <string name="text_delete">مسح</string>
     <string name="text_result">النتيجة</string>
     <string name="final_exam">الإمتحان النهائي</string>
+    <string name="text_exit">خروج</string>
+    <string name="text_about">حول التطبيق</string>
+    <string name="text_results">النتائج</string>
+    <string name="text_learn">تعليم</string>
 </resources>
