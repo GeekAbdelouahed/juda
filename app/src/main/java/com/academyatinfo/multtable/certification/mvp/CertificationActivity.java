@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.databases.DataBaseResultExam;
+import com.academyatinfo.multtable.databases.DataBaseResults;
 import com.academyatinfo.multtable.modules.Results;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
@@ -27,7 +27,7 @@ public class CertificationActivity extends BaseActivity implements Certification
     TextView soccer;
 
     private Intent intent;
-    private DataBaseResultExam dataBaseResultExam;
+    private DataBaseResults dataBaseResults;
     private Results results;
 
     @Override
@@ -47,9 +47,9 @@ public class CertificationActivity extends BaseActivity implements Certification
         results.setDate(intent.getStringExtra("date"));
         results.setTime(intent.getStringExtra("time"));
 
-        dataBaseResultExam = new DataBaseResultExam(this);
-        dataBaseResultExam.open();
-        dataBaseResultExam.insertResult(results);
+        dataBaseResults = new DataBaseResults(this);
+        dataBaseResults.open();
+        dataBaseResults.insertResult(results);
 
         name.setText(results.getName());
         soccer.setText(results.getResult() + " من 90");

@@ -7,36 +7,34 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.view.WindowManager;
 
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.appintro.slides.Slide1Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide2Fragment;
-import com.academyatinfo.multtable.appintro.slides.Slide3Fragment;
 import com.academyatinfo.multtable.home.HomeActivity;
 import com.github.paolorotolo.appintro.AppIntro;
+import com.github.paolorotolo.appintro.AppIntro2;
 import com.github.paolorotolo.appintro.AppIntroFragment;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class IntroActivity extends AppIntro {
+public class IntroActivity extends AppIntro2{
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        startActivity(new Intent(this, HomeActivity.class));
-        finish();
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        getSupportActionBar().hide();
 
         addSlide(Slide1Fragment.newInstance("slide1", "intro1"));
         addSlide(Slide2Fragment.newInstance("slide2", "intro2"));
-        addSlide(Slide3Fragment.newInstance("slide3", "intro3"));
 
         addSlide(AppIntroFragment.newInstance("intro", "just try", R.mipmap.ic_launcher, Color.GREEN));
 
         showSkipButton(false);
-
-        setColorDoneText(Color.WHITE);
-        setDoneText("موافق");
 
         askForPermissions(
                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.READ_EXTERNAL_STORAGE}

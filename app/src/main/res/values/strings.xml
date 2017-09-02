@@ -33,4 +33,8 @@
     <string name="text_results">النتائج</string>
     <string name="text_learn">تعليم</string>
     <string name="text_settings">الإعدادت</string>
+    <string name="name">الإسم</string>
+    <string name="family">اللقب</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
 </resources>

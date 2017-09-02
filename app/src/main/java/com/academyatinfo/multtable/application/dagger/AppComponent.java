@@ -2,7 +2,7 @@ package com.academyatinfo.multtable.application.dagger;
 
 import com.academyatinfo.multtable.databases.DataBaseLearn;
 import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.databases.DataBaseResultExam;
+import com.academyatinfo.multtable.databases.DataBaseResults;
 
 import dagger.Component;
 
@@ -17,6 +17,6 @@ public interface AppComponent {
 
     DataBaseLearnTable dataBaseLearnTable();
 
-    DataBaseResultExam dataBaseResultExam();
+    DataBaseResults dataBaseResultExam();
 
 }

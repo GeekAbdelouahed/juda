@@ -14,7 +14,7 @@ import java.util.ArrayList;
  * Created by abde on 14/02/17.
  */
 
-public class DataBaseResultExam {
+public class DataBaseResults {
     private static String DATABASE_NAME = "MULTTABLE";
     private static String DATABASE_TABLE = "TABLERESULTS";
     private static final int DATABASE_VERSION = 1;
@@ -29,7 +29,7 @@ public class DataBaseResultExam {
     SQLiteDatabase sqLiteDatabase;
     DBhelber dbhelber;
 
-    public DataBaseResultExam(Context context) {
+    public DataBaseResults(Context context) {
         this.context = context;
     }
 
