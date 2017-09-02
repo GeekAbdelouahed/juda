@@ -7,13 +7,13 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.academyatinfo.multtable.levels.Levels;
+import com.academyatinfo.multtable.exam.ExamActivity;
+import com.academyatinfo.multtable.levels.LevelsActivity;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearn;
-import com.academyatinfo.multtable.exam.Exam;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
-public class Tables extends BaseActivity implements TablesContract.View {
+public class TablesActivity extends BaseActivity implements TablesContract.View {
 
     private Intent intent;
     private ImageView lock_two, lock_three, lock_four, lock_five, lock_six, lock_seven, lock_eight, lock_nine, img_lock_exam;
@@ -22,7 +22,7 @@ public class Tables extends BaseActivity implements TablesContract.View {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tables);
+        setContentView(R.layout.layout_tables);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         lock_two = (ImageView) findViewById(R.id.lock_two);
@@ -37,7 +37,7 @@ public class Tables extends BaseActivity implements TablesContract.View {
 
         dataBaseLearn = new DataBaseLearn(this);
 
-        intent = new Intent(this, Levels.class);
+        intent = new Intent(this, LevelsActivity.class);
     }
 
     public void one(View view) {
@@ -103,7 +103,7 @@ public class Tables extends BaseActivity implements TablesContract.View {
 
     public void click_exam(View view) {
         if (check_done_table(9)) {
-            intent = new Intent(this, Exam.class);
+            intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", 9);
             intent.putExtra("level", 7);
             startActivity(intent);

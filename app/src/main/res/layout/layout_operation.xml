@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.operation.Operation">
+    tools:context="com.academyatinfo.multtable.operation.OperationActivity">
 
 
     <RelativeLayout

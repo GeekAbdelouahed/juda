@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.previewresults.mvp;
+package com.academyatinfo.multtable.results.mvp;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -12,7 +12,7 @@ import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseResultExam;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
-public class PreviewResults extends BaseActivity implements PreviewResultContract.View {
+public class ResultsActivity extends BaseActivity implements ResultContract.View {
 
     private RecyclerView recyclerView;
     private MyAdapter myAdapter;
@@ -22,7 +22,7 @@ public class PreviewResults extends BaseActivity implements PreviewResultContrac
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.preview_results);
+        setContentView(R.layout.layout_results);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         dataBaseResultExam = new DataBaseResultExam(this);
         dataBaseResultExam.open();

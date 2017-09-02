@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.learntable.LearnTable">
+    tools:context="com.academyatinfo.multtable.learn.LearnActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_saveTable"

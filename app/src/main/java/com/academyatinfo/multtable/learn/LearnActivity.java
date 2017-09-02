@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.learntable;
+package com.academyatinfo.multtable.learn;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import com.academyatinfo.multtable.ui.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class LearnTable extends BaseActivity {
+public class LearnActivity extends BaseActivity {
 
     @BindView(R.id.zero_result)
     TextView result_zero;
@@ -61,7 +61,7 @@ public class LearnTable extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.learntable);
+        setContentView(R.layout.layout_learn);
 
         ButterKnife.bind(this);
 

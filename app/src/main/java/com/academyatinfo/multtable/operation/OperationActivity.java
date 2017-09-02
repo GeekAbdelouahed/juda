@@ -6,12 +6,9 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutCompat;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.DisplayMetrics;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -20,7 +17,7 @@ import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearnTable;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
-public class Operation extends BaseActivity implements OperationContract.View {
+public class OperationActivity extends BaseActivity implements OperationContract.View {
 
     private TextView answer, soccer_table;
     private int index_table, mult_in, result, soccer;
@@ -32,7 +29,7 @@ public class Operation extends BaseActivity implements OperationContract.View {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.operation);
+        setContentView(R.layout.layout_operation);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         answer = (TextView) findViewById(R.id.answer);
         intent = getIntent();

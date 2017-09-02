@@ -70,3 +70,4 @@ dependencies {
     // App Intro
     compile 'com.github.apl-devs:appintro:v4.2.0'
 }
+apply plugin: 'realm-android'

@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.previewresults.mvp.PreviewResults">
+    tools:context="com.academyatinfo.multtable.results.mvp.ResultsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_results"
+        style="@style/mToolBar">
+
+        <ImageView style="@style/ImageView.ImageBack" />
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar_results">
 
         <TextView
             android:id="@+id/text_checkdata"
@@ -29,4 +38,4 @@
             android:layout_centerInParent="true"
             android:visibility="invisible"></android.support.v7.widget.RecyclerView>
     </RelativeLayout>
-</LinearLayout>
+</RelativeLayout>

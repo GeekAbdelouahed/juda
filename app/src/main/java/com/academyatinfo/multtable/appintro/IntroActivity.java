@@ -12,19 +12,19 @@ import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.appintro.slides.Slide1Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide2Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide3Fragment;
-import com.academyatinfo.multtable.splashscreen.SplashScreen;
+import com.academyatinfo.multtable.home.HomeActivity;
 import com.github.paolorotolo.appintro.AppIntro;
 import com.github.paolorotolo.appintro.AppIntroFragment;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class AppIntroActivity extends AppIntro {
+public class IntroActivity extends AppIntro {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        startActivity(new Intent(this, SplashScreen.class));
+        startActivity(new Intent(this, HomeActivity.class));
         finish();
 
         addSlide(Slide1Fragment.newInstance("slide1", "intro1"));
@@ -46,7 +46,7 @@ public class AppIntroActivity extends AppIntro {
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
-        startActivity(new Intent(this, SplashScreen.class));
+        startActivity(new Intent(this, HomeActivity.class));
     }
 
     @Override

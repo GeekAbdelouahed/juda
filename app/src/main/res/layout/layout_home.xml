@@ -6,7 +6,7 @@
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
     android:padding="@dimen/padding_layout_home"
-    tools:context="com.academyatinfo.multtable.splashscreen.SplashScreen">
+    tools:context="com.academyatinfo.multtable.home.HomeActivity">
 
 
     <ImageView
@@ -18,6 +18,7 @@
         android:layout_marginBottom="@dimen/marginTB_cardView_levels"
         android:layout_marginTop="@dimen/marginTB_cardView_levels"
         android:background="@drawable/background_logo"
+        android:onClick="click_to_about"
         android:src="@drawable/logo" />
 
     <RelativeLayout
@@ -88,8 +89,8 @@
             style="@style/mTextViewLevels"
             android:layout_toRightOf="@id/ic_splash_about"
             android:background="#25000000"
-            android:onClick="click_to_about"
-            android:text="@string/text_about" />
+            android:onClick="click_to_settings"
+            android:text="@string/text_settings" />
 
     </RelativeLayout>
 

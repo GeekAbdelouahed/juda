@@ -9,18 +9,16 @@ import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearn;
-import com.academyatinfo.multtable.exam.Exam;
-import com.academyatinfo.multtable.learntable.LearnTable;
+import com.academyatinfo.multtable.exam.ExamActivity;
+import com.academyatinfo.multtable.learn.LearnActivity;
 import com.academyatinfo.multtable.tablelevels.TableLevels;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Levels extends BaseActivity implements LevelsContract.View {
+public class LevelsActivity extends BaseActivity implements LevelsContract.View {
 
-    /*@BindView(R.id.image_back)
-    ImageView imageBack;*/
     @BindView(R.id.table_number)
     TextView table_number;
 
@@ -32,7 +30,7 @@ public class Levels extends BaseActivity implements LevelsContract.View {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.levels);
+        setContentView(R.layout.layout_levels);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -49,7 +47,7 @@ public class Levels extends BaseActivity implements LevelsContract.View {
     }
 
     public void level_one(View view) {
-        intent = new Intent(this, LearnTable.class);
+        intent = new Intent(this, LearnActivity.class);
         intent.putExtra("table", table);
         startActivityForResult(intent, 1);
     }
@@ -64,7 +62,7 @@ public class Levels extends BaseActivity implements LevelsContract.View {
 
     public void level_three(View view) {
         if (dataBaseLearn.getData(table, 2)) {
-            intent = new Intent(this, Exam.class);
+            intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 3);
             startActivityForResult(intent, 1);
@@ -73,7 +71,7 @@ public class Levels extends BaseActivity implements LevelsContract.View {
 
     public void level_four(View view) {
         if (dataBaseLearn.getData(table, 3)) {
-            intent = new Intent(this, Exam.class);
+            intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 4);
             startActivityForResult(intent, 1);
@@ -82,7 +80,7 @@ public class Levels extends BaseActivity implements LevelsContract.View {
 
     public void level_five(View view) {
         if (dataBaseLearn.getData(table, 4)) {
-            intent = new Intent(this, Exam.class);
+            intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 5);
             startActivityForResult(intent, 1);
@@ -91,7 +89,7 @@ public class Levels extends BaseActivity implements LevelsContract.View {
 
     public void review(View view) {
         if (dataBaseLearn.getData(table, 5)) {
-            intent = new Intent(this, Exam.class);
+            intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 6);
             startActivityForResult(intent, 1);

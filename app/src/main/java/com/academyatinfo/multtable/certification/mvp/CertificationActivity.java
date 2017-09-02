@@ -17,7 +17,7 @@ import com.academyatinfo.multtable.ui.BaseActivity;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Certification extends BaseActivity implements CertificationContract.View {
+public class CertificationActivity extends BaseActivity implements CertificationContract.View {
 
     @BindView(R.id.back_certification)
     TextView textView;
@@ -33,7 +33,7 @@ public class Certification extends BaseActivity implements CertificationContract
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.certification);
+        setContentView(R.layout.layout_certification);
 
         ButterKnife.bind(this);
 

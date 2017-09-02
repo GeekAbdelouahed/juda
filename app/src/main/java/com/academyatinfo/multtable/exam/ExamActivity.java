@@ -18,7 +18,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.certification.mvp.Certification;
+import com.academyatinfo.multtable.certification.mvp.CertificationActivity;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ import java.util.Random;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Exam extends BaseActivity implements ExamContract.View {
+public class ExamActivity extends BaseActivity implements ExamContract.View {
 
     @BindView(R.id.text_card_one)
     TextView text1;
@@ -63,7 +63,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.exam);
+        setContentView(R.layout.layout_exam);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -200,7 +200,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
                     answer = prepare_game(table1, table2);
                     inputByIndex(index_empty, answer);
                 } else {
-                    dialog = new Dialog(Exam.this);
+                    dialog = new Dialog(ExamActivity.this);
                     dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
                     DisplayMetrics metrics = getResources().getDisplayMetrics();
                     int width = metrics.widthPixels;
@@ -225,7 +225,7 @@ public class Exam extends BaseActivity implements ExamContract.View {
                         @Override
                         public void onClick(View view) {
                             if (val_full_soccer == 90 && level == 7) {
-                                intent = new Intent(Exam.this, Certification.class);
+                                intent = new Intent(ExamActivity.this, CertificationActivity.class);
                                 intent.putExtra("time", chronometer.getText().toString());
                                 intent.putExtra("soccer", value_soccer + "");
                                 calendar = Calendar.getInstance();
