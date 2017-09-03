@@ -38,5 +38,8 @@
     <dimen name="height_cardAnswer">80dp</dimen>
     <dimen name="height_layout_answer">240dp</dimen>
     <dimen name="padding_layout_home">50dp</dimen>
+    <dimen name="marginTop_layout_certificate">120dp</dimen>
+    <dimen name="marginRight_layout_certificate">20dp</dimen>
+    <dimen name="marginLeft_layout_certificate">100dp</dimen>
 
 </resources>

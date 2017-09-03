@@ -13,4 +13,9 @@
     <color name="color_icLock">#f5f5f5</color>
     <color name="tintColor">#fff</color>
     <color name="background_white">#fff</color>
+
+    <color name="user_name_certificate">#33d4ac</color>
+    <color name="text_certificate">#2f3c45</color>
+    <color name="text_signature">#636363</color>
+
 </resources>

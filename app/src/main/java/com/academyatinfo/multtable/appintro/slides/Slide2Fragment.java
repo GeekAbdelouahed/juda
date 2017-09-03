@@ -45,6 +45,9 @@ public class Slide2Fragment extends Fragment implements ISlidePolicy {
         View view = inflater.inflate(R.layout.fragment_slide2, container, false);
         ButterKnife.bind(this, view);
         dataBaseInfo = new DataBaseInfo(getContext());
+
+        userName.setText("عبد الواحد");
+        familyName.setText("مجوجة");
         return view;
     }
 
