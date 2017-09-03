@@ -39,7 +39,6 @@ public class CertificationActivity extends BaseActivity implements Certification
     private Bitmap bitmap;
     private File pictureFile;
     private final String path = "images/certificate.png";
-    private final String TAG = "errr";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +55,7 @@ public class CertificationActivity extends BaseActivity implements Certification
             storeImage(bitmap);
             certificate.setImageBitmap(bitmap);
         } catch (IOException e) {
-            Log.d(TAG, e.getMessage());
+
         }
     }
 
