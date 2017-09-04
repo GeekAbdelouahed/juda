@@ -7,6 +7,15 @@
     android:fitsSystemWindows="true"
     tools:context="com.academyatinfo.multtable.certification.mvp.CertificationActivity">
 
+
+    <ImageView
+        android:id="@+id/image_certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_layout_tables" />
+
+
     <RelativeLayout
         android:id="@+id/toolBar_certificate"
         style="@style/mToolBar">
@@ -35,14 +44,6 @@
             android:textColor="@color/text_white"
             android:textSize="@dimen/text_medium" />
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/image_certificate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/toolBar_certificate"
-        android:layout_centerInParent="true"
-        android:layout_margin="@dimen/margin_layout_tables" />
 
 </RelativeLayout>
 

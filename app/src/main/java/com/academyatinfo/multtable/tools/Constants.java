@@ -28,7 +28,7 @@ public class Constants {
 
 
     protected static final int sizeDate = 20;
-    protected static final int xTextDate = 370;
+    protected static final int xTextDate = 380;
     protected static final int yTextDate = 300;
 
 }
