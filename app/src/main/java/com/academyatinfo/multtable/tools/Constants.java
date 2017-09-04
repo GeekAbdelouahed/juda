@@ -9,7 +9,7 @@ public class Constants {
     protected static final int sizeUserName = 65;
     protected static final int xUserName = 135;
     protected static final int yUserName = -30;
-    protected static final String pathFontUserName = "fonts/font.ttf";
+    public static final String pathFontUserName = "fonts/font.ttf";
 
 
     protected static final int sizeTextCertification = 35;
@@ -24,7 +24,7 @@ public class Constants {
     protected static final int sizeSignature = 18;
     protected static final int xTextSignature = -345;
     protected static final int yTextSignature = 300;
-    protected static final String pathFontSignature = "fonts/font_italic.ttf";
+    public static final String pathFontSignature = "fonts/font_italic.ttf";
 
 
     protected static final int sizeDate = 20;

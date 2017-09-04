@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 import com.academyatinfo.multtable.R;
@@ -17,26 +18,68 @@ import com.github.paolorotolo.appintro.ISlidePolicy;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link Slide2Fragment.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link Slide2Fragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class Slide2Fragment extends Fragment {
 
+public class Slide3Fragment extends Fragment implements ISlidePolicy {
+
+
+    @BindView(R.id.user_name)
+    EditText userName;
+    @BindView(R.id.family_name)
+    EditText familyName;
+    @BindView(R.id.male)
+    RadioButton male;
+    @BindView(R.id.female)
+    RadioButton female;
+    @BindView(R.id.avatar)
+    ImageView avatar;
+
+    private DataBaseInfo dataBaseInfo;
+    private String gender = "male";
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_slide2, container, false);
 
+        View view = inflater.inflate(R.layout.fragment_slide3, container, false);
+        ButterKnife.bind(this, view);
+        dataBaseInfo = new DataBaseInfo(getContext());
+
+        male.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                avatar.setImageResource(R.drawable.ic_boy);
+                gender = "male";
+            }
+        });
+
+        female.setOnCheckedChangeListener((buttonView, isChecked) -> {
+            if (isChecked) {
+                avatar.setImageResource(R.drawable.ic_girl);
+                gender = "female";
+            }
+        });
+
+        userName.setText("عبد الواحد");
+        familyName.setText("مجوجة");
         return view;
     }
+
+
+    @Override
+    public boolean isPolicyRespected() {
+        if (!userName.getText().toString().isEmpty() && !familyName.getText().toString().isEmpty()) {
+            dataBaseInfo.setName(userName + " " + familyName);
+            dataBaseInfo.setGender(gender);
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void onUserIllegallyRequestedNextPage() {
+
+    }
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -49,7 +92,7 @@ public class Slide2Fragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Slide2Fragment() {
+    public Slide3Fragment() {
         // Required empty public constructor
     }
 
@@ -59,11 +102,11 @@ public class Slide2Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Slide2Fragment.
+     * @return A new instance of fragment Slide3Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Slide2Fragment newInstance(String param1, String param2) {
-        Slide2Fragment fragment = new Slide2Fragment();
+    public static Slide3Fragment newInstance(String param1, String param2) {
+        Slide3Fragment fragment = new Slide3Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

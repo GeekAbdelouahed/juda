@@ -1,0 +1,98 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_slides3"
+    tools:context="com.academyatinfo.multtable.appintro.slides.Slide3Fragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_layout_tables">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_info"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_boy" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/text_gray"
+            app:cardCornerRadius="@dimen/radius_cardView"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_layout_tables">
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/margin_textView"
+                    android:background="@drawable/background_text"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_medium" />
+
+                <EditText
+                    android:id="@+id/family_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name"
+                    android:layout_margin="@dimen/margin_textView"
+                    android:background="@drawable/background_text"
+                    android:hint="@string/family"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_medium" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/family_name"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right">
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:text="@string/male"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:text="@string/female"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_medium" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>

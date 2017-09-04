@@ -1,6 +1,7 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
 
+    <dimen name="text_small">15sp</dimen>
     <dimen name="text_medium">18sp</dimen>
     <dimen name="size_text_learn">27sp</dimen>
     <dimen name="text_large">23sp</dimen>
@@ -41,5 +42,6 @@
     <dimen name="marginTop_layout_certificate">120dp</dimen>
     <dimen name="marginRight_layout_certificate">20dp</dimen>
     <dimen name="marginLeft_layout_certificate">100dp</dimen>
+    <dimen name="margin_ic_intro">50dp</dimen>
 
 </resources>

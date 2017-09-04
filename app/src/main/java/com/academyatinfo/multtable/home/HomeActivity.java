@@ -6,7 +6,6 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.certification.mvp.CertificationActivity;
 import com.academyatinfo.multtable.modules.AboutApp;
 import com.academyatinfo.multtable.results.mvp.ResultsActivity;
 import com.academyatinfo.multtable.settings.SettingsActivity;
@@ -20,7 +19,6 @@ public class HomeActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_home);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        startActivity(new Intent(this, CertificationActivity.class));
 
     }
 

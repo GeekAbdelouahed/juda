@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#009688</color>
-    <color name="colorLevels">#00bfa5</color>
     <color name="colorPrimaryDark">#00796B</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLevels">#00bfa5</color>
     <color name="colorAnswerButton">#FF4081</color>
     <color name="colorAnswerLayout">#30af94</color>
-    <color name="colorTextAnswer">#30af94</color>
     <color name="colorButtonKeyboard">#e6e6e6</color>
     <color name="colorButtonHelp">#ececec</color>
-    <color name="text_white">#f4f4f4</color>
     <color name="color_icLock">#f5f5f5</color>
-    <color name="tintColor">#fff</color>
     <color name="background_white">#fff</color>
 
+    <color name="color_slides1">#2196F3</color>
+    <color name="color_slides2">#E91E63</color>
+    <color name="color_slides3">#00bfa5</color>
+
+    <color name="tintColor">#fff</color>
+
+    <color name="colorTextAnswer">#30af94</color>
+    <color name="text_white">#f9f9f9</color>
+    <color name="text_gray">#e9e9e9</color>
     <color name="user_name_certificate">#33d4ac</color>
     <color name="text_certificate">#2f3c45</color>
     <color name="text_signature">#636363</color>
+    <color name="text_black">#212121</color>
+    <color name="text_hint">#cecece</color>
+    <color name="color_slides4">#673AB7</color>
 
 </resources>

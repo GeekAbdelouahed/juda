@@ -7,37 +7,18 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
-import android.widget.RadioButton;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.databases.DataBaseInfo;
-import com.github.paolorotolo.appintro.ISlidePolicy;
-
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link Slide2Fragment.OnFragmentInteractionListener} interface
+ * {@link Slide4Fragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link Slide2Fragment#newInstance} factory method to
+ * Use the {@link Slide4Fragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Slide2Fragment extends Fragment {
-
-
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_slide2, container, false);
-
-        return view;
-    }
-
+public class Slide4Fragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -49,7 +30,7 @@ public class Slide2Fragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public Slide2Fragment() {
+    public Slide4Fragment() {
         // Required empty public constructor
     }
 
@@ -59,11 +40,11 @@ public class Slide2Fragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Slide2Fragment.
+     * @return A new instance of fragment Slide4Fragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Slide2Fragment newInstance(String param1, String param2) {
-        Slide2Fragment fragment = new Slide2Fragment();
+    public static Slide4Fragment newInstance(String param1, String param2) {
+        Slide4Fragment fragment = new Slide4Fragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -78,6 +59,13 @@ public class Slide2Fragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_slide4, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
