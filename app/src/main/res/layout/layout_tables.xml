@@ -23,9 +23,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="@dimen/margin_layout_tables"
-        android:layout_marginLeft="@dimen/margin_layout_tables"
-        android:layout_marginRight="@dimen/margin_layout_tables"
+        android:layout_marginBottom="@dimen/main_margin"
+        android:layout_marginLeft="@dimen/main_margin"
+        android:layout_marginRight="@dimen/main_margin"
         app:cardBackgroundColor="@color/colorLevels"
         app:cardCornerRadius="@dimen/radius_cardView"
         app:cardElevation="5dp">

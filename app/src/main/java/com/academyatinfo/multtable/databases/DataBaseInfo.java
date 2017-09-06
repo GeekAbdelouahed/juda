@@ -45,4 +45,14 @@ public class DataBaseInfo {
     public String getGender() {
         return sharedPreferences.getString("gender", null);
     }
+
+    public void firstLogin() {
+        editor = sharedPreferences.edit();
+        editor.putBoolean("login", true);
+        editor.commit();
+    }
+
+    public boolean checkFirstLogin() {
+        return sharedPreferences.getBoolean("login", false);
+    }
 }

@@ -15,8 +15,8 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_marginTop">@dimen/marginTB_cardView_levels</item>
         <item name="android:layout_marginBottom">@dimen/marginTB_cardView_levels</item>
-        <item name="android:layout_marginRight">@dimen/marginRL_cardView_levels</item>
-        <item name="android:layout_marginLeft">@dimen/marginRL_cardView_levels</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium_big</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium_big</item>
         <item name="cardBackgroundColor">@color/colorLevels</item>
         <item name="cardCornerRadius">@dimen/radius_cardView</item>
     </style>
@@ -44,8 +44,8 @@
     </style>
 
     <style name="ImageView.ImageBack">
-        <item name="android:layout_height">@dimen/dimen_ic_back</item>
-        <item name="android:layout_width">@dimen/dimen_ic_back</item>
+        <item name="android:layout_height">@dimen/dimen_ic</item>
+        <item name="android:layout_width">@dimen/dimen_ic</item>
         <item name="android:padding">@dimen/padding_ic_back</item>
         <item name="android:src">@drawable/ic_back</item>
         <item name="android:layout_alignParentRight">true</item>
@@ -62,12 +62,12 @@
     </style>
 
     <style name="ImageView.ButtonClick" parent="ImageView.ButtonClick">
-        <item name="android:layout_width">@dimen/dimen_ic_click</item>
-        <item name="android:layout_height">@dimen/dimen_ic_click</item>
-        <item name="android:layout_marginTop">@dimen/marginTB_ic_click</item>
-        <item name="android:layout_marginBottom">@dimen/marginTB_ic_click</item>
-        <item name="android:layout_marginRight">@dimen/marginRL_ic_click</item>
-        <item name="android:layout_marginLeft">@dimen/marginRL_ic_click</item>
+        <item name="android:layout_width">@dimen/dimen_ic</item>
+        <item name="android:layout_height">@dimen/dimen_ic</item>
+        <item name="android:layout_marginTop">@dimen/margin_small</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium_big</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium_big</item>
     </style>
 
     <!-- RelativeLayout -->

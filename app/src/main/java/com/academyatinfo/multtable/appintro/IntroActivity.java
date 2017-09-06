@@ -13,6 +13,7 @@ import com.academyatinfo.multtable.appintro.slides.Slide1Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide2Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide3Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide4Fragment;
+import com.academyatinfo.multtable.databases.DataBaseInfo;
 import com.academyatinfo.multtable.home.HomeActivity;
 import com.github.paolorotolo.appintro.AppIntro2;
 
@@ -20,11 +21,18 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class IntroActivity extends AppIntro2 {
 
+    private DataBaseInfo dataBaseInfo;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        dataBaseInfo = new DataBaseInfo(this);
+
+        if (dataBaseInfo.checkFirstLogin())
+            startActivity(new Intent(this, HomeActivity.class));
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
@@ -44,6 +52,7 @@ public class IntroActivity extends AppIntro2 {
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
+        dataBaseInfo.firstLogin();
         startActivity(new Intent(this, HomeActivity.class));
         finish();
     }

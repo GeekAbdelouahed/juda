@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolBar_operation"
-        android:layout_margin="@dimen/margin_layout_tables"
+        android:layout_margin="@dimen/main_margin"
         app:cardBackgroundColor="@color/colorLevels"
         app:cardCornerRadius="@dimen/radius_cardView_operation">
 
@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/margin_layout_tables"
-                android:paddingRight="@dimen/margin_layout_tables">
+                android:paddingLeft="@dimen/main_margin"
+                android:paddingRight="@dimen/main_margin">
 
 
                 <TextView
@@ -73,7 +73,7 @@
                 android:layout_above="@+id/layout_buttons_operation"
                 android:layout_below="@+id/layout_info_operation"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/margin_layout_answer"
+                android:layout_margin="@dimen/main_margin"
                 android:gravity="center">
 
 

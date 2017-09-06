@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolBar_exam"
-        android:layout_margin="@dimen/margin_layout_tables"
+        android:layout_margin="@dimen/main_margin"
         app:cardCornerRadius="@dimen/radius_cardView_operation"
         app:cardElevation="5dp">
 

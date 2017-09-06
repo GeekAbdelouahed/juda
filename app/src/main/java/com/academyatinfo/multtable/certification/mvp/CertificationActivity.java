@@ -7,12 +7,12 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.academyatinfo.multtable.R;
+import com.academyatinfo.multtable.databases.DataBaseInfo;
 import com.academyatinfo.multtable.databases.DataBaseResults;
 import com.academyatinfo.multtable.modules.Results;
 import com.academyatinfo.multtable.tools.Painter;
@@ -33,6 +33,7 @@ public class CertificationActivity extends BaseActivity implements Certification
     @BindView(R.id.image_certificate)
     ImageView certificate;
 
+    private DataBaseInfo dataBaseInfo;
     private Intent intent;
     private DataBaseResults dataBaseResults;
     private Results results;
@@ -49,9 +50,11 @@ public class CertificationActivity extends BaseActivity implements Certification
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
+        dataBaseInfo = new DataBaseInfo(this);
+
         try {
             bitmap = BitmapFactory.decodeStream(getAssets().open(path));
-            bitmap = Painter.paint(this, bitmap, "نوفل", "مجوجة", "ممتاز", "male");
+            bitmap = Painter.paint(this, bitmap, dataBaseInfo.getName(), dataBaseInfo.getFamilyName(), "ممتاز", dataBaseInfo.getGender());
             storeImage(bitmap);
             certificate.setImageBitmap(bitmap);
         } catch (IOException e) {

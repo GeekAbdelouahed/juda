@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_layout_tables">
+        android:layout_margin="@dimen/main_margin">
 
         <ImageView
             android:id="@+id/avatar"
@@ -31,7 +31,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="@dimen/margin_layout_tables">
+                android:layout_margin="@dimen/main_margin">
 
                 <EditText
                     android:id="@+id/user_name"
