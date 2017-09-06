@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.modules;
+package com.academyatinfo.multtable.about;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,12 +12,12 @@ import com.academyatinfo.multtable.R;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
-public class AboutApp extends AppCompatActivity {
+public class AboutActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.aboutapp);
+        setContentView(R.layout.layout_about);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 

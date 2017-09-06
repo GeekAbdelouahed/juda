@@ -16,14 +16,24 @@ public class DataBaseInfo {
         sharedPreferences = context.getSharedPreferences("info", Context.MODE_PRIVATE);
     }
 
-    public void setName(String info) {
+    public void setName(String name) {
         editor = sharedPreferences.edit();
-        editor.putString("name", info);
+        editor.putString("name", name);
         editor.commit();
     }
 
     public String getName() {
         return sharedPreferences.getString("name", "null");
+    }
+
+    public void setFamilyName(String familyName) {
+        editor = sharedPreferences.edit();
+        editor.putString("family_name", familyName);
+        editor.commit();
+    }
+
+    public String getFamilyName() {
+        return sharedPreferences.getString("family_name", "null");
     }
 
     public void setGender(String gender) {

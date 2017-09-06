@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.modules.AboutApp;
+import com.academyatinfo.multtable.about.AboutActivity;
 import com.academyatinfo.multtable.results.mvp.ResultsActivity;
 import com.academyatinfo.multtable.settings.SettingsActivity;
 import com.academyatinfo.multtable.tables.TablesActivity;
@@ -30,11 +30,11 @@ public class HomeActivity extends BaseActivity {
         startActivity(new Intent(this, ResultsActivity.class));
     }
 
-    public void click_to_about(View view) {
-        startActivity(new Intent(this, AboutApp.class));
-    }
-
     public void click_to_settings(View view) {
         startActivity(new Intent(this, SettingsActivity.class));
+    }
+
+    public void click_to_about(View view) {
+        startActivity(new Intent(this, AboutActivity.class));
     }
 }

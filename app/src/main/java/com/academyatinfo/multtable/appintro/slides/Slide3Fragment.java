@@ -59,8 +59,6 @@ public class Slide3Fragment extends Fragment implements ISlidePolicy {
             }
         });
 
-        userName.setText("عبد الواحد");
-        familyName.setText("مجوجة");
         return view;
     }
 
@@ -68,7 +66,8 @@ public class Slide3Fragment extends Fragment implements ISlidePolicy {
     @Override
     public boolean isPolicyRespected() {
         if (!userName.getText().toString().isEmpty() && !familyName.getText().toString().isEmpty()) {
-            dataBaseInfo.setName(userName + " " + familyName);
+            dataBaseInfo.setName(userName.getText().toString());
+            dataBaseInfo.setFamilyName(familyName.getText().toString());
             dataBaseInfo.setGender(gender);
             return true;
         }

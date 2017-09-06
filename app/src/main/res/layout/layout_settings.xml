@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -13,5 +14,112 @@
 
         <ImageView style="@style/ImageView.ImageBack" />
 
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/text_settings" />
+
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar_settings"
+        android:layout_margin="@dimen/margin_layout_tables">
+
+        <ImageView
+            android:id="@+id/avatar_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@id/layout_info_settings"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_boy" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/layout_info_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:cardBackgroundColor="@color/text_gray"
+            app:cardCornerRadius="@dimen/radius_cardView"
+            app:cardElevation="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/margin_layout_tables">
+
+                <EditText
+                    android:id="@+id/user_name_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/margin_textView"
+                    android:background="@drawable/background_text"
+                    android:hint="@string/name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_medium" />
+
+                <EditText
+                    android:id="@+id/family_name_settings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/user_name_settings"
+                    android:layout_margin="@dimen/margin_textView"
+                    android:background="@drawable/background_text"
+                    android:hint="@string/family"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/text_white"
+                    android:textColorHint="@color/text_hint"
+                    android:textSize="@dimen/text_medium" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/family_name_settings"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right">
+
+                    <RadioButton
+                        android:id="@+id/male_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:text="@string/male"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_medium" />
+
+                    <RadioButton
+                        android:id="@+id/female_settings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawablePadding="10dp"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:text="@string/female"
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_medium" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <Button
+        style="@style/mTextViewLevels"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/margin_layout_tables"
+        android:background="@drawable/background_learn"
+        android:onClick="click_to_save"
+        android:text="@string/text_save" />
+
+
 </RelativeLayout>
