@@ -21,7 +21,6 @@ public class OperationActivity extends BaseActivity implements OperationContract
 
     private TextView answer, soccer_table;
     private int index_table, mult_in, result, soccer;
-    private Dialog dialog_help;
     private Intent intent;
     private DataBaseLearnTable dataTablesCheck;
     private MediaPlayer success, wrong;
@@ -85,7 +84,9 @@ public class OperationActivity extends BaseActivity implements OperationContract
             soccer_table.setText(getResources().getString(R.string.count_points) + " " + (soccer + 1));
             intent.putExtra("check", true);
             intent.putExtra("index_mult", mult_in);
+
             setResult(1, intent);
+
             answer.setBackgroundColor(Color.parseColor("#03d1bd"));
             answer.setTextColor(Color.parseColor("#FFF1F1F1"));
             success.start();
@@ -164,16 +165,6 @@ public class OperationActivity extends BaseActivity implements OperationContract
         if (answer.getText().toString().length() > 0)
             answer.setText(answer.getText().toString().substring(0, answer.getText().toString().length() - 1));
     }
-
-    /*public void click_help(View view) {
-        dialog_help = new Dialog(this);
-        dialog_help.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        DisplayMetrics metrics = getResources().getDisplayMetrics();
-        int width = metrics.widthPixels;
-        dialog_help.getWindow().setLayout(width - 10, LinearLayoutCompat.LayoutParams.WRAP_CONTENT);
-        dialog_help.setContentView(R.layout.custom_layout_help);
-        dialog_help.show();
-    }*/
 
 
     private void setImageNumberTable(int number, ImageView imageView) {

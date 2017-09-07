@@ -37,4 +37,5 @@ public class HomeActivity extends BaseActivity {
     public void click_to_about(View view) {
         startActivity(new Intent(this, AboutActivity.class));
     }
+
 }

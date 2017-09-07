@@ -53,47 +53,47 @@ public class LevelsActivity extends BaseActivity implements LevelsContract.View 
     }
 
     public void level_two(View view) {
-        if (dataBaseLearn.getData(table, 1)) {
+        //if (dataBaseLearn.getData(table, 1)) {
             intent = new Intent(this, TableLevels.class);
             intent.putExtra("index_table", table);
             startActivityForResult(intent, 1);
-        }
+        //}
     }
 
     public void level_three(View view) {
-        if (dataBaseLearn.getData(table, 2)) {
+        //if (dataBaseLearn.getData(table, 2)) {
             intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 3);
             startActivityForResult(intent, 1);
-        }
+       // }
     }
 
     public void level_four(View view) {
-        if (dataBaseLearn.getData(table, 3)) {
+        //if (dataBaseLearn.getData(table, 3)) {
             intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 4);
             startActivityForResult(intent, 1);
-        }
+        //}
     }
 
     public void level_five(View view) {
-        if (dataBaseLearn.getData(table, 4)) {
+        //if (dataBaseLearn.getData(table, 4)) {
             intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 5);
             startActivityForResult(intent, 1);
-        }
+      //  }
     }
 
     public void review(View view) {
-        if (dataBaseLearn.getData(table, 5)) {
+        //if (dataBaseLearn.getData(table, 5)) {
             intent = new Intent(this, ExamActivity.class);
             intent.putExtra("long_table", table);
             intent.putExtra("level", 6);
             startActivityForResult(intent, 1);
-        }
+       // }
     }
 
     @Override

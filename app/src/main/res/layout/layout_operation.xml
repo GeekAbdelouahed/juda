@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/margin_medium_big"
-                android:paddingRight="@dimen/margin_medium_big">
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium">
 
 
                 <TextView

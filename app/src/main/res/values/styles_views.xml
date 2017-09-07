@@ -67,8 +67,8 @@
         <item name="android:layout_height">@dimen/dimen_small</item>
         <item name="android:layout_marginTop">@dimen/margin_small</item>
         <item name="android:layout_marginBottom">@dimen/margin_small</item>
-        <item name="android:layout_marginRight">@dimen/margin_medium_big</item>
-        <item name="android:layout_marginLeft">@dimen/margin_medium_big</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
     </style>
 
     <!-- RelativeLayout -->

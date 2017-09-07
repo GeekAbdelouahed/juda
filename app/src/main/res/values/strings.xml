@@ -1,14 +1,6 @@
 <resources>
     <string name="app_name">جداء</string>
-    <string name="title_activity_show_results">ShowResults</string>
-    <string name="title_activity_inforamtion">Inforamtion</string>
-    <string name="title_activity_about_app">AboutApp</string>
-    <string name="title_activity_learn">Learn</string>
-    <string name="title_activity_preview_mult_table">PreviewMultTable</string>
-    <string name="title_activity_critification">Critification</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="tables">الجداول</string>
     <string name="table_number">جدول رقم</string>
     <string name="review">مراجعة</string>
@@ -26,17 +18,17 @@
     <string name="text_about">حول التطبيق</string>
     <string name="text_results">النتائج</string>
     <string name="text_learn">تعليم</string>
-    <string name="text_settings">الإعدادت</string>
+    <string name="text_settings">الإعدادات</string>
     <string name="name">الإسم</string>
     <string name="family">اللقب</string>
     <string name="male">ذكر</string>
     <string name="female">أنثى</string>
-    <string name="save_certificate">حفظ</string>
     <string name="title_certificate">شهادة نجاح</string>
+    <string name="text_save">حفظ</string>
 
     <string name="text_certification_male1">هنيئا للتلميذ ---</string>
     <string name="text_certification_male2">لنجاحه في إمتحان جدول الضرب</string>
     <string name="text_certification_male3">بتقدير ### بالتوفيق للمزيد .</string>
     <string name="signature">Abdelouahed Medjoudja</string>
-    <string name="text_save">حفظ</string>
+
 </resources>

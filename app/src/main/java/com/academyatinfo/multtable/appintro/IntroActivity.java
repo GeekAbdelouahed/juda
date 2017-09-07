@@ -38,11 +38,10 @@ public class IntroActivity extends AppIntro2 {
 
         getSupportActionBar().hide();
 
-        addSlide(Slide1Fragment.newInstance("slide1", "intro1"));
-        addSlide(Slide2Fragment.newInstance("slide2", "intro2"));
-        addSlide(Slide3Fragment.newInstance("slide3", "intro3"));
-
-        addSlide(Slide4Fragment.newInstance("slide1", "intro1"));
+        addSlide(new Slide1Fragment());
+        addSlide(new Slide2Fragment());
+        addSlide(new Slide3Fragment());
+        addSlide(new Slide4Fragment());
 
         showSkipButton(false);
 
@@ -53,8 +52,8 @@ public class IntroActivity extends AppIntro2 {
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
         dataBaseInfo.firstLogin();
-        startActivity(new Intent(this, HomeActivity.class));
         finish();
+        startActivity(new Intent(this, HomeActivity.class));
     }
 
     @Override

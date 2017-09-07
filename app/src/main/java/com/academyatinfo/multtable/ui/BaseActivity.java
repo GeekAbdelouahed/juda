@@ -19,7 +19,7 @@ public class BaseActivity extends AppCompatActivity {
     }
 
     public void clickBack(View view) {
-        finish();
+        this.finish();
     }
 
     @Override

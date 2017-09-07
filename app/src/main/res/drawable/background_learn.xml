@@ -3,7 +3,7 @@
 
     <item android:drawable="@drawable/layer_learn_1" />
     <item
-        android:bottom="5px"
+        android:bottom="@dimen/margin_small_big"
         android:drawable="@drawable/layer_learn_2" />
 
 </layer-list>

@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- text Sizes -->
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_medium">13sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_very_large">35sp</dimen>
+    <dimen name="text_learn">16sp</dimen>
+    <dimen name="text_exam">40sp</dimen>
+
+
+    <!-- dimens -->
+    <dimen name="dimen_small">30dp</dimen>
+    <dimen name="dimen_medium">50dp</dimen>
+    <dimen name="dimen_large">80dp</dimen>
+
+
+    <!-- margins -->
+    <dimen name="margin_small">3dp</dimen>
+    <dimen name="margin_small_big">5dp</dimen>
+    <dimen name="margin_small_very_big">5dp</dimen>
+    <dimen name="margin_medium">13dp</dimen>
+    <dimen name="margin_medium_big">25dp</dimen>
+    <dimen name="margin_medium_very_big">47dp</dimen>
+    <dimen name="margin_large">97dp</dimen>
+    <dimen name="margin_large_big">117dp</dimen>
+
+
+    <!-- padding -->
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_small_big">5dp</dimen>
+    <dimen name="padding_medium">10dp</dimen>
+    <dimen name="padding_medium_big">10dp</dimen>
+    <dimen name="padding_large">20dp</dimen>
+
+
+    <!-- height -->
+    <dimen name="height_small">40dp</dimen>
+    <dimen name="height_medium">50dp</dimen>
+    <dimen name="height_large">150dp</dimen>
+
+
+    <!-- width -->
+    <dimen name="width_medium">70dp</dimen>
+    <dimen name="width_small">40dp</dimen>
+
+    <!-- radius -->
+    <dimen name="radius_small">10dp</dimen>
+    <dimen name="radius_medium">20dp</dimen>
+
+</resources>
