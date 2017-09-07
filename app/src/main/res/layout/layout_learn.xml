@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolBar_saveTable"
-        android:layout_margin="@dimen/main_margin"
+        android:layout_margin="@dimen/margin_medium_big"
         android:background="@drawable/blackboard"
         android:gravity="center">
 

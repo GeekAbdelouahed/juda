@@ -29,8 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolBar_exam"
-        android:layout_margin="@dimen/main_margin"
-        app:cardCornerRadius="@dimen/radius_cardView_operation"
+        android:layout_margin="@dimen/margin_medium_big"
+        app:cardCornerRadius="@dimen/radius_medium"
         app:cardElevation="5dp">
 
         <RelativeLayout
@@ -42,8 +42,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/padding_textView_answer"
-                android:paddingRight="@dimen/padding_textView_answer">
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium">
 
                 <TextView
                     android:id="@+id/soccer_table_exam"
@@ -51,10 +51,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginBottom="@dimen/margin_textView"
-                    android:layout_marginTop="@dimen/margin_textView"
+                    android:layout_marginBottom="@dimen/margin_small_big"
+                    android:layout_marginTop="@dimen/margin_small_big"
                     android:gravity="center"
-                    android:paddingRight="@dimen/padding_textView_answer"
+                    android:paddingRight="@dimen/padding_medium"
                     android:text="0"
                     android:textColor="@color/text_white"
                     android:textSize="@dimen/text_medium" />
@@ -65,10 +65,10 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginBottom="@dimen/margin_textView"
-                    android:layout_marginTop="@dimen/margin_textView"
+                    android:layout_marginBottom="@dimen/margin_small_big"
+                    android:layout_marginTop="@dimen/margin_small_big"
                     android:gravity="center"
-                    android:paddingLeft="@dimen/padding_textView_answer"
+                    android:paddingLeft="@dimen/padding_medium"
                     android:text="90"
                     android:textColor="@color/text_white"
                     android:textSize="@dimen/text_medium" />
@@ -79,7 +79,7 @@
             <LinearLayout
                 android:id="@+id/layout_answer"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/height_layout_answer"
+                android:layout_height="@dimen/height_large"
                 android:layout_below="@id/layout_info_exam"
                 android:background="@color/colorLevels"
                 android:gravity="center"
@@ -115,7 +115,7 @@
                 android:layout_below="@id/layout_answer"
                 android:background="@color/colorAnswerButton"
                 android:orientation="vertical"
-                android:padding="@dimen/padding_layout">
+                android:padding="@dimen/padding_small">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -124,7 +124,7 @@
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.CardView
-                        style="@style/CardView.Exam"
+                        style="@style/mCardView.Exam"
                         android:onClick="click_card_two">
 
                         <TextView
@@ -137,7 +137,7 @@
                     </android.support.v7.widget.CardView>
 
                     <android.support.v7.widget.CardView
-                        style="@style/CardView.Exam"
+                        style="@style/mCardView.Exam"
                         android:onClick="click_card_one">
 
                         <TextView
@@ -158,7 +158,7 @@
                     android:orientation="horizontal">
 
                     <android.support.v7.widget.CardView
-                        style="@style/CardView.Exam"
+                        style="@style/mCardView.Exam"
                         android:onClick="click_card_four">
 
                         <TextView
@@ -171,7 +171,7 @@
                     </android.support.v7.widget.CardView>
 
                     <android.support.v7.widget.CardView
-                        style="@style/CardView.Exam"
+                        style="@style/mCardView.Exam"
                         android:onClick="click_card_three">
 
                         <TextView

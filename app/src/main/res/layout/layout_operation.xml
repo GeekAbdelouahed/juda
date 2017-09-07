@@ -25,9 +25,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolBar_operation"
-        android:layout_margin="@dimen/main_margin"
+        android:layout_margin="@dimen/margin_medium_big"
         app:cardBackgroundColor="@color/colorLevels"
-        app:cardCornerRadius="@dimen/radius_cardView_operation">
+        app:cardCornerRadius="@dimen/radius_medium">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -39,8 +39,8 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/main_margin"
-                android:paddingRight="@dimen/main_margin">
+                android:paddingLeft="@dimen/margin_medium_big"
+                android:paddingRight="@dimen/margin_medium_big">
 
 
                 <TextView
@@ -48,8 +48,8 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginBottom="@dimen/margin_textView"
-                    android:layout_marginTop="@dimen/margin_textView"
+                    android:layout_marginBottom="@dimen/margin_small_big"
+                    android:layout_marginTop="@dimen/margin_small_big"
                     android:text="عدد الأسئلة 10"
                     android:textColor="@color/text_white"
                     android:textSize="@dimen/text_medium" />
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:layout_margin="@dimen/margin_textView"
+                    android:layout_margin="@dimen/margin_small_big"
                     android:textColor="@color/text_white"
                     android:textSize="@dimen/text_medium" />
 
@@ -73,13 +73,13 @@
                 android:layout_above="@+id/layout_buttons_operation"
                 android:layout_below="@+id/layout_info_operation"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/main_margin"
+                android:layout_margin="@dimen/margin_medium_big"
                 android:gravity="center">
 
 
                 <ImageView
                     android:id="@+id/first_number"
-                    android:layout_width="@dimen/dimen_ic_operation"
+                    android:layout_width="@dimen/dimen_large"
                     android:layout_height="match_parent"
                     android:layout_above="@id/cardView_answer"
                     android:layout_alignParentTop="true"
@@ -94,13 +94,13 @@
                     android:layout_above="@id/cardView_answer"
                     android:layout_alignParentTop="true"
                     android:layout_centerHorizontal="true"
-                    android:padding="@dimen/padding_ic_lock"
+                    android:padding="@dimen/padding_small_big"
                     android:src="@drawable/ic_mul"
                     android:tint="@color/colorButtonHelp" />
 
                 <ImageView
                     android:id="@+id/second_number"
-                    android:layout_width="@dimen/dimen_ic_operation"
+                    android:layout_width="@dimen/dimen_large"
                     android:layout_height="match_parent"
                     android:layout_above="@id/cardView_answer"
                     android:layout_alignParentTop="true"
@@ -110,13 +110,13 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/cardView_answer"
-                    android:layout_width="@dimen/width_cardAnswer"
-                    android:layout_height="@dimen/height_cardAnswer"
+                    android:layout_width="@dimen/width_medium"
+                    android:layout_height="@dimen/height_medium"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/margin_textView"
+                    android:layout_marginTop="@dimen/margin_small_big"
                     app:cardBackgroundColor="@color/background_white"
-                    app:cardCornerRadius="@dimen/radius_cardView">
+                    app:cardCornerRadius="@dimen/radius_small">
 
                     <TextView
                         android:id="@+id/answer"
@@ -124,7 +124,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:maxLength="2"
-                        android:padding="@dimen/padding_textView"
+                        android:padding="@dimen/padding_small"
                         android:textColor="@color/colorTextAnswer"
                         android:textSize="@dimen/text_very_large" />
 
@@ -140,7 +140,7 @@
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAnswerButton"
                 android:gravity="center"
-                android:padding="@dimen/padding_layout">
+                android:padding="@dimen/padding_small">
 
                 <ImageView
                     android:id="@+id/ic_one_click"

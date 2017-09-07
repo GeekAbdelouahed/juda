@@ -10,7 +10,7 @@
         android:layout_weight="0.9"
         android:background="@color/colorAnswerButton"
         android:gravity="center"
-        android:padding="@dimen/padding_textView"
+        android:padding="@dimen/padding_small"
         android:text="أكتب إسمك"
         android:textColor="#fff"
         android:textSize="@dimen/text_large" />
@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.2"
-        android:padding="@dimen/padding_textView"
+        android:padding="@dimen/padding_small"
         android:hint="الإسم"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="@dimen/text_very_large" />

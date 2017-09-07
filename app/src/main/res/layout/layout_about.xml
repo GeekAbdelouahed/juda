@@ -9,12 +9,11 @@
     tools:context="com.academyatinfo.multtable.about.AboutActivity">
 
     <android.support.v7.widget.CardView
+        style="@style/mCardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/main_margin"
-        android:elevation="5dp"
-        app:cardBackgroundColor="@color/colorPrimary"
-        app:cardCornerRadius="@dimen/radius_cardView">
+        android:layout_margin="@dimen/margin_medium_big"
+        app:cardBackgroundColor="@color/colorPrimary">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -33,7 +32,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/padding_textView_answer">
+                    android:padding="@dimen/padding_medium">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -73,7 +72,7 @@
                 android:drawableLeft="@drawable/ic_mail"
                 android:gravity="center"
                 android:onClick="send_mail"
-                android:padding="@dimen/padding_textView_answer"
+                android:padding="@dimen/padding_medium"
                 android:text="راسلنا عبر الإيميل"
                 android:textColor="#efefef"
                 android:textSize="@dimen/text_medium" />

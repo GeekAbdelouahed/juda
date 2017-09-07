@@ -10,7 +10,7 @@
         android:layout_weight="0.9"
         android:background="@color/colorAnswerButton"
         android:gravity="center"
-        android:padding="@dimen/padding_layout"
+        android:padding="@dimen/padding_small"
         android:text="النتيجة"
         android:textColor="#fff"
         android:textSize="@dimen/text_large" />
@@ -19,7 +19,7 @@
         android:id="@+id/text_result_exam"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_textView"
+        android:layout_margin="@dimen/margin_small_big"
         android:layout_weight="0.2"
         android:gravity="right"
         android:textColor="#202020"

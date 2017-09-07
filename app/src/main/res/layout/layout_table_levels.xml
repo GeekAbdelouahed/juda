@@ -31,7 +31,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_zero"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:onClick="click_zero">
 
                 <RelativeLayout
@@ -47,11 +47,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_zero"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_zero"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -63,7 +63,7 @@
 
                         <ImageView
                             android:id="@+id/level_zero"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
 
                             android:layout_toLeftOf="@id/level_zero_symbol"
@@ -77,7 +77,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_one"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_zero"
                 android:onClick="click_one">
 
@@ -94,11 +94,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_one"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_one"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -110,7 +110,7 @@
 
                         <ImageView
                             android:id="@+id/level_one"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_one_symbol"
                             android:src="@drawable/ic_one_b" />
@@ -123,7 +123,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_two"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_one"
                 android:onClick="click_two">
 
@@ -140,11 +140,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_two"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_two"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -156,7 +156,7 @@
 
                         <ImageView
                             android:id="@+id/level_two"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_two_symbol"
                             android:src="@drawable/ic_two_b" />
@@ -169,7 +169,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_three"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_two"
                 android:onClick="click_three">
 
@@ -186,11 +186,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_three"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_three"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -202,7 +202,7 @@
 
                         <ImageView
                             android:id="@+id/level_three"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_three_symbol"
                             android:src="@drawable/ic_three_b" />
@@ -215,7 +215,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_four"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_three"
                 android:onClick="click_four">
 
@@ -232,11 +232,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_four"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_four"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -248,7 +248,7 @@
 
                         <ImageView
                             android:id="@+id/level_four"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_four_symbol"
                             android:src="@drawable/ic_four_b" />
@@ -261,7 +261,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_five"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_four"
                 android:onClick="click_five">
 
@@ -278,11 +278,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_five"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_five"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -294,7 +294,7 @@
 
                         <ImageView
                             android:id="@+id/level_five"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_five_symbol"
                             android:src="@drawable/ic_five_b" />
@@ -307,7 +307,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_six"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_five"
                 android:onClick="click_six">
 
@@ -324,11 +324,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_six"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_six"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -340,7 +340,7 @@
 
                         <ImageView
                             android:id="@+id/level_six"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_six_symbol"
                             android:src="@drawable/ic_six_b" />
@@ -353,7 +353,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_seven"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_six"
                 android:onClick="click_seven">
 
@@ -370,11 +370,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_seven"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_seven"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -386,7 +386,7 @@
 
                         <ImageView
                             android:id="@+id/level_seven"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_seven_symbol"
                             android:src="@drawable/ic_seven_b" />
@@ -400,7 +400,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_table_eight"
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_seven"
                 android:onClick="click_eight">
 
@@ -417,11 +417,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_eight"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_eight"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -433,7 +433,7 @@
 
                         <ImageView
                             android:id="@+id/level_eight"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_eight_symbol"
                             android:src="@drawable/ic_eight_b" />
@@ -446,7 +446,7 @@
 
 
             <android.support.v7.widget.CardView
-                style="@style/CardView.Levels"
+                style="@style/mCardView.Levels"
                 android:layout_below="@id/layout_table_eight"
                 android:onClick="click_nine">
 
@@ -463,11 +463,11 @@
                         android:layout_height="match_parent"
                         android:layout_toRightOf="@id/check_nine"
                         android:gravity="center"
-                        android:padding="@dimen/padding_ic_lock">
+                        android:padding="@dimen/padding_small_big">
 
                         <ImageView
                             android:id="@+id/ic_mul_nine"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_alignParentRight="true"
                             android:src="@mipmap/ic_launcher" />
@@ -479,7 +479,7 @@
 
                         <ImageView
                             android:id="@+id/level_nine"
-                            android:layout_width="@dimen/dimen_ic_lock_levels"
+                            android:layout_width="@dimen/dimen_medium"
                             android:layout_height="match_parent"
                             android:layout_toLeftOf="@id/level_nine_symbol"
                             android:src="@drawable/ic_nine_b" />

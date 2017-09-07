@@ -50,8 +50,10 @@ public class SettingsActivity extends BaseActivity {
 
         if (gender.equals("male"))
             male.setChecked(true);
-        else if (gender.equals("female"))
+        else if (gender.equals("female")) {
+            avatar.setImageResource(R.drawable.ic_girl);
             female.setChecked(true);
+        }
 
         male.setOnCheckedChangeListener((buttonView, isChecked) -> {
             if (isChecked) {

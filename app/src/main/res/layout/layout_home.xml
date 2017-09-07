@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    android:padding="@dimen/padding_layout_home"
+    android:padding="@dimen/padding_large"
     tools:context="com.academyatinfo.multtable.home.HomeActivity">
 
 
@@ -15,8 +15,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
-        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
         android:background="@drawable/background_logo"
         android:onClick="click_to_about"
         android:src="@drawable/logo" />
@@ -24,10 +24,10 @@
     <RelativeLayout
         android:id="@+id/layout_learn"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_height="@dimen/height_small"
         android:layout_below="@id/ic_logo"
-        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
-        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
         android:background="@drawable/background_learn">
 
         <ImageView
@@ -48,10 +48,10 @@
     <RelativeLayout
         android:id="@+id/layout_result"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_height="@dimen/height_small"
         android:layout_below="@+id/layout_learn"
-        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
-        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
         android:background="@drawable/background_results">
 
         <ImageView
@@ -73,10 +73,10 @@
     <RelativeLayout
         android:id="@+id/layout_about"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_height="@dimen/height_small"
         android:layout_below="@id/layout_result"
-        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
-        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
         android:background="@drawable/background_about">
 
         <ImageView
@@ -97,10 +97,10 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/height_cardView_levels"
+        android:layout_height="@dimen/height_small"
         android:layout_below="@id/layout_about"
-        android:layout_marginBottom="@dimen/marginTB_cardView_levels"
-        android:layout_marginTop="@dimen/marginTB_cardView_levels"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
         android:background="@drawable/background_exit">
 
         <ImageView

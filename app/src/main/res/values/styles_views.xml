@@ -3,31 +3,32 @@
 
 
     <!-- CardView -->
-    <style name="CardView.Tables" parent="CardView">
-        <item name="android:layout_width">@dimen/dimen_cardView_Tables</item>
-        <item name="android:layout_height">@dimen/dimen_cardView_Tables</item>
-        <item name="android:layout_margin">@dimen/margin_cardView_Tables</item>
-        <item name="cardCornerRadius">@dimen/radius_cardView</item>
+    <style name="mCardView" parent="CardView">
+        <item name="cardCornerRadius">@dimen/radius_small</item>
+    </style>
+    <style name="mCardView.Tables" parent="mCardView">
+        <item name="android:layout_width">@dimen/dimen_large</item>
+        <item name="android:layout_height">@dimen/dimen_large</item>
+        <item name="android:layout_margin">@dimen/margin_small_big</item>
     </style>
 
-    <style name="CardView.Levels" parent="CardView">
-        <item name="android:layout_height">@dimen/height_cardView_levels</item>
+    <style name="mCardView.Levels" parent="mCardView">
+        <item name="android:layout_height">@dimen/height_small</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginTop">@dimen/marginTB_cardView_levels</item>
-        <item name="android:layout_marginBottom">@dimen/marginTB_cardView_levels</item>
+        <item name="android:layout_marginTop">@dimen/margin_small_very_big</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small_very_big</item>
         <item name="android:layout_marginRight">@dimen/margin_medium_big</item>
         <item name="android:layout_marginLeft">@dimen/margin_medium_big</item>
         <item name="cardBackgroundColor">@color/colorLevels</item>
-        <item name="cardCornerRadius">@dimen/radius_cardView</item>
     </style>
 
-    <style name="CardView.Exam" parent="CardView">
+    <style name="mCardView.Exam" parent="mCardView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">@dimen/margin_cardView_Tables</item>
+        <item name="android:layout_margin">@dimen/margin_small_big</item>
         <item name="android:layout_weight">0.1</item>
-        <item name="cardCornerRadius">@dimen/radius_cardView</item>
     </style>
+
     <!-- ImageView -->
     <style name="ImageView" parent="ImageView">
         <item name="android:layout_width">wrap_content</item>
@@ -35,18 +36,18 @@
     </style>
 
     <style name="ImageView.Lock">
-        <item name="android:layout_width">@dimen/dimen_ic_lock_levels</item>
+        <item name="android:layout_width">@dimen/dimen_medium</item>
         <item name="android:background">@color/color_icLock</item>
         <item name="android:src">@drawable/ic_lock</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:padding">@dimen/padding_ic_lock</item>
+        <item name="android:padding">@dimen/padding_small_big</item>
         <item name="android:layout_alignParentLeft">true</item>
     </style>
 
     <style name="ImageView.ImageBack">
-        <item name="android:layout_height">@dimen/dimen_ic</item>
-        <item name="android:layout_width">@dimen/dimen_ic</item>
-        <item name="android:padding">@dimen/padding_ic_back</item>
+        <item name="android:layout_height">@dimen/dimen_small</item>
+        <item name="android:layout_width">@dimen/dimen_small</item>
+        <item name="android:padding">@dimen/padding_small</item>
         <item name="android:src">@drawable/ic_back</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerVertical">true</item>
@@ -54,16 +55,16 @@
     </style>
 
     <style name="ImageView.MultiSymbol" parent="ImageView.MultiSymbol">
-        <item name="android:layout_width">@dimen/dimen_ic_lock_levels</item>
+        <item name="android:layout_width">@dimen/dimen_medium</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:src">@drawable/ic_mul</item>
-        <item name="android:padding">@dimen/padding_ic_lock</item>
+        <item name="android:padding">@dimen/padding_small_big</item>
         <item name="android:tint">@color/colorButtonHelp</item>
     </style>
 
     <style name="ImageView.ButtonClick" parent="ImageView.ButtonClick">
-        <item name="android:layout_width">@dimen/dimen_ic</item>
-        <item name="android:layout_height">@dimen/dimen_ic</item>
+        <item name="android:layout_width">@dimen/dimen_small</item>
+        <item name="android:layout_height">@dimen/dimen_small</item>
         <item name="android:layout_marginTop">@dimen/margin_small</item>
         <item name="android:layout_marginBottom">@dimen/margin_small</item>
         <item name="android:layout_marginRight">@dimen/margin_medium_big</item>
@@ -100,10 +101,10 @@
     <style name="mTextViewSaveTables" parent="mTextViewSaveTables">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/size_text_learn</item>
+        <item name="android:textSize">@dimen/text_learn</item>
         <item name="android:textColor">@color/text_white</item>
-        <item name="android:layout_marginRight">@dimen/margin_textView</item>
-        <item name="android:layout_marginLeft">@dimen/margin_textView</item>
+        <item name="android:layout_marginRight">@dimen/margin_small_big</item>
+        <item name="android:layout_marginLeft">@dimen/margin_small_big</item>
         <item name="fontPath">fonts/num_font.ttf</item>
     </style>
 </resources>

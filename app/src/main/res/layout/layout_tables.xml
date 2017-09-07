@@ -20,25 +20,24 @@
 
     <android.support.v7.widget.CardView
         android:id="@+id/layout_tables"
+        style="@style/mCardView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:layout_marginBottom="@dimen/main_margin"
-        android:layout_marginLeft="@dimen/main_margin"
-        android:layout_marginRight="@dimen/main_margin"
-        app:cardBackgroundColor="@color/colorLevels"
-        app:cardCornerRadius="@dimen/radius_cardView"
-        app:cardElevation="5dp">
+        android:layout_marginBottom="@dimen/margin_medium_big"
+        android:layout_marginLeft="@dimen/margin_medium_big"
+        android:layout_marginRight="@dimen/margin_medium_big"
+        app:cardBackgroundColor="@color/colorLevels">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="@dimen/padding_layout">
+            android:padding="@dimen/padding_small">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_one"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_alignParentRight="true"
                 android:layout_alignParentTop="true"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -53,7 +52,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_two"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@id/layout_one"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -72,7 +71,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_three"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_alignParentTop="true"
                 android:layout_toLeftOf="@+id/layout_two"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -90,7 +89,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_four"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/layout_one"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -108,7 +107,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_five"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_below="@+id/layout_two"
                 android:layout_toLeftOf="@+id/layout_four"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -128,7 +127,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_six"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_below="@+id/layout_three"
                 android:layout_toLeftOf="@+id/layout_five"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -146,7 +145,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_seven"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_alignParentRight="true"
                 android:layout_below="@+id/layout_five"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -164,7 +163,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_eight"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_below="@+id/layout_five"
                 android:layout_toLeftOf="@id/layout_seven"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -183,7 +182,7 @@
 
             <android.support.v7.widget.CardView
                 android:id="@+id/layout_nine"
-                style="@style/CardView.Tables"
+                style="@style/mCardView.Tables"
                 android:layout_below="@id/layout_six"
                 android:layout_toLeftOf="@+id/layout_eight"
                 app:cardBackgroundColor="@color/color_icLock">
@@ -204,7 +203,7 @@
     </android.support.v7.widget.CardView>
 
     <android.support.v7.widget.CardView
-        style="@style/CardView.Levels"
+        style="@style/mCardView.Levels"
         android:layout_below="@+id/layout_tables"
         android:onClick="click_exam"
         app:cardBackgroundColor="@color/colorAccent">
@@ -216,7 +215,7 @@
             <ImageView
                 android:id="@+id/img_lock_certification"
                 style="@style/ImageView.Lock"
-                android:padding="@dimen/padding_ic_lock" />
+                android:padding="@dimen/padding_small_big" />
 
             <TextView
                 android:id="@+id/text_exam"

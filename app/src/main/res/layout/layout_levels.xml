@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_margin="@dimen/margin_textView"
+            android:layout_margin="@dimen/margin_small_big"
             android:layout_toLeftOf="@id/name_table_number"
             android:textColor="@color/text_white"
             android:textSize="@dimen/text_large" />
@@ -39,7 +39,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/layout_level_one"
-            style="@style/CardView.Levels"
+            style="@style/mCardView.Levels"
             android:onClick="level_one">
 
             <RelativeLayout
@@ -61,7 +61,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/layout_level_two"
-            style="@style/CardView.Levels"
+            style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_one"
             android:onClick="level_two">
 
@@ -82,7 +82,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/layout_level_three"
-            style="@style/CardView.Levels"
+            style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_two"
             android:onClick="level_three">
 
@@ -105,7 +105,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/layout_level_four"
-            style="@style/CardView.Levels"
+            style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_three"
             android:onClick="level_four">
 
@@ -126,7 +126,7 @@
 
         <android.support.v7.widget.CardView
             android:id="@+id/layout_level_five"
-            style="@style/CardView.Levels"
+            style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_four"
             android:onClick="level_five">
 
@@ -146,7 +146,7 @@
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView
-            style="@style/CardView.Levels"
+            style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_five"
             app:cardBackgroundColor="@color/colorAccent">
 
