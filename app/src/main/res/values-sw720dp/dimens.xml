@@ -7,12 +7,14 @@
     <dimen name="text_very_large">90sp</dimen>
     <dimen name="text_learn">60sp</dimen>
     <dimen name="text_exam">120sp</dimen>
+    <dimen name="text_toolBar">18sp</dimen>
 
 
     <!-- dimens -->
     <dimen name="dimen_small">90dp</dimen>
     <dimen name="dimen_medium">120dp</dimen>
     <dimen name="dimen_large">230dp</dimen>
+    <dimen name="dimen_ic_toolbar">40dp</dimen>
 
 
 

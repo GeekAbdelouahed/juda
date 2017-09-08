@@ -12,8 +12,9 @@
         android:id="@+id/toolBar_exam"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack"
-            android:onClick="click_back"/>
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
 
         <Chronometer
             android:id="@+id/chrono"
@@ -90,13 +91,14 @@
                     android:id="@+id/second_number_exam"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.1"
+                    android:layout_weight="0.5"
                     android:src="@mipmap/ic_launcher" />
 
                 <ImageView
                     android:id="@+id/ic_mult_exam"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="0.75"
                     android:src="@drawable/ic_mul"
                     android:tint="@color/colorButtonHelp" />
 
@@ -104,7 +106,7 @@
                     android:id="@+id/first_number_exam"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.1"
+                    android:layout_weight="0.5"
                     android:src="@mipmap/ic_launcher" />
 
             </LinearLayout>

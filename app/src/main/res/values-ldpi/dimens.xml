@@ -7,12 +7,14 @@
     <dimen name="text_very_large">30sp</dimen>
     <dimen name="text_learn">16sp</dimen>
     <dimen name="text_exam">30sp</dimen>
+    <dimen name="text_toolBar">18sp</dimen>
 
 
     <!-- dimens -->
     <dimen name="dimen_small">30dp</dimen>
     <dimen name="dimen_medium">50dp</dimen>
     <dimen name="dimen_large">80dp</dimen>
+    <dimen name="dimen_ic_toolbar">40dp</dimen>
 
 
     <!-- margins -->
