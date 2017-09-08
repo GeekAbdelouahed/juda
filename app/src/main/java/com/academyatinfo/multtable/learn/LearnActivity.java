@@ -2,6 +2,7 @@ package com.academyatinfo.multtable.learn;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
@@ -93,9 +94,9 @@ public class LearnActivity extends BaseActivity {
     }
 
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        setResult(1, (new Intent()).putExtra("level", 1));
+    public void click_back(View view) {
+        intent.putExtra("level", 1);
+        setResult(1, intent);
+        finish();
     }
 }

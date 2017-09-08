@@ -6,13 +6,17 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context="com.academyatinfo.multtable.settings.SettingsActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_settings"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack" />
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
 
 
         <TextView
@@ -30,7 +34,7 @@
         <ImageView
             android:id="@+id/avatar_settings"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_above="@id/layout_info_settings"
             android:layout_centerHorizontal="true"
             android:src="@drawable/ic_boy" />
@@ -119,7 +123,8 @@
         android:layout_margin="@dimen/margin_medium_big"
         android:background="@drawable/background_learn"
         android:onClick="click_to_save"
-        android:text="@string/text_save" />
-
+        android:padding="@dimen/padding_medium_big"
+        android:text="@string/text_save"
+        android:textColor="@color/text_white" />
 
 </RelativeLayout>

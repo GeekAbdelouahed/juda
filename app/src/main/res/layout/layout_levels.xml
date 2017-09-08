@@ -12,7 +12,8 @@
         android:id="@+id/toolBar_Levels"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack" />
+        <ImageView style="@style/ImageView.ImageBack"
+            android:onClick="click_back"/>
 
         <TextView
             android:id="@+id/name_table_number"

@@ -1,23 +1,23 @@
 <resources>
 
     <!-- text Sizes -->
-    <dimen name="text_small">15sp</dimen>
-    <dimen name="text_medium">18sp</dimen>
-    <dimen name="text_large">23sp</dimen>
-    <dimen name="text_very_large">40sp</dimen>
-    <dimen name="text_learn">27sp</dimen>
-    <dimen name="text_exam">50sp</dimen>
+    <dimen name="text_small">19sp</dimen>
+    <dimen name="text_medium">22sp</dimen>
+    <dimen name="text_large">30sp</dimen>
+    <dimen name="text_very_large">50sp</dimen>
+    <dimen name="text_learn">40sp</dimen>
+    <dimen name="text_exam">80sp</dimen>
 
 
     <!-- dimens -->
-    <dimen name="dimen_small">40dp</dimen>
-    <dimen name="dimen_medium">50dp</dimen>
-    <dimen name="dimen_large">80dp</dimen>
+    <dimen name="dimen_small">60dp</dimen>
+    <dimen name="dimen_medium">70dp</dimen>
+    <dimen name="dimen_large">130dp</dimen>
 
 
     <!-- margins -->
     <dimen name="margin_small">3dp</dimen>
-    <dimen name="margin_small_big">5dp</dimen>
+    <dimen name="margin_small_big">7dp</dimen>
     <dimen name="margin_small_very_big">10dp</dimen>
     <dimen name="margin_medium">16dp</dimen>
     <dimen name="margin_medium_big">20dp</dimen>
@@ -31,21 +31,21 @@
     <dimen name="padding_small_big">7dp</dimen>
     <dimen name="padding_medium">10dp</dimen>
     <dimen name="padding_medium_big">20dp</dimen>
-    <dimen name="padding_large">50dp</dimen>
+    <dimen name="padding_large">80dp</dimen>
 
 
     <!-- height -->
-    <dimen name="height_small">50dp</dimen>
-    <dimen name="height_medium">80dp</dimen>
-    <dimen name="height_large">240dp</dimen>
+    <dimen name="height_small">60dp</dimen>
+    <dimen name="height_medium">100dp</dimen>
+    <dimen name="height_large">375dp</dimen>
 
 
     <!-- width -->
-    <dimen name="width_medium">100dp</dimen>
+    <dimen name="width_medium">150dp</dimen>
     <dimen name="width_small">50dp</dimen>
 
     <!-- radius -->
-    <dimen name="radius_small">10dp</dimen>
-    <dimen name="radius_medium">20dp</dimen>
+    <dimen name="radius_small">15dp</dimen>
+    <dimen name="radius_medium">25dp</dimen>
 
 </resources>

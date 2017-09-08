@@ -36,4 +36,8 @@ public class ResultsActivity extends BaseActivity implements ResultContract.View
             text_check.setVisibility(View.GONE);
         }
     }
+
+    public void click_back(View view) {
+        finish();
+    }
 }

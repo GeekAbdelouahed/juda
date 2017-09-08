@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,10 +8,25 @@
     android:fitsSystemWindows="true"
     tools:context="com.academyatinfo.multtable.about.AboutActivity">
 
+    <RelativeLayout
+        android:id="@+id/toolBar_about"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/text_about" />
+
+    </RelativeLayout>
+
     <android.support.v7.widget.CardView
         style="@style/mCardView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_about"
         android:layout_margin="@dimen/margin_medium_big"
         app:cardBackgroundColor="@color/colorPrimary">
 
@@ -79,4 +94,4 @@
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
+</RelativeLayout>

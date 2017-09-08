@@ -2,7 +2,6 @@ package com.academyatinfo.multtable.appintro;
 
 import android.Manifest;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -14,7 +13,6 @@ import com.academyatinfo.multtable.appintro.slides.Slide2Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide3Fragment;
 import com.academyatinfo.multtable.appintro.slides.Slide4Fragment;
 import com.academyatinfo.multtable.databases.DataBaseInfo;
-import com.academyatinfo.multtable.home.HomeActivity;
 import com.github.paolorotolo.appintro.AppIntro2;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
@@ -29,14 +27,7 @@ public class IntroActivity extends AppIntro2 {
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        dataBaseInfo = new DataBaseInfo(this);
-
-        if (dataBaseInfo.checkFirstLogin())
-            startActivity(new Intent(this, HomeActivity.class));
-
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
-        getSupportActionBar().hide();
 
         addSlide(new Slide1Fragment());
         addSlide(new Slide2Fragment());
@@ -51,9 +42,9 @@ public class IntroActivity extends AppIntro2 {
     @Override
     public void onDonePressed(Fragment currentFragment) {
         super.onDonePressed(currentFragment);
+        dataBaseInfo = new DataBaseInfo(this);
         dataBaseInfo.firstLogin();
         finish();
-        startActivity(new Intent(this, HomeActivity.class));
     }
 
     @Override
@@ -65,5 +56,4 @@ public class IntroActivity extends AppIntro2 {
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
     }
-
 }

@@ -51,7 +51,6 @@
         <item name="android:src">@drawable/ic_back</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerVertical">true</item>
-        <item name="android:onClick">clickBack</item>
     </style>
 
     <style name="ImageView.MultiSymbol" parent="ImageView.MultiSymbol">
@@ -87,7 +86,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">@dimen/text_large</item>
+        <item name="android:textSize">@dimen/text_small</item>
     </style>
 
     <style name="mTextViewLevels" parent="mTextViewLevels">

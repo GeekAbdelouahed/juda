@@ -40,6 +40,8 @@
                     android:layout_alignParentTop="true"
                     android:layout_margin="@dimen/margin_small_big"
                     android:background="@drawable/background_text"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
                     android:hint="@string/name"
                     android:inputType="textPersonName"
                     android:textColor="@color/text_white"

@@ -78,4 +78,8 @@ public class SettingsActivity extends BaseActivity {
 
         toast("تم الحفظ");
     }
+
+    public void click_back(View view) {
+        finish();
+    }
 }

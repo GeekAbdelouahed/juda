@@ -12,7 +12,8 @@
         android:id="@+id/toolBar_exam"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack" />
+        <ImageView style="@style/ImageView.ImageBack"
+            android:onClick="click_back"/>
 
         <Chronometer
             android:id="@+id/chrono"

@@ -34,4 +34,8 @@ public class AboutActivity extends AppCompatActivity {
         emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
         startActivity(Intent.createChooser(emailIntent, "إرسال إيميل"));
     }
+
+    public void click_back(View view) {
+        finish();
+    }
 }

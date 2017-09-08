@@ -109,4 +109,8 @@ public class CertificationActivity extends BaseActivity implements Certification
         startActivity(Intent.createChooser(shareIntent, "مشاركة الشهادة"));
 
     }
+
+    public void click_back(View view) {
+        finish();
+    }
 }

@@ -7,10 +7,10 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.academyatinfo.multtable.exam.ExamActivity;
-import com.academyatinfo.multtable.levels.LevelsActivity;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearn;
+import com.academyatinfo.multtable.exam.ExamActivity;
+import com.academyatinfo.multtable.levels.LevelsActivity;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class TablesActivity extends BaseActivity implements TablesContract.View {
@@ -148,4 +148,7 @@ public class TablesActivity extends BaseActivity implements TablesContract.View 
         }
     }
 
+    public void click_back(View view) {
+        finish();
+    }
 }

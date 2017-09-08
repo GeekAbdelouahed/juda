@@ -358,6 +358,12 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
         }
     }
 
+
+    public void click_back(View view) {
+        finish();
+    }
+
     public void click_finish_exam(View view) {
     }
+
 }

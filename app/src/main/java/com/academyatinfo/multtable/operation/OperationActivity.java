@@ -237,4 +237,7 @@ public class OperationActivity extends BaseActivity implements OperationContract
         }
     }
 
+    public void click_back(View view) {
+        finish();
+    }
 }

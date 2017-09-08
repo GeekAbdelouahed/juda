@@ -13,7 +13,8 @@
         android:id="@+id/toolBar_operation"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack" />
+        <ImageView style="@style/ImageView.ImageBack"
+            android:onClick="click_back"/>
 
         <TextView
             style="@style/mTextToolBar"

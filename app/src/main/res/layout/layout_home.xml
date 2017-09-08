@@ -113,7 +113,7 @@
             style="@style/mTextViewLevels"
             android:layout_toRightOf="@id/ic_splash_exit"
             android:background="#25000000"
-            android:onClick="clickBack"
+            android:onClick="click_back"
             android:text="@string/text_exit" />
 
     </RelativeLayout>

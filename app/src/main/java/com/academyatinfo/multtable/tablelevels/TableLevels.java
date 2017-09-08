@@ -272,4 +272,8 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
         if (dataBaseLearnTable.getData(10, index_table))
             setResult(1, (new Intent()).putExtra("level", 2));
     }
+
+    public void click_back(View view) {
+        finish();
+    }
 }
