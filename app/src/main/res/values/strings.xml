@@ -1,18 +1,34 @@
 <resources>
     <string name="app_name">جداء</string>
-    <string name="method1">حاصل ضرب أي عدد بالعدد 0 هو 0</string>
-    <string name="method2">حاصل ضرب أي عدد بالعدد 1 هو هو العدد نفسه</string>
-    <string name="method3">حاصل ضرب أي عدد بالعدد 5 يكون الناتج يحتوي على 0 أو 5 على اليمين</string>
-    <string name="method4">حاصل ضرب أي عدد في العدد 9 يكون على الشكل التالي :\nخانة العشرات = الرقم المضروب بالعدد 9 ناقص 1\nخانة الآحاد = 9 ناقص الرقم في خانة العشرات</string>
-    <string name="method5">مثال : 8 ضرب 6\n10 ناقص 8 تساوي 2\n10 ناقص 6 تساوي 4\nالناتج يكون على الشكل التالي :\nنضع في خانة الآحاد حاصل ضرب 2 و 4 وهو 8\nنضع في خانة العشرات ناتج 6 ناقص 2 وهو 4\nفيكون الناتج 48</string>
-    <string name="method6">مثال : 7 ضرب 4\n10 ناقص 7 تساوي 3\n10 ناقص 4 تساوي 6\nالناتج يكون على الشكل التالي :\nفي خانة الآحاد نضع رقم الآحاد من حاصل ضرب 3 و 6 وهو 8 ونحتفظ برقم العشرات 1\nنضع في خانة العشرات ناتج 4 زائد 1 ناقص 3 وهو 2\nفيكون الناتج 28</string>
-    <string name="title_activity_show_results">ShowResults</string>
-    <string name="title_activity_inforamtion">Inforamtion</string>
-    <string name="title_activity_about_app">AboutApp</string>
-    <string name="title_activity_learn">Learn</string>
-    <string name="title_activity_preview_mult_table">PreviewMultTable</string>
-    <string name="title_activity_critification">Critification</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tables">الجداول</string>
+    <string name="table_number">جدول رقم</string>
+    <string name="review">مراجعة</string>
+    <string name="save_mult_table">حفظ الجدول</string>
+    <string name="solve_mut_table">حل الجدول</string>
+    <string name="first_exam">الإختبار الأول</string>
+    <string name="second_exam">الإختبار الثاني</string>
+    <string name="third_exam">الإختبار الثالث</string>
+    <string name="operation">حل العملية</string>
+    <string name="count_points">النقاط</string>
+    <string name="text_delete">مسح</string>
+    <string name="text_result">النتيجة</string>
+    <string name="final_exam">الإمتحان النهائي</string>
+    <string name="text_exit">خروج</string>
+    <string name="text_about">حول التطبيق</string>
+    <string name="text_results">النتائج</string>
+    <string name="text_learn">تعليم</string>
+    <string name="text_settings">الإعدادات</string>
+    <string name="name">الإسم</string>
+    <string name="family">اللقب</string>
+    <string name="male">ذكر</string>
+    <string name="female">أنثى</string>
+    <string name="title_certificate">شهادة نجاح</string>
+    <string name="text_save">حفظ</string>
+
+    <string name="text_certification_male1">هنيئا للتلميذ ---</string>
+    <string name="text_certification_male2">لنجاحه في إمتحان جدول الضرب</string>
+    <string name="text_certification_male3">بتقدير ### بالتوفيق للمزيد .</string>
+    <string name="signature">Abdelouahed Medjoudja</string>
+
 </resources>

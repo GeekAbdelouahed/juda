@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.academyatinfo.multtable.exam.ExamActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_exam"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
+
+        <Chronometer
+            android:id="@+id/chrono"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorButtonKeyboard"
+            android:textSize="@dimen/text_large" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_exam"
+        android:layout_margin="@dimen/margin_medium_big"
+        app:cardCornerRadius="@dimen/radius_medium"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout_info_exam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAnswerButton"
+                android:paddingLeft="@dimen/padding_medium"
+                android:paddingRight="@dimen/padding_medium">
+
+                <TextView
+                    android:id="@+id/soccer_table_exam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_small_big"
+                    android:layout_marginTop="@dimen/margin_small_big"
+                    android:gravity="center"
+                    android:paddingRight="@dimen/padding_medium"
+                    android:text="0"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_medium" />
+
+                <TextView
+                    android:id="@+id/full_soccer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_small_big"
+                    android:layout_marginTop="@dimen/margin_small_big"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/padding_medium"
+                    android:text="90"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_medium" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_answer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_large"
+                android:layout_below="@id/layout_info_exam"
+                android:background="@color/colorLevels"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/second_number_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:src="@mipmap/ic_launcher" />
+
+                <ImageView
+                    android:id="@+id/ic_mult_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75"
+                    android:src="@drawable/ic_mul"
+                    android:tint="@color/colorButtonHelp" />
+
+                <ImageView
+                    android:id="@+id/first_number_exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/layout_answer"
+                android:background="@color/colorAnswerButton"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_small">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/mCardView.Exam"
+                        android:onClick="click_card_two">
+
+                        <TextView
+                            android:id="@+id/text_card_two"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextAnswer"
+                            android:textSize="@dimen/text_exam" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        style="@style/mCardView.Exam"
+                        android:onClick="click_card_one">
+
+                        <TextView
+                            android:id="@+id/text_card_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextAnswer"
+                            android:textSize="@dimen/text_exam" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        style="@style/mCardView.Exam"
+                        android:onClick="click_card_four">
+
+                        <TextView
+                            android:id="@+id/text_card_four"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextAnswer"
+                            android:textSize="@dimen/text_exam" />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        style="@style/mCardView.Exam"
+                        android:onClick="click_card_three">
+
+                        <TextView
+                            android:id="@+id/text_card_three"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textColor="@color/colorTextAnswer"
+                            android:textSize="@dimen/text_exam" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

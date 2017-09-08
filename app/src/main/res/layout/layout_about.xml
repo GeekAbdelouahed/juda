@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.academyatinfo.multtable.about.AboutActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_about"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/text_about" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        style="@style/mCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_about"
+        android:layout_margin="@dimen/margin_medium_big"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button_about"
+                android:layout_alignParentTop="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_medium">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="تعلم جدول الضرب أصبح سهلا سريعا وممتعا مع تطبيق"
+                        android:textColor="#efefef"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/app_name"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_very_large" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="حيث يتوافر على العديد من الميزات التي تجعلك تستمتع وتتعلم في نفس الوقت من بينها :\nتعلم جدول الضرب خطوة بخطوة بطريقة سهلة وممتعة مع أصوات خاصة بالإجابة الصحيحة أوالخاطئة\nأيضا التطبيق يعطيك تقييما لمستواك خلال التعلم تقيم لكل الجداول معا وتقيم خاص لكل جدول\nكما يمكنك التطبيق من إجراء إمتحان مباشر لتحديد المستوى ويقوم بحفظ كل نتائجك مع التقييم والتاريخ وبالتالي يمكنك الرجوع لها في أي وقت للإطلاع عليها وملاحظة مراحل تطورك مع الوقت وبعد تجاوز الإمتحان يمكنك الحصول على شهادة تشجيعية باسمك الخاص"
+                        android:textColor="#efefef"
+                        android:textSize="@dimen/text_medium" />
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/button_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent"
+                android:drawableLeft="@drawable/ic_mail"
+                android:gravity="center"
+                android:onClick="send_mail"
+                android:padding="@dimen/padding_medium"
+                android:text="راسلنا عبر الإيميل"
+                android:textColor="#efefef"
+                android:textSize="@dimen/text_medium" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

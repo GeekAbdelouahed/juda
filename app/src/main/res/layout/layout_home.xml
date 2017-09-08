@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:padding="@dimen/padding_large"
+    tools:context="com.academyatinfo.multtable.home.HomeActivity">
+
+
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
+        android:background="@drawable/background_logo"
+        android:onClick="click_to_about"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/layout_learn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_small"
+        android:layout_below="@id/ic_logo"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
+        android:background="@drawable/background_learn">
+
+        <ImageView
+            android:id="@+id/ic_splash_learn"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_learn" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@+id/ic_splash_learn"
+            android:background="#25000000"
+            android:onClick="click_to_learn"
+            android:text="@string/text_learn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_result"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_small"
+        android:layout_below="@+id/layout_learn"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
+        android:background="@drawable/background_results">
+
+        <ImageView
+            android:id="@+id/ic_splash_results"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_results" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@+id/ic_splash_results"
+            android:background="#25000000"
+            android:onClick="click_to_result"
+            android:text="@string/text_results" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_small"
+        android:layout_below="@id/layout_result"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
+        android:background="@drawable/background_about">
+
+        <ImageView
+            android:id="@+id/ic_splash_about"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_about" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@id/ic_splash_about"
+            android:background="#25000000"
+            android:onClick="click_to_settings"
+            android:text="@string/text_settings" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_small"
+        android:layout_below="@id/layout_about"
+        android:layout_marginBottom="@dimen/margin_small_very_big"
+        android:layout_marginTop="@dimen/margin_small_very_big"
+        android:background="@drawable/background_exit">
+
+        <ImageView
+            android:id="@+id/ic_splash_exit"
+            style="@style/ImageView.Lock"
+            android:background="#00000000"
+            android:src="@drawable/ic_exit" />
+
+        <TextView
+            style="@style/mTextViewLevels"
+            android:layout_toRightOf="@id/ic_splash_exit"
+            android:background="#25000000"
+            android:onClick="click_back"
+            android:text="@string/text_exit" />
+
+    </RelativeLayout>
+</RelativeLayout>

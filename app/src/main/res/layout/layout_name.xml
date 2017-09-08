@@ -10,22 +10,20 @@
         android:layout_weight="0.9"
         android:background="@color/colorAnswerButton"
         android:gravity="center"
-        android:padding="@dimen/_10sdp"
+        android:padding="@dimen/padding_small"
         android:text="أكتب إسمك"
         android:textColor="#fff"
-        android:textSize="@dimen/_25sdp" />
+        android:textSize="@dimen/text_large" />
 
     <EditText
         android:id="@+id/text_name"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
         android:layout_weight="0.2"
-        android:padding="@dimen/_10sdp"
+        android:padding="@dimen/padding_small"
         android:hint="الإسم"
         android:textColor="@color/colorPrimaryDark"
-        android:textSize="@dimen/_28sdp" />
+        android:textSize="@dimen/text_very_large" />
 
     <Button
         android:id="@+id/button_name"

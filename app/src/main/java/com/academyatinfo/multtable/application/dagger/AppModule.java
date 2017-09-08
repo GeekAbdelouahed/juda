@@ -5,7 +5,7 @@ import android.content.Context;
 
 import com.academyatinfo.multtable.databases.DataBaseLearn;
 import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.databases.DataBaseResultExam;
+import com.academyatinfo.multtable.databases.DataBaseResults;
 
 import dagger.Module;
 import dagger.Provides;
@@ -36,7 +36,7 @@ public class AppModule {
 
     @Provides
     @AppScope
-    public DataBaseResultExam dataBaseResultExam() {
-        return new DataBaseResultExam(context);
+    public DataBaseResults dataBaseResultExam() {
+        return new DataBaseResults(context);
     }
 }

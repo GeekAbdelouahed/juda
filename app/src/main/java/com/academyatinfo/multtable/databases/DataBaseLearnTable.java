@@ -22,7 +22,7 @@ public class DataBaseLearnTable extends SQLiteAssetHelper {
     }
 
     public boolean getData(int id, int index) {
-        String name_column = setNameColumn(index);
+        String name_column = getNameColumn(index);
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = db.rawQuery("SELECT _id ," + name_column + " from " + TABLE_NAME + " WHERE _id = " + id, null);
         c.moveToFirst();
@@ -30,14 +30,14 @@ public class DataBaseLearnTable extends SQLiteAssetHelper {
     }
 
     public void updateData(int id, int index) {
-        String name_column = setNameColumn(index);
+        String name_column = getNameColumn(index);
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(name_column, true);
         db.update(TABLE_NAME, contentValues, id + " = _id", null);
     }
 
-    public String setNameColumn(int index) {
+    private String getNameColumn(int index) {
         String name_column = null;
         switch (index) {
             case 0:

@@ -1,7 +1,7 @@
 package com.academyatinfo.multtable.certification.dagger;
 
 import com.academyatinfo.multtable.application.dagger.AppComponent;
-import com.academyatinfo.multtable.certification.mvp.Certification;
+import com.academyatinfo.multtable.certification.mvp.CertificationActivity;
 
 import dagger.Component;
 
@@ -12,6 +12,6 @@ import dagger.Component;
 @Component(modules = CertificationModule.class, dependencies = AppComponent.class)
 public interface CertificationComponent {
 
-    void inject(Certification certification);
+    void inject(CertificationActivity certificationActivity);
 
 }

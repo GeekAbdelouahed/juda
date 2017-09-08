@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.academyatinfo.multtable.certification.mvp.CertificationActivity">
+
+
+    <ImageView
+        android:id="@+id/image_certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_medium_big" />
+
+
+    <RelativeLayout
+        android:id="@+id/toolBar_certificate"
+        style="@style/mToolBar">
+
+        <ImageView style="@style/ImageView.ImageBack"
+            android:onClick="click_back"/>
+
+
+        <ImageView
+            android:id="@+id/ic_share_certification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/padding_small"
+            android:onClick="share_certification"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/ic_share" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/ic_share_certification"
+            android:gravity="center"
+            android:onClick="share_certification"
+            android:text="مشاركة"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_medium" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

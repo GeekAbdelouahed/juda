@@ -6,10 +6,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.academyatinfo.multtable.operation.Operation;
+import com.academyatinfo.multtable.operation.OperationActivity;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.tools.BaseActivity;
+import com.academyatinfo.multtable.ui.BaseActivity;
 
 public class TableLevels extends BaseActivity implements TableLevelsContract.View {
 
@@ -20,11 +20,11 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.table_levels);
+        setContentView(R.layout.layout_table_levels);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         index_table = getIntent().getIntExtra("index_table", 0);
         setImageNumber(index_table);
-        intent = new Intent(TableLevels.this, Operation.class);
+        intent = new Intent(TableLevels.this, OperationActivity.class);
         intent.putExtra("index_table", index_table);
         dataBaseLearnTable = new DataBaseLearnTable(this);
         for (int i = 1; i <= 10; i++) {
@@ -266,9 +266,14 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
         }
     }
 
-    public void back_learn(View view) {
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
         if (dataBaseLearnTable.getData(10, index_table))
             setResult(1, (new Intent()).putExtra("level", 2));
+    }
+
+    public void click_back(View view) {
         finish();
     }
 }

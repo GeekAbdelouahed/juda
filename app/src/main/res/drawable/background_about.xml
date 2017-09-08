@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/layer_about_1" />
+    <item
+        android:bottom="@dimen/margin_small_big"
+        android:drawable="@drawable/layer_about_2" />
+
+</layer-list>

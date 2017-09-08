@@ -10,20 +10,20 @@
         android:layout_weight="0.9"
         android:background="@color/colorAnswerButton"
         android:gravity="center"
-        android:padding="@dimen/_10sdp"
+        android:padding="@dimen/padding_small"
         android:text="النتيجة"
         android:textColor="#fff"
-        android:textSize="@dimen/_25sdp" />
+        android:textSize="@dimen/text_large" />
 
     <TextView
         android:id="@+id/text_result_exam"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/_10sdp"
+        android:layout_margin="@dimen/margin_small_big"
         android:layout_weight="0.2"
         android:gravity="right"
         android:textColor="#202020"
-        android:textSize="@dimen/_22sdp" />
+        android:textSize="@dimen/text_large" />
 
     <Button
         android:id="@+id/click_done"
@@ -34,5 +34,5 @@
         android:onClick="click_finish_exam"
         android:text="موافق"
         android:textColor="#313131"
-        android:textSize="@dimen/_18sdp" />
+        android:textSize="@dimen/text_medium" />
 </LinearLayout>
