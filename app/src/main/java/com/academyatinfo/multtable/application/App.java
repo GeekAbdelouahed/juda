@@ -8,6 +8,7 @@ import com.academyatinfo.multtable.application.dagger.AppComponent;
 import com.academyatinfo.multtable.application.dagger.AppModule;
 import com.academyatinfo.multtable.application.dagger.DaggerAppComponent;
 
+import io.realm.Realm;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
@@ -26,6 +27,9 @@ public class App extends Application {
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
+
+
+        Realm.init(this);
 
         component = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))

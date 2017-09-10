@@ -7,31 +7,40 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.academyatinfo.multtable.databases.DataBaseResults;
-import com.academyatinfo.multtable.modules.MyAdapter;
 import com.academyatinfo.multtable.R;
+import com.academyatinfo.multtable.adapters.ResultsAdapter;
+import com.academyatinfo.multtable.databases.DataBaseResults;
 import com.academyatinfo.multtable.ui.BaseActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class ResultsActivity extends BaseActivity implements ResultContract.View {
 
-    private RecyclerView recyclerView;
-    private MyAdapter myAdapter;
+    @BindView(R.id.recycler)
+    RecyclerView recyclerView;
+    @BindView(R.id.text_checkdata)
+    TextView text_check;
+
+    private ResultsAdapter resultsAdapter;
     private DataBaseResults dataBaseResults;
-    private TextView text_check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_results);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+        ButterKnife.bind(this);
+
         dataBaseResults = new DataBaseResults(this);
         dataBaseResults.open();
-        text_check = (TextView) findViewById(R.id.text_checkdata);
+
         if (dataBaseResults.checkCursor()) {
-            recyclerView = (RecyclerView) findViewById(R.id.recycler);
-            myAdapter = new MyAdapter(this, dataBaseResults.getResults());
+            resultsAdapter = new ResultsAdapter(this, dataBaseResults.getResults());
             recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            recyclerView.setAdapter(myAdapter);
+            recyclerView.setAdapter(resultsAdapter);
             recyclerView.setVisibility(View.VISIBLE);
             text_check.setVisibility(View.GONE);
         }

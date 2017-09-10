@@ -4,45 +4,41 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteQueryBuilder;
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 /**
- * Created by abde on 13/02/17.
+ * Created by abde on 21/02/17.
  */
 
-public class DataBaseLearnTable extends SQLiteAssetHelper {
-    private static final String DATABASE_NAME = "table_mult.db";
-    private final String TABLE_NAME = "table_mult";
+public class DataTableLevel extends SQLiteAssetHelper {
+    private static final String DATABASE_NAME = "table_level.db";
+    private final String TABLE_NAME = "table_level";
     private static final int DATABASE_VERSION = 1;
 
-    public DataBaseLearnTable(Context context) {
+    public DataTableLevel(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
-    public boolean getData(int id, int index) {
-        String name_column = getNameColumn(index);
+    public boolean getData(int id, int column_index) {
+        String name_column = setNameColumn(column_index);
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = db.rawQuery("SELECT _id ," + name_column + " from " + TABLE_NAME + " WHERE _id = " + id, null);
         c.moveToFirst();
         return c.getInt(c.getColumnIndex(name_column)) > 0;
     }
 
-    public void updateData(int id, int index) {
-        String name_column = getNameColumn(index);
+    public void updateData(int id_table, int index_column) {
+        String name_column = setNameColumn(index_column);
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(name_column, true);
-        db.update(TABLE_NAME, contentValues, id + " = _id", null);
+        db.update(TABLE_NAME, contentValues, id_table + " = _id", null);
     }
 
-    private String getNameColumn(int index) {
+    public String setNameColumn(int index) {
         String name_column = null;
         switch (index) {
-            case 0:
-                name_column = "_zero";
-                break;
             case 1:
                 name_column = "_one";
                 break;
@@ -61,16 +57,8 @@ public class DataBaseLearnTable extends SQLiteAssetHelper {
             case 6:
                 name_column = "_six";
                 break;
-            case 7:
-                name_column = "_seven";
-                break;
-            case 8:
-                name_column = "_eight";
-                break;
-            case 9:
-                name_column = "_nine";
-                break;
         }
         return name_column;
     }
+
 }

@@ -6,29 +6,37 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
 
-import com.academyatinfo.multtable.operation.OperationActivity;
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.databases.DataBaseLearnTable;
+import com.academyatinfo.multtable.databases.DataTables;
+import com.academyatinfo.multtable.operation.OperationActivity;
+import com.academyatinfo.multtable.tools.Constants;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
-public class TableLevels extends BaseActivity implements TableLevelsContract.View {
+public class TableLevels extends BaseActivity {
 
     private Intent intent;
     private int index_table;
-    private DataBaseLearnTable dataBaseLearnTable;
+    private DataTables dataTables;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_table_levels);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        index_table = getIntent().getIntExtra("index_table", 0);
+
+        index_table = getIntent().getIntExtra(Constants.KEY_INDEX_TABLE, 0);
+
         setImageNumber(index_table);
+
         intent = new Intent(TableLevels.this, OperationActivity.class);
-        intent.putExtra("index_table", index_table);
-        dataBaseLearnTable = new DataBaseLearnTable(this);
+
+        intent.putExtra(Constants.KEY_INDEX_TABLE, index_table);
+
+        dataTables = new DataTables(this);
+
         for (int i = 1; i <= 10; i++) {
-            if (dataBaseLearnTable.getData(i, index_table))
+            if (dataTables.getData(i, index_table))
                 add_image_check(i - 1);
         }
 
@@ -39,53 +47,53 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
     }
 
     public void click_one(View view) {
-        if (dataBaseLearnTable.getData(1, index_table))
+        if (dataTables.getData(1, index_table))
             startAnotherActivity(1);
     }
 
     public void click_two(View view) {
-        if (dataBaseLearnTable.getData(2, index_table))
+        if (dataTables.getData(2, index_table))
             startAnotherActivity(2);
     }
 
     public void click_three(View view) {
-        if (dataBaseLearnTable.getData(3, index_table))
+        if (dataTables.getData(3, index_table))
             startAnotherActivity(3);
     }
 
     public void click_four(View view) {
-        if (dataBaseLearnTable.getData(4, index_table))
+        if (dataTables.getData(4, index_table))
             startAnotherActivity(4);
     }
 
     public void click_five(View view) {
-        if (dataBaseLearnTable.getData(5, index_table))
+        if (dataTables.getData(5, index_table))
             startAnotherActivity(5);
     }
 
     public void click_six(View view) {
-        if (dataBaseLearnTable.getData(6, index_table))
+        if (dataTables.getData(6, index_table))
             startAnotherActivity(6);
     }
 
     public void click_seven(View view) {
-        if (dataBaseLearnTable.getData(7, index_table))
+        if (dataTables.getData(7, index_table))
             startAnotherActivity(7);
     }
 
     public void click_eight(View view) {
-        if (dataBaseLearnTable.getData(8, index_table))
+        if (dataTables.getData(8, index_table))
             startAnotherActivity(8);
     }
 
     public void click_nine(View view) {
-        if (dataBaseLearnTable.getData(9, index_table)) {
+        if (dataTables.getData(9, index_table)) {
             startAnotherActivity(9);
         }
     }
 
     public void startAnotherActivity(int index) {
-        intent.putExtra("number", index);
+        intent.putExtra(Constants.KEY_NUMBER, index);
         startActivityForResult(intent, 1);
     }
 
@@ -93,9 +101,9 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         if (data != null) {
-            if (requestCode == 1 && data.getBooleanExtra("check", false)) {
-                add_image_check(data.getIntExtra("index_mult", -1));
-                dataBaseLearnTable.updateData(data.getIntExtra("index_mult", -1) + 1, index_table);
+            if (requestCode == 1 && data.getBooleanExtra(Constants.KEY_CHECK, false)) {
+                add_image_check(data.getIntExtra(Constants.KEY_MULT, -1));
+                dataTables.updateData(data.getIntExtra(Constants.KEY_MULT, -1) + 1, index_table);
             }
         }
     }
@@ -104,47 +112,47 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
         switch (index) {
             case 0:
                 ((ImageView) findViewById(R.id.check_zero)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(2, index_table))
+                if (!dataTables.getData(2, index_table))
                     ((ImageView) findViewById(R.id.check_one)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 1:
                 ((ImageView) findViewById(R.id.check_one)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(3, index_table))
+                if (!dataTables.getData(3, index_table))
                     ((ImageView) findViewById(R.id.check_two)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 2:
                 ((ImageView) findViewById(R.id.check_two)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(4, index_table))
+                if (!dataTables.getData(4, index_table))
                     ((ImageView) findViewById(R.id.check_three)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 3:
                 ((ImageView) findViewById(R.id.check_three)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(5, index_table))
+                if (!dataTables.getData(5, index_table))
                     ((ImageView) findViewById(R.id.check_four)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 4:
                 ((ImageView) findViewById(R.id.check_four)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(6, index_table))
+                if (!dataTables.getData(6, index_table))
                     ((ImageView) findViewById(R.id.check_five)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 5:
                 ((ImageView) findViewById(R.id.check_five)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(7, index_table))
+                if (!dataTables.getData(7, index_table))
                     ((ImageView) findViewById(R.id.check_six)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 6:
                 ((ImageView) findViewById(R.id.check_six)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(8, index_table))
+                if (!dataTables.getData(8, index_table))
                     ((ImageView) findViewById(R.id.check_seven)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 7:
                 ((ImageView) findViewById(R.id.check_seven)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(9, index_table))
+                if (!dataTables.getData(9, index_table))
                     ((ImageView) findViewById(R.id.check_eight)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 8:
                 ((ImageView) findViewById(R.id.check_eight)).setImageResource(R.drawable.ic_check_true);
-                if (!dataBaseLearnTable.getData(10, index_table))
+                if (!dataTables.getData(10, index_table))
                     ((ImageView) findViewById(R.id.check_nine)).setImageResource(R.drawable.ic_check_false);
                 break;
             case 9:
@@ -266,14 +274,10 @@ public class TableLevels extends BaseActivity implements TableLevelsContract.Vie
         }
     }
 
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (dataBaseLearnTable.getData(10, index_table))
-            setResult(1, (new Intent()).putExtra("level", 2));
-    }
 
     public void click_back(View view) {
+        if (dataTables.getData(10, index_table))
+            setResult(1, (new Intent()).putExtra(Constants.KEY_LEVEL, 2));
         finish();
     }
 }

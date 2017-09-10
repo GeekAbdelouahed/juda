@@ -6,7 +6,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.academyatinfo.multtable.modules.Results;
+import com.academyatinfo.multtable.models.Result;
 
 import java.util.ArrayList;
 
@@ -67,28 +67,28 @@ public class DataBaseResults {
     }
 
 
-    public void insertResult(Results results) {
-        final ContentValues content = new ContentValues();
-        content.put(KEY_NAME, results.getName());
-        content.put(KEY_RESULT, results.getResult());
-        content.put(KEY_TIME, results.getTime());
-        content.put(KEY_DATE, results.getDate());
-        sqLiteDatabase.insert(DATABASE_TABLE, null, content);
+    public void insertResult(Result result) {
+        /*final ContentValues content = new ContentValues();
+        content.put(KEY_NAME, result.getName());
+        content.put(KEY_RESULT, result.getResult());
+        content.put(KEY_TIME, result.getTime());
+        content.put(KEY_DATE, result.getDate());
+        sqLiteDatabase.insert(DATABASE_TABLE, null, content);*/
     }
 
-    public ArrayList<Results> getResults() {
-        ArrayList<Results> arrayResults = new ArrayList<>();
-        Results results;
+    public ArrayList<Result> getResults() {
+        ArrayList<Result> arrayResults = new ArrayList<>();
+        /*Result result;
         String[] columns = {KEY_NAME, KEY_RESULT, KEY_TIME, KEY_DATE};
         Cursor cursor = sqLiteDatabase.query(DATABASE_TABLE, columns, null, null, null, null, null);
         for (cursor.moveToFirst(); !cursor.isAfterLast(); cursor.moveToNext()) {
-            results = new Results();
-            results.setName(cursor.getString(cursor.getColumnIndex(KEY_NAME)));
-            results.setResult(cursor.getString(cursor.getColumnIndex(KEY_RESULT)));
-            results.setTime(cursor.getString(cursor.getColumnIndex(KEY_TIME)));
-            results.setDate((cursor.getString(cursor.getColumnIndex(KEY_DATE))));
-            arrayResults.add(results);
-        }
+            result = new Result();
+            result.setName(cursor.getString(cursor.getColumnIndex(KEY_NAME)));
+            result.setResult(cursor.getString(cursor.getColumnIndex(KEY_RESULT)));
+            result.setTime(cursor.getString(cursor.getColumnIndex(KEY_TIME)));
+            result.setDate((cursor.getString(cursor.getColumnIndex(KEY_DATE))));
+            arrayResults.add(result);
+        }*/
         return arrayResults;
     }
 

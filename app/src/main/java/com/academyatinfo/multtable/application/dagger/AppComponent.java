@@ -1,10 +1,10 @@
 package com.academyatinfo.multtable.application.dagger;
 
-import com.academyatinfo.multtable.databases.DataBaseLearn;
-import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.databases.DataBaseResults;
+import com.academyatinfo.multtable.databases.DataTableLevel;
+import com.academyatinfo.multtable.databases.DataTables;
 
 import dagger.Component;
+import io.realm.Realm;
 
 /**
  * Created by geek on 01/08/17.
@@ -13,10 +13,10 @@ import dagger.Component;
 @Component(modules = AppModule.class)
 public interface AppComponent {
 
-    DataBaseLearn dataBaseLearn();
+    DataTableLevel dataBaseLearn();
 
-    DataBaseLearnTable dataBaseLearnTable();
+    DataTables dataBaseLearnTable();
 
-    DataBaseResults dataBaseResultExam();
+    Realm getRealmData();
 
 }

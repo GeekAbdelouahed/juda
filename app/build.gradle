@@ -73,5 +73,8 @@ dependencies {
     // Glide
     compile 'com.github.bumptech.glide:glide:3.5.2'
 
+    // Dialog Success Exam
+    compile 'com.github.blennerSilva:AwesomeDialog:2.0.1'
+
 }
 apply plugin: 'realm-android'

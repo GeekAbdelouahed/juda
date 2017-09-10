@@ -39,7 +39,7 @@
                 android:id="@+id/scrollView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_above="@+id/button_about"
+                android:layout_above="@+id/layout_send"
                 android:layout_alignParentTop="true"
                 android:scrollbars="none">
 
@@ -78,19 +78,29 @@
 
             </ScrollView>
 
-            <Button
-                android:id="@+id/button_about"
+            <RelativeLayout
+                android:id="@+id/layout_send"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/height_small"
                 android:layout_alignParentBottom="true"
-                android:background="@color/colorAccent"
-                android:drawableLeft="@drawable/ic_mail"
-                android:gravity="center"
-                android:onClick="send_mail"
-                android:padding="@dimen/padding_medium"
-                android:text="راسلنا عبر الإيميل"
-                android:textColor="#efefef"
-                android:textSize="@dimen/text_medium" />
+                android:background="@color/colorAccent">
+
+                <ImageView
+                    android:id="@+id/ic_splash_learn"
+                    style="@style/ImageView.Lock"
+                    android:background="#00000000"
+                    android:src="@drawable/ic_mail" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toRightOf="@+id/ic_splash_learn"
+                    android:background="#25000000"
+                    android:onClick="send_mail"
+                    android:text="راسلنا عبر الإيميل"
+                    android:textSize="@dimen/text_medium" />
+
+            </RelativeLayout>
+
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 

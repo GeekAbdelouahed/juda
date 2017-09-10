@@ -7,6 +7,7 @@ import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
+import com.academyatinfo.multtable.tools.Constants;
 import com.academyatinfo.multtable.ui.BaseActivity;
 
 import butterknife.BindView;
@@ -66,8 +67,10 @@ public class LearnActivity extends BaseActivity {
         ButterKnife.bind(this);
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         intent = getIntent();
-        table = intent.getIntExtra("table", 0);
+
+        table = intent.getIntExtra(Constants.KEY_SEND_TABLE, 0);
 
         second_zero.setText(table + "");
         second_one.setText(table + "");
@@ -95,7 +98,7 @@ public class LearnActivity extends BaseActivity {
 
 
     public void click_back(View view) {
-        intent.putExtra("level", 1);
+        intent.putExtra(Constants.KEY_LEVEL, 1);
         setResult(1, intent);
         finish();
     }

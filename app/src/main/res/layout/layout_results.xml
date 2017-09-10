@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.results.mvp.ResultsActivity">
+    tools:context="com.academyatinfo.multtable.result.mvp.ResultsActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_results"

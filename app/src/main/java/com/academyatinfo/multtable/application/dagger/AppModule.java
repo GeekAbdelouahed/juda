@@ -3,12 +3,12 @@ package com.academyatinfo.multtable.application.dagger;
 import android.app.Application;
 import android.content.Context;
 
-import com.academyatinfo.multtable.databases.DataBaseLearn;
-import com.academyatinfo.multtable.databases.DataBaseLearnTable;
-import com.academyatinfo.multtable.databases.DataBaseResults;
+import com.academyatinfo.multtable.databases.DataTableLevel;
+import com.academyatinfo.multtable.databases.DataTables;
 
 import dagger.Module;
 import dagger.Provides;
+import io.realm.Realm;
 
 /**
  * Created by geek on 01/08/17.
@@ -24,19 +24,19 @@ public class AppModule {
 
     @Provides
     @AppScope
-    public DataBaseLearn dataBaseLearn() {
-        return new DataBaseLearn(context);
+    public DataTableLevel dataBaseLearn() {
+        return new DataTableLevel(context);
     }
 
     @Provides
     @AppScope
-    public DataBaseLearnTable dataBaseLearnTable() {
-        return new DataBaseLearnTable(context);
+    public DataTables dataBaseLearnTable() {
+        return new DataTables(context);
     }
 
     @Provides
     @AppScope
-    public DataBaseResults dataBaseResultExam() {
-        return new DataBaseResults(context);
+    public Realm getRealmData() {
+        return Realm.getDefaultInstance();
     }
 }

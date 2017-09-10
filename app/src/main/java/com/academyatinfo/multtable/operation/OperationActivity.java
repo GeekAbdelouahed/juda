@@ -1,6 +1,5 @@
 package com.academyatinfo.multtable.operation;
 
-import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -14,32 +13,41 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.databases.DataBaseLearnTable;
+import com.academyatinfo.multtable.databases.DataTables;
+import com.academyatinfo.multtable.tools.Constants;
 import com.academyatinfo.multtable.ui.BaseActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class OperationActivity extends BaseActivity implements OperationContract.View {
 
-    private TextView answer, soccer_table;
+    @BindView(R.id.answer)
+    TextView answer;
+    @BindView(R.id.soccer_table)
+    TextView soccer_table;
     private int index_table, mult_in, result, soccer;
     private Intent intent;
-    private DataBaseLearnTable dataTablesCheck;
+    private DataTables dataTablesCheck;
     private MediaPlayer success, wrong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_operation);
+
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        answer = (TextView) findViewById(R.id.answer);
+
+        ButterKnife.bind(this);
+
         intent = getIntent();
-        index_table = intent.getIntExtra("index_table", 0);
-        mult_in = intent.getIntExtra("number", 0);
+        index_table = intent.getIntExtra(Constants.KEY_INDEX_TABLE, 0);
+        mult_in = intent.getIntExtra(Constants.KEY_NUMBER, 0);
         result = index_table * mult_in;
         setImageNumberTable(index_table, (ImageView) findViewById(R.id.first_number));
         setImageNumberMul(mult_in, (ImageView) findViewById(R.id.second_number));
 
-        dataTablesCheck = new DataBaseLearnTable(this);
-        soccer_table = (TextView) findViewById(R.id.soccer_table);
+        dataTablesCheck = new DataTables(this);
         soccer = 0;
         for (int i = 1; i <= 10; i++) {
             if (dataTablesCheck.getData(i, index_table)) {
@@ -82,8 +90,8 @@ public class OperationActivity extends BaseActivity implements OperationContract
     private void check_answer(int result) {
         if (this.result == result) {
             soccer_table.setText(getResources().getString(R.string.count_points) + " " + (soccer + 1));
-            intent.putExtra("check", true);
-            intent.putExtra("index_mult", mult_in);
+            intent.putExtra(Constants.KEY_CHECK, true);
+            intent.putExtra(Constants.KEY_MULT, mult_in);
 
             setResult(1, intent);
 
