@@ -12,23 +12,13 @@
         android:id="@+id/toolBar_Levels"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack"
-            android:onClick="click_back"/>
-
-        <TextView
-            android:id="@+id/name_table_number"
-            style="@style/mTextToolBar"
-            android:text="@string/table_number"/>
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
 
         <TextView
             android:id="@+id/table_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_margin="@dimen/margin_small_big"
-            android:layout_toLeftOf="@id/name_table_number"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_large" />
+            style="@style/mTextToolBar" />
     </RelativeLayout>
 
 
@@ -93,7 +83,7 @@
 
                 <ImageView
                     android:id="@+id/result_three"
-                    style="@style/ImageView.Lock"/>
+                    style="@style/ImageView.Lock" />
 
                 <TextView
                     style="@style/mTextViewLevels"
@@ -116,7 +106,7 @@
 
                 <ImageView
                     android:id="@+id/result_four"
-                    style="@style/ImageView.Lock"/>
+                    style="@style/ImageView.Lock" />
 
                 <TextView
                     style="@style/mTextViewLevels"

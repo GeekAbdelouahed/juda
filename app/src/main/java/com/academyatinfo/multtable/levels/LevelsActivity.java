@@ -40,7 +40,8 @@ public class LevelsActivity extends BaseActivity implements LevelsContract.View 
         dataTableLevel = new DataTableLevel(this);
         intent = getIntent();
         table = intent.getIntExtra(Constants.KEY_INDEX_TABLE, 0);
-        table_number.setText(table + "");
+
+        table_number.setText("جدول رقم " + table);
 
         for (int i = 1; i <= 6; i++) {
             if (dataTableLevel.getData(table, i))

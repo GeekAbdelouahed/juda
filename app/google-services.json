@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1096921763747",
+    "firebase_url": "https://juda-6efc8.firebaseio.com",
+    "project_id": "juda-6efc8",
+    "storage_bucket": "juda-6efc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096921763747:android:40c3359f3ebf0d52",
+        "android_client_info": {
+          "package_name": "com.academyatinfo.multtable"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1096921763747-t2suldkhmsj73695e7t7s44vleu6be2t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCW0K1XuHec4oVmhOHsGjRLuokRhGoeMpg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

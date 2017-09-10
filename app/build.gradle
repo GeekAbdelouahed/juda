@@ -76,5 +76,9 @@ dependencies {
     // Dialog Success Exam
     compile 'com.github.blennerSilva:AwesomeDialog:2.0.1'
 
+    // FireBase Analytics
+    compile 'com.google.firebase:firebase-core:11.2.2'
+
 }
 apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'

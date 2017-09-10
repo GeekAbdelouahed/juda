@@ -78,6 +78,7 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
         end = MediaPlayer.create(this, R.raw.finish);
 
         createTable(long_table);
+
         chronometer.start();
         random = new Random();
         index_empty = generateRandom();
