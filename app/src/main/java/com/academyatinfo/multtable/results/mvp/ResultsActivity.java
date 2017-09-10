@@ -1,29 +1,27 @@
 package com.academyatinfo.multtable.results.mvp;
 
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.adapters.ResultsAdapter;
-import com.academyatinfo.multtable.databases.DataBaseResults;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
+import com.academyatinfo.multtable.ui.viewpagers.ResultsViewPager;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class ResultsActivity extends BaseActivity implements ResultContract.View {
 
-    @BindView(R.id.recycler)
-    RecyclerView recyclerView;
-    @BindView(R.id.text_checkdata)
-    TextView text_check;
+    @BindView(R.id.tab_layout)
+    TabLayout tabLayout;
+    @BindView(R.id.view_pager)
+    ViewPager viewPager;
 
-    private ResultsAdapter resultsAdapter;
-    private DataBaseResults dataBaseResults;
+    private ResultsViewPager resultsViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,16 +32,43 @@ public class ResultsActivity extends BaseActivity implements ResultContract.View
 
         ButterKnife.bind(this);
 
-        dataBaseResults = new DataBaseResults(this);
-        dataBaseResults.open();
+        resultsViewPager = new ResultsViewPager(getSupportFragmentManager());
 
-        if (dataBaseResults.checkCursor()) {
-            resultsAdapter = new ResultsAdapter(this, dataBaseResults.getResults());
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-            recyclerView.setAdapter(resultsAdapter);
-            recyclerView.setVisibility(View.VISIBLE);
-            text_check.setVisibility(View.GONE);
-        }
+        viewPager.setAdapter(resultsViewPager);
+        viewPager.setOffscreenPageLimit(2);
+
+
+        TabLayout.Tab tab;
+
+        tab = tabLayout.newTab();
+        ((TextView) tab.setCustomView(R.layout.custom_tab).getCustomView().findViewById(R.id.text_tab))
+                .setText("الشهادات");
+        tabLayout.addTab(tab, 0);
+
+        tab = tabLayout.newTab();
+        ((TextView) tab.setCustomView(R.layout.custom_tab).getCustomView().findViewById(R.id.text_tab))
+                .setText("الجداول");
+        tabLayout.addTab(tab, 1);
+
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        viewPager.setCurrentItem(2);
+
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+            }
+        });
+
+
     }
 
     public void click_back(View view) {

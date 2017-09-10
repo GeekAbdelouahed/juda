@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.result.mvp.ResultsActivity">
+    tools:context="com.academyatinfo.multtable.results.mvp.ResultsActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_results"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack"
-            android:onClick="click_back"/>
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolBar_results">
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
 
         <TextView
-            android:id="@+id/text_checkdata"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:background="@color/colorPrimary"
-            android:gravity="center"
-            android:text="لا توجد نتائج"
-            android:textColor="#efefef"
-            android:textSize="@dimen/text_large" />
+            style="@style/mTextToolBar"
+            android:text="@string/text_results" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:visibility="invisible" />
     </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar_results"
+        android:background="@color/colorPrimary"
+        android:layoutDirection="ltr"
+        app:tabIndicatorColor="#fff"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout" />
+
 </RelativeLayout>

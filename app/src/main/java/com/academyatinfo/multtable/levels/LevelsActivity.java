@@ -13,7 +13,7 @@ import com.academyatinfo.multtable.exam.ExamActivity;
 import com.academyatinfo.multtable.learn.LearnActivity;
 import com.academyatinfo.multtable.tablelevels.TableLevels;
 import com.academyatinfo.multtable.tools.Constants;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -38,7 +38,9 @@ public class LevelsActivity extends BaseActivity implements LevelsContract.View 
         ButterKnife.bind(this);
 
         dataTableLevel = new DataTableLevel(this);
+
         intent = getIntent();
+
         table = intent.getIntExtra(Constants.KEY_INDEX_TABLE, 0);
 
         table_number.setText("جدول رقم " + table);

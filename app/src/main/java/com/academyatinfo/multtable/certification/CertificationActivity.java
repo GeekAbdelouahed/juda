@@ -14,7 +14,7 @@ import android.widget.ImageView;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.tools.Constants;
 import com.academyatinfo.multtable.tools.Painter;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -16,7 +16,7 @@ import com.academyatinfo.multtable.certification.CertificationActivity;
 import com.academyatinfo.multtable.databases.DataBaseInfo;
 import com.academyatinfo.multtable.models.Result;
 import com.academyatinfo.multtable.tools.Constants;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 import com.awesomedialog.blennersilva.awesomedialoglibrary.AwesomeSuccessDialog;
 
 import java.text.SimpleDateFormat;

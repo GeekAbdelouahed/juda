@@ -21,7 +21,7 @@ public class DataTableLevel extends SQLiteAssetHelper {
     }
 
     public boolean getData(int id, int column_index) {
-        String name_column = setNameColumn(column_index);
+        String name_column = getNameColumn(column_index);
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor c = db.rawQuery("SELECT _id ," + name_column + " from " + TABLE_NAME + " WHERE _id = " + id, null);
         c.moveToFirst();
@@ -29,14 +29,14 @@ public class DataTableLevel extends SQLiteAssetHelper {
     }
 
     public void updateData(int id_table, int index_column) {
-        String name_column = setNameColumn(index_column);
+        String name_column = getNameColumn(index_column);
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(name_column, true);
         db.update(TABLE_NAME, contentValues, id_table + " = _id", null);
     }
 
-    public String setNameColumn(int index) {
+    private String getNameColumn(int index) {
         String name_column = null;
         switch (index) {
             case 1:

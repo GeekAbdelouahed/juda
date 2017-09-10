@@ -10,7 +10,7 @@ import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.holders.ResultHolder;
 import com.academyatinfo.multtable.models.Result;
 
-import java.util.ArrayList;
+import io.realm.RealmResults;
 
 /**
  * Created by abde on 14/02/17.
@@ -18,10 +18,10 @@ import java.util.ArrayList;
 
 public class ResultsAdapter extends RecyclerView.Adapter<ResultHolder> {
 
-    private ArrayList<Result> results;
+    private RealmResults<Result> results;
     private Context context;
 
-    public ResultsAdapter(Context context, ArrayList<Result> results) {
+    public ResultsAdapter(Context context, RealmResults<Result> results) {
         this.context = context;
         this.results = results;
     }

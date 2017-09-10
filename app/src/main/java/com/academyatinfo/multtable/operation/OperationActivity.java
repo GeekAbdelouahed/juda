@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataTables;
 import com.academyatinfo.multtable.tools.Constants;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

@@ -8,10 +8,10 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.WindowManager;
 
-import com.academyatinfo.multtable.appintro.slides.Slide1Fragment;
-import com.academyatinfo.multtable.appintro.slides.Slide2Fragment;
-import com.academyatinfo.multtable.appintro.slides.Slide3Fragment;
-import com.academyatinfo.multtable.appintro.slides.Slide4Fragment;
+import com.academyatinfo.multtable.ui.fragments.Slide1Fragment;
+import com.academyatinfo.multtable.ui.fragments.Slide2Fragment;
+import com.academyatinfo.multtable.ui.fragments.Slide3Fragment;
+import com.academyatinfo.multtable.ui.fragments.Slide4Fragment;
 import com.academyatinfo.multtable.databases.DataBaseInfo;
 import com.github.paolorotolo.appintro.AppIntro2;
 

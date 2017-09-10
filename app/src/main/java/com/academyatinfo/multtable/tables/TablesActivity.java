@@ -12,7 +12,7 @@ import com.academyatinfo.multtable.databases.DataTableLevel;
 import com.academyatinfo.multtable.exam.ExamActivity;
 import com.academyatinfo.multtable.levels.LevelsActivity;
 import com.academyatinfo.multtable.tools.Constants;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

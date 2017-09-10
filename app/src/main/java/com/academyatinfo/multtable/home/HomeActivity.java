@@ -12,7 +12,7 @@ import com.academyatinfo.multtable.databases.DataBaseInfo;
 import com.academyatinfo.multtable.results.mvp.ResultsActivity;
 import com.academyatinfo.multtable.settings.SettingsActivity;
 import com.academyatinfo.multtable.tables.TablesActivity;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 public class HomeActivity extends BaseActivity {
 
