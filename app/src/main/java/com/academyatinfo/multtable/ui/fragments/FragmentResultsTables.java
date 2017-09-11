@@ -112,6 +112,8 @@ public class FragmentResultsTables extends Fragment {
         for (int i = 1; i <= 6; i++) {
             if (dataTableLevel.getData(table, i))
                 somme++;
+            else
+                break;
         }
 
         return somme;

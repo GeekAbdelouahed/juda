@@ -38,6 +38,8 @@ public class TableLevels extends BaseActivity {
         for (int i = 1; i <= 10; i++) {
             if (dataTables.getData(i, index_table))
                 add_image_check(i - 1);
+            else
+                break;
         }
 
     }

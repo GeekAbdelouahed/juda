@@ -52,7 +52,8 @@ public class OperationActivity extends BaseActivity implements OperationContract
         for (int i = 1; i <= 10; i++) {
             if (dataTablesCheck.getData(i, index_table)) {
                 soccer++;
-            }
+            } else
+                break;
         }
 
         soccer_table.setText(getResources().getString(R.string.count_points) + " " + soccer);

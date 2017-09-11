@@ -132,10 +132,15 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
         full_soccer.setText("عدد الأسئلة " + fullSoccer);
     }
 
+    private int randInt(int min, int max) {
+        return random.nextInt((max - min) + 1) + min;
+    }
+
     public int generateRandom() {
-        value_random1 = random.nextInt(long_table * 9);
-        value_random2 = random.nextInt((long_table * 9) / 2);
-        value_random3 = random.nextInt((long_table * 9) / 10 + 1);
+        int val = long_table * 9;
+        value_random1 = randInt(val / 2 + 1, val);
+        value_random2 = randInt((val / 10 + 2), val / 2);
+        value_random3 = randInt(0, val / 10 + 1);
 
         ArrayList<Integer> arrayList = new ArrayList<>();
         for (int i = 0; i <= 3; i++)
