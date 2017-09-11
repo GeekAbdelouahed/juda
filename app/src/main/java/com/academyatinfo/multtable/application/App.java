@@ -7,7 +7,9 @@ import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.application.dagger.AppComponent;
 import com.academyatinfo.multtable.application.dagger.AppModule;
 import com.academyatinfo.multtable.application.dagger.DaggerAppComponent;
+import com.google.firebase.analytics.FirebaseAnalytics;
 
+import io.realm.Realm;
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 
 /**
@@ -21,15 +23,21 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
+        FirebaseAnalytics.getInstance(this);
+
         CalligraphyConfig.initDefault(new CalligraphyConfig.Builder()
                 .setDefaultFontPath("fonts/font.ttf")
                 .setFontAttrId(R.attr.fontPath)
                 .build()
         );
 
+
+        Realm.init(this);
+
         component = DaggerAppComponent.builder()
                 .appModule(new AppModule(this))
                 .build();
+
     }
 
     public static App get(Activity activity) {

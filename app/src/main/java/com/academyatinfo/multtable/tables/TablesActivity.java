@@ -8,16 +8,39 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.databases.DataBaseLearn;
+import com.academyatinfo.multtable.databases.DataTableLevel;
 import com.academyatinfo.multtable.exam.ExamActivity;
 import com.academyatinfo.multtable.levels.LevelsActivity;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.tools.Constants;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class TablesActivity extends BaseActivity implements TablesContract.View {
 
+
+    @BindView(R.id.lock_two)
+    ImageView lock_two;
+    @BindView(R.id.lock_three)
+    ImageView lock_three;
+    @BindView(R.id.lock_four)
+    ImageView lock_four;
+    @BindView(R.id.lock_five)
+    ImageView lock_five;
+    @BindView(R.id.lock_six)
+    ImageView lock_six;
+    @BindView(R.id.lock_seven)
+    ImageView lock_seven;
+    @BindView(R.id.lock_eight)
+    ImageView lock_eight;
+    @BindView(R.id.lock_nine)
+    ImageView lock_nine;
+    @BindView(R.id.img_lock_certification)
+    ImageView img_lock_exam;
+
     private Intent intent;
-    private ImageView lock_two, lock_three, lock_four, lock_five, lock_six, lock_seven, lock_eight, lock_nine, img_lock_exam;
-    private DataBaseLearn dataBaseLearn;
+    private DataTableLevel dataTableLevel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,78 +48,70 @@ public class TablesActivity extends BaseActivity implements TablesContract.View 
         setContentView(R.layout.layout_tables);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        lock_two = (ImageView) findViewById(R.id.lock_two);
-        lock_three = (ImageView) findViewById(R.id.lock_three);
-        lock_four = (ImageView) findViewById(R.id.lock_four);
-        lock_five = (ImageView) findViewById(R.id.lock_five);
-        lock_six = (ImageView) findViewById(R.id.lock_six);
-        lock_seven = (ImageView) findViewById(R.id.lock_seven);
-        lock_eight = (ImageView) findViewById(R.id.lock_eight);
-        lock_nine = (ImageView) findViewById(R.id.lock_nine);
-        img_lock_exam = (ImageView) findViewById(R.id.img_lock_certification);
+        ButterKnife.bind(this);
 
-        dataBaseLearn = new DataBaseLearn(this);
+        dataTableLevel = new DataTableLevel(this);
 
         intent = new Intent(this, LevelsActivity.class);
     }
 
     public void one(View view) {
-        intent.putExtra("index_table", 1);
+        intent.putExtra(Constants.KEY_INDEX_TABLE, 1);
         startActivity(intent);
     }
 
     public void two(View view) {
         if (check_done_table(1)) {
-            intent.putExtra("index_table", 2);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 2);
             startActivity(intent);
         }
     }
 
     public void three(View view) {
         if (check_done_table(2)) {
-            intent.putExtra("index_table", 3);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 3);
             startActivity(intent);
         }
     }
 
     public void four(View view) {
         if (check_done_table(3)) {
-            intent.putExtra("index_table", 4);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 4);
             startActivity(intent);
         }
     }
 
     public void five(View view) {
         if (check_done_table(4)) {
-            intent.putExtra("index_table", 5);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 5);
             startActivity(intent);
         }
     }
 
     public void six(View view) {
         if (check_done_table(5)) {
-            intent.putExtra("index_table", 6);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 6);
             startActivity(intent);
         }
     }
 
     public void seven(View view) {
         if (check_done_table(6)) {
-            intent.putExtra("index_table", 7);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 7);
             startActivity(intent);
         }
     }
 
     public void eight(View view) {
         if (check_done_table(7)) {
-            intent.putExtra("index_table", 8);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 8);
             startActivity(intent);
         }
     }
 
     public void nine(View view) {
         if (check_done_table(8)) {
-            intent.putExtra("index_table", 9);
+            intent.putExtra(Constants.KEY_INDEX_TABLE, 9);
             startActivity(intent);
         }
     }
@@ -104,8 +119,8 @@ public class TablesActivity extends BaseActivity implements TablesContract.View 
     public void click_exam(View view) {
         if (check_done_table(9)) {
             intent = new Intent(this, ExamActivity.class);
-            intent.putExtra("long_table", 9);
-            intent.putExtra("level", 7);
+            intent.putExtra(Constants.KEY_LONG_TABLE, 9);
+            intent.putExtra(Constants.KEY_LEVEL, 7);
             startActivity(intent);
         } else {
             Toast.makeText(this, "يجب إكمال جميع مراحل التعليم", Toast.LENGTH_LONG).show();
@@ -113,7 +128,7 @@ public class TablesActivity extends BaseActivity implements TablesContract.View 
     }
 
     public boolean check_done_table(int id_table) {
-        return dataBaseLearn.getData(id_table, 6);
+        return dataTableLevel.getData(id_table, 6);
     }
 
     @Override

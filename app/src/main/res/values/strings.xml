@@ -31,4 +31,8 @@
     <string name="text_certification_male3">بتقدير ### بالتوفيق للمزيد .</string>
     <string name="signature">Abdelouahed Medjoudja</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="not_found">لا توجد نتائج</string>
+
 </resources>

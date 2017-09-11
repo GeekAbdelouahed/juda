@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.certification.mvp;
+package com.academyatinfo.multtable.certification;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,11 +12,9 @@ import android.view.WindowManager;
 import android.widget.ImageView;
 
 import com.academyatinfo.multtable.R;
-import com.academyatinfo.multtable.databases.DataBaseInfo;
-import com.academyatinfo.multtable.databases.DataBaseResults;
-import com.academyatinfo.multtable.modules.Results;
+import com.academyatinfo.multtable.tools.Constants;
 import com.academyatinfo.multtable.tools.Painter;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -28,18 +26,16 @@ import java.util.Date;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class CertificationActivity extends BaseActivity implements CertificationContract.View {
+public class CertificationActivity extends BaseActivity {
 
     @BindView(R.id.image_certificate)
     ImageView certificate;
 
-    private DataBaseInfo dataBaseInfo;
-    private Intent intent;
-    private DataBaseResults dataBaseResults;
-    private Results results;
     private Bitmap bitmap;
     private File pictureFile;
     private final String path = "images/certificate.png";
+    private Intent intent;
+    private String userName, familyName, degree, gender, date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +46,17 @@ public class CertificationActivity extends BaseActivity implements Certification
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        dataBaseInfo = new DataBaseInfo(this);
+        intent = getIntent();
+
+        userName = intent.getStringExtra(Constants.KEY_NAME);
+        familyName = intent.getStringExtra(Constants.KEY_FAMILY_NAME);
+        degree = intent.getStringExtra(Constants.KEY_DEGREE);
+        gender = intent.getStringExtra(Constants.KEY_GENDER);
+        date = intent.getStringExtra(Constants.KEY_DATE);
 
         try {
             bitmap = BitmapFactory.decodeStream(getAssets().open(path));
-            bitmap = Painter.paint(this, bitmap, dataBaseInfo.getName(), dataBaseInfo.getFamilyName(), "ممتاز", dataBaseInfo.getGender());
+            bitmap = Painter.paint(this, bitmap, userName, familyName, degree, gender, date);
             storeImage(bitmap);
             certificate.setImageBitmap(bitmap);
         } catch (IOException e) {

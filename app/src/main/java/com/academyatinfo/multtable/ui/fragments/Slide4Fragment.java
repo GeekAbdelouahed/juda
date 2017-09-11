@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.appintro.slides;
+package com.academyatinfo.multtable.ui.fragments;
 
 import android.content.Context;
 import android.net.Uri;

@@ -10,9 +10,6 @@ import android.graphics.Typeface;
 
 import com.academyatinfo.multtable.R;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 /**
  * Created by geek on 03/09/17.
  */
@@ -20,7 +17,7 @@ import java.util.Date;
 public class Painter {
 
 
-    public static Bitmap paint(Context context, Bitmap bitmap, String user_name, String family_name, String degree, String gender) {
+    public static Bitmap paint(Context context, Bitmap bitmap, String user_name, String family_name, String degree, String gender, String date) {
 
         Config configBitmap = bitmap.getConfig();
         // set default bitmap config if none
@@ -66,8 +63,8 @@ public class Painter {
                 , Constants.sizeSignature, Constants.xTextSignature, Constants.yTextSignature, context.getResources()
                         .getString(R.string.signature));
 
-        SimpleDateFormat format = new SimpleDateFormat("yyyy/MM/dd");
-        text = "التاريخ : " + format.format(new Date());
+        text = "التاريخ : " + date;
+
         // draw Date
         drawer(canvas, bitmap, paint, rect, typeface, context.getResources().getColor(R.color.text_signature)
                 , Constants.sizeDate, Constants.xTextDate, Constants.yTextDate, text);

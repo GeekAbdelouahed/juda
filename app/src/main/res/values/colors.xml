@@ -28,4 +28,6 @@
     <color name="text_hint">#cecece</color>
     <color name="color_slides4">#673AB7</color>
 
+    <color name="white_light">#f5f5f5</color>
+
 </resources>

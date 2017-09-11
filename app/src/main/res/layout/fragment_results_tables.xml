@@ -1,0 +1,477 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.academyatinfo.multtable.ui.fragments.FragmentResultsTables">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin_medium">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 1"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_one"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_one"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_one"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_one"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 2"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_two"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_two"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_two"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_two"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 3"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_three"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_three"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_three"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_three"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 4"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_four"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_four"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_four"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_four"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 5"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_five"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_five"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_five"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_six"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_five"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 6"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_six"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_six"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_six"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_seven"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_six"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 7"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_seven"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_seven"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_seven"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_seven"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_eight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/card_seven"
+                android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_eight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 8"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_eight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_eight"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_eight"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_eight"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="100" />
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_eight"
+                app:cardBackgroundColor="@color/white_light"
+                app:cardCornerRadius="@dimen/radius_small">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/title_nine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:background="@color/color_slides1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_small"
+                        android:text="جدول رقم 9"
+                        android:textColor="@color/text_white"
+                        android:textSize="@dimen/text_medium" />
+
+                    <TextView
+                        android:id="@+id/progress_nine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_nine"
+                        android:layout_marginTop="@dimen/margin_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/text_small" />
+
+                    <ProgressBar
+                        android:id="@+id/progressBar_nine"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/progress_nine"
+                        android:layout_marginBottom="@dimen/margin_medium"
+                        android:layout_marginLeft="@dimen/margin_medium"
+                        android:layout_marginRight="@dimen/margin_medium"
+                        android:max="6"
+                        android:secondaryProgress="900"
+                        android:textDirection="rtl" />
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+    </ScrollView>
+</FrameLayout>

@@ -6,6 +6,22 @@ package com.academyatinfo.multtable.tools;
 
 public class Constants {
 
+
+    /********** Keys ***********/
+    public static final String KEY_CHECK = "check";
+    public static final String KEY_NAME = "user_name";
+    public static final String KEY_FAMILY_NAME = "family_name";
+    public static final String KEY_DEGREE = "degree";
+    public static final String KEY_GENDER = "gender";
+    public static final String KEY_NUMBER = "number";
+    public static final String KEY_DATE = "date";
+    public static final String KEY_SEND_TABLE = "table";
+    public static final String KEY_LEVEL = "level";
+    public static final String KEY_INDEX_TABLE = "index_table";
+    public static final String KEY_LONG_TABLE = "long_table";
+    public static final String KEY_MULT = "index_mult";
+
+    /********** Properties Image Certificate *********/
     protected static final int sizeUserName = 65;
     protected static final int xUserName = 135;
     protected static final int yUserName = -30;

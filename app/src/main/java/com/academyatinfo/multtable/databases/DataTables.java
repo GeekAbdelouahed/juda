@@ -12,12 +12,12 @@ import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
  * Created by abde on 13/02/17.
  */
 
-public class DataBaseLearnTable extends SQLiteAssetHelper {
+public class DataTables extends SQLiteAssetHelper {
     private static final String DATABASE_NAME = "table_mult.db";
     private final String TABLE_NAME = "table_mult";
     private static final int DATABASE_VERSION = 1;
 
-    public DataBaseLearnTable(Context context) {
+    public DataTables(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 

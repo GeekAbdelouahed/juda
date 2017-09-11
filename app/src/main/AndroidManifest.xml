@@ -3,9 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.academyatinfo.multtable">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
     <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
 
     <application
         android:name=".application.App"
@@ -15,13 +19,14 @@
         android:supportsRtl="false"
         android:theme="@style/AppTheme"
         tools:replace="supportsRtl">
-        <activity android:name=".appintro.IntroActivity"
+        <activity
+            android:name=".appintro.IntroActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".home.HomeActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -66,7 +71,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".certification.mvp.CertificationActivity"
+            android:name=".certification.CertificationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

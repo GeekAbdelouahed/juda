@@ -1,4 +1,4 @@
-package com.academyatinfo.multtable.ui;
+package com.academyatinfo.multtable.ui.activitys;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

@@ -9,7 +9,7 @@ import android.widget.RadioButton;
 
 import com.academyatinfo.multtable.R;
 import com.academyatinfo.multtable.databases.DataBaseInfo;
-import com.academyatinfo.multtable.ui.BaseActivity;
+import com.academyatinfo.multtable.ui.activitys.BaseActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
