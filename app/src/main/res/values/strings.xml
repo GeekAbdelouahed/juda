@@ -29,6 +29,8 @@
     <string name="text_certification_male1">هنيئا للتلميذ ---</string>
     <string name="text_certification_male2">لنجاحه في إمتحان جدول الضرب</string>
     <string name="text_certification_male3">بتقدير ### بالتوفيق للمزيد .</string>
+    <string name="text_certification_female1">هنيئا للتلميذة ---</string>
+    <string name="text_certification_female2">لنجاحها في إمتحان جدول الضرب</string>
     <string name="signature">Abdelouahed Medjoudja</string>
 
     <!-- TODO: Remove or change this placeholder text -->

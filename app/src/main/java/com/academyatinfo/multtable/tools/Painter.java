@@ -42,17 +42,28 @@ public class Painter {
 
         typeface = Typeface.createFromAsset(context.getAssets(), Constants.pathFontUserName);
 
+        String text;
         // draw text certification
-        String text = context.getResources().getString(R.string.text_certification_male1);
+        if (gender.equals("male"))
+            text = context.getResources().getString(R.string.text_certification_male1);
+        else
+            text = context.getResources().getString(R.string.text_certification_female1);
+
         text = text.replaceAll("---", user_name + " " + family_name);
+
         drawer(canvas, bitmap, paint, rect, typeface, context.getResources().getColor(R.color.text_certificate)
                 , Constants.sizeTextCertification, Constants.xTextCertification1, Constants.yTextCertification1, text);
 
-        text = context.getResources().getString(R.string.text_certification_male2);
+        if (gender.equals("male"))
+            text = context.getResources().getString(R.string.text_certification_male2);
+        else
+            text = context.getResources().getString(R.string.text_certification_female2);
+
         drawer(canvas, bitmap, paint, rect, typeface, context.getResources().getColor(R.color.text_certificate)
                 , Constants.sizeTextCertification, Constants.xTextCertification2, Constants.yTextCertification2, text);
 
         text = context.getResources().getString(R.string.text_certification_male3);
+
         text = text.replaceAll("###", degree);
         drawer(canvas, bitmap, paint, rect, typeface, context.getResources().getColor(R.color.text_certificate)
                 , Constants.sizeTextCertification, Constants.xTextCertification3, Constants.yTextCertification3, text);
