@@ -184,8 +184,8 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
     }
 
     private void play_game(boolean wine, final TextView text) {
-        if (chronometer.getVisibility() == View.INVISIBLE) {
-            chronometer.setVisibility(View.VISIBLE);
+        if (!chronometer.isEnabled()) {
+            chronometer.setEnabled(true);
             chronometer.setBase(SystemClock.elapsedRealtime());
             chronometer.start();
         }
