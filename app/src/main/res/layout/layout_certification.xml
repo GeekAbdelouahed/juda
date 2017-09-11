@@ -8,7 +8,7 @@
     tools:context="com.academyatinfo.multtable.certification.CertificationActivity">
 
 
-    <ImageView
+    <com.academyatinfo.multtable.ui.customviews.mImageView
         android:id="@+id/image_certificate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,15 +20,17 @@
         android:id="@+id/toolBar_certificate"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack"
-            android:onClick="click_back"/>
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
 
 
         <ImageView
             android:id="@+id/ic_share_certification"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="@dimen/dimen_ic_toolbar"
+            android:layout_height="@dimen/dimen_ic_toolbar"
             android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
             android:layout_margin="@dimen/padding_small"
             android:onClick="share_certification"
             android:padding="@dimen/padding_small"
@@ -38,6 +40,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/ic_share_certification"
             android:gravity="center"
             android:onClick="share_certification"

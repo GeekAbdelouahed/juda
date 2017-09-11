@@ -2,19 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context="com.academyatinfo.multtable.ui.fragments.FragmentCertificates">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorAccent">
+        android:layout_height="match_parent">
 
         <TextView
             android:id="@+id/text_checkdata"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:drawableBottom="@drawable/ic_not_found"
+            android:background="@color/colorAccent"
             android:gravity="center"
             android:text="@string/not_found"
             android:textColor="#efefef"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_centerInParent="true"
-            android:background="@color/text_white"
+            android:layout_margin="@dimen/margin_medium"
             android:visibility="invisible" />
 
     </RelativeLayout>

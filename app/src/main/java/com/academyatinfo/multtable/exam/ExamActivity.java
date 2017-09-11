@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Chronometer;
@@ -79,11 +80,14 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
 
         createTable(long_table);
 
-        chronometer.start();
         random = new Random();
+
         index_empty = generateRandom();
+
         answer = prepare_game(table1, table2);
+
         inputByIndex(index_empty, answer);
+
         valueSoccer = 0;
 
         soccer.setText("النقاط 0");
@@ -180,6 +184,12 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
     }
 
     private void play_game(boolean wine, final TextView text) {
+        if (chronometer.getVisibility() == View.INVISIBLE) {
+            chronometer.setVisibility(View.VISIBLE);
+            chronometer.setBase(SystemClock.elapsedRealtime());
+            chronometer.start();
+        }
+
         if (wine) {
             valueSoccer++;
             soccer.setText("النقاط " + valueSoccer);
@@ -281,9 +291,6 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
         finish();
     }
 
-    public void click_finish_exam(View view) {
-    }
-
 
     private class TaskClass extends AsyncTask {
 
@@ -304,13 +311,13 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
 
                 String resultExam = null, result = null;
 
-                if (valueSoccer >= (long_table * 0.8)) {
+                if (valueSoccer >= (fullSoccer * 0.75)) {
                     resultExam = "أحسنت عمل ممتاز واصل على هذا المنوال";
                     result = "ممتاز";
-                } else if (valueSoccer < (long_table * 0.8) && valueSoccer >= (long_table * 0.5)) {
+                } else if (valueSoccer < (fullSoccer * 0.75) && valueSoccer >= (fullSoccer * 0.5)) {
                     resultExam = "عمل جيد يمكنك تحسين مهارتك أكثر بالتمرين";
                     result = "حسن";
-                } else if (valueSoccer < (long_table * 0.5)) {
+                } else if (valueSoccer < (fullSoccer * 0.5)) {
                     resultExam = "عمل متوسط حاول التمرن أكثر لتصبح أفضل";
                     result = "متوسط";
                 }
@@ -328,7 +335,7 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
                         .setPositiveButtonTextColor(R.color.white)
                         .setPositiveButtonClick(() -> {
                             // last Exam Certification
-                            if (long_table == 90 && level == 7) {
+                            if (long_table == 9 && level == 7) {
 
                                 DataBaseInfo dataBaseInfo = new DataBaseInfo(ExamActivity.this);
                                 String userName = dataBaseInfo.getName();
@@ -340,12 +347,11 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
                                 Realm realm = Realm.getDefaultInstance();
                                 realm.beginTransaction();
                                 Result resultCertification = new Result();
-                                int id;
-                                try {
-                                    id = realm.where(Result.class).max("id").intValue();
-                                } catch (ArrayIndexOutOfBoundsException e) {
-                                    id = 0;
-                                }
+                                int id = 0;
+                                Number number = realm.where(Result.class).max("id");
+                                if (number != null)
+                                    id = number.intValue() + 1;
+
                                 resultCertification.setId(id);
                                 resultCertification.setUserName(userName);
                                 resultCertification.setFamilyName(familyName);
@@ -354,7 +360,7 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
                                 resultCertification.setGender(gender);
                                 resultCertification.setTime(chronometer.getText().toString());
 
-                                realm.insertOrUpdate(resultCertification);
+                                realm.insert(resultCertification);
                                 realm.commitTransaction();
                                 realm.close();
 
@@ -369,8 +375,10 @@ public class ExamActivity extends BaseActivity implements ExamContract.View {
 
 
                             } else {
-                                if (valueSoccer >= (long_table * 0.7))
+                                if (valueSoccer >= (long_table * 0.75))
                                     setResult(1, intent.putExtra(Constants.KEY_LEVEL, level));
+                                else
+                                    toast("يجب الحصول على علامة ممتاز");
                             }
                             finish();
                         })

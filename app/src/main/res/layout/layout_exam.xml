@@ -20,6 +20,7 @@
             android:id="@+id/chrono"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
+            android:visibility="invisible"
             android:layout_centerInParent="true"
             android:gravity="center"
             android:textColor="@color/colorButtonKeyboard"

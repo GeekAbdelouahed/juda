@@ -12,13 +12,14 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="@dimen/padding_medium_big">
+            android:layout_margin="@dimen/margin_medium">
 
             <android.support.v7.widget.CardView
                 android:id="@+id/card_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -56,7 +57,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -69,6 +70,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_one"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -106,7 +108,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -119,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_two"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -156,7 +159,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -169,6 +172,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_three"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -206,7 +210,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -219,6 +223,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_four"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -256,7 +261,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -269,6 +274,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_five"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -306,7 +312,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -319,6 +325,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/card_six"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -356,7 +363,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
 
@@ -369,6 +376,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/card_seven"
                 android:layout_marginBottom="@dimen/margin_medium"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -406,7 +414,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="100" />
 
                 </RelativeLayout>
@@ -417,6 +425,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/card_eight"
+                app:cardBackgroundColor="@color/white_light"
                 app:cardCornerRadius="@dimen/radius_small">
 
                 <RelativeLayout
@@ -454,7 +463,7 @@
                         android:layout_marginBottom="@dimen/margin_medium"
                         android:layout_marginLeft="@dimen/margin_medium"
                         android:layout_marginRight="@dimen/margin_medium"
-                        android:max="100"
+                        android:max="6"
                         android:secondaryProgress="900"
                         android:textDirection="rtl" />
 

@@ -69,39 +69,39 @@ public class FragmentResultsTables extends Fragment {
 
         progress = getProgress(1);
         progressOne.setText(progress + "/6");
-        barOne.setProgress((int) ((float) (progress / 6) * 100));
+        barOne.setProgress(progress);
 
         progress = getProgress(2);
         progressTwo.setText(progress + "/6");
-        barTwo.setProgress((int) ((float) (progress / 6) * 100));
+        barTwo.setProgress(progress);
 
         progress = getProgress(3);
         progressThree.setText(progress + "/6");
-        barThree.setProgress((int) ((float) progress * 100) / 6);
+        barThree.setProgress(progress);
 
         progress = getProgress(4);
         progressFour.setText(progress + "/6");
-        barFour.setProgress((int) ((float) (progress / 6) * 100));
+        barFour.setProgress(progress);
 
         progress = getProgress(5);
         progressFive.setText(progress + "/6");
-        barFive.setProgress((int) ((float) (progress / 6) * 100));
+        barFive.setProgress(progress);
 
         progress = getProgress(6);
         progressSix.setText(progress + "/6");
-        barSix.setProgress((int) ((float) (progress / 6) * 100));
+        barSix.setProgress(progress);
 
         progress = getProgress(7);
         progressSeven.setText(progress + "/6");
-        barSeven.setProgress((int) ((float) (progress / 6) * 100));
+        barSeven.setProgress(progress);
 
         progress = getProgress(8);
         progressEight.setText(progress + "/6");
-        barEight.setProgress((int) ((float) (progress / 6) * 100));
+        barEight.setProgress(progress);
 
         progress = getProgress(9);
         progressNine.setText(progress + "/6");
-        barNine.setProgress((int) ((float) (progress / 6) * 100));
+        barNine.setProgress(progress);
 
         return view;
     }
