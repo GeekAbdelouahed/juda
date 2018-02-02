@@ -27,14 +27,14 @@
 
 ---
 
-##Tools :
+## Tools :
 - [Android Studio](https://developer.android.com/studio/index.html)
 - [FireBase](https://firebase.google.com/)
 - [Final-Android-Resizer](https://github.com/asystat/Final-Android-Resizer)
 
 ---
 
-##Librarys :
+## Librarys :
 - [Realm-Java](https://github.com/realm/realm-java)
 - [Calligraphy](https://github.com/chrisjenx/Calligraphy)
 - [android-sqlite-asset-helper](https://github.com/jgilfelt/android-sqlite-asset-helper)
