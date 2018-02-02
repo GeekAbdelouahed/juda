@@ -8,4 +8,4 @@
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/4.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/5.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/6.png" width="200"></kbd>
-<kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/7.png" width="200"></kbd>
+<kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/8.png" width="200"></kbd>
