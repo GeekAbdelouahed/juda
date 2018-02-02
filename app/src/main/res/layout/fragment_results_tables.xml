@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.academyatinfo.multtable.ui.fragments.FragmentResultsTables">
+    tools:context="com.academyatinfo.juda.ui.fragments.FragmentResultsTables">
 
     <ScrollView
         android:layout_width="match_parent"

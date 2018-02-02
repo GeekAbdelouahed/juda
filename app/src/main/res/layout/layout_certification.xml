@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.certification.CertificationActivity">
+    tools:context="com.academyatinfo.juda.certification.CertificationActivity">
 
 
-    <com.academyatinfo.multtable.ui.customviews.mImageView
+    <com.academyatinfo.juda.ui.customviews.mImageView
         android:id="@+id/image_certificate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

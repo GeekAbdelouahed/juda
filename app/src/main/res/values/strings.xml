@@ -36,5 +36,25 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="not_found">لا توجد نتائج</string>
+    <string name="send_email">إرسال إيميل</string>
+    <string name="duration">المدة</string>
+    <string name="ask_get_certificate">هل تريد إستخراج الشهادة</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="share_certificate">مشاركة الشهادة</string>
+    <string name="count_questions">عدد الأسئلة</string>
+    <string name="points">النقاط</string>
+    <string name="result_excellent">أحسنت عمل ممتاز واصل على هذا المنوال</string>
+    <string name="result_medium">عمل جيد يمكنك تحسين مهارتك أكثر بالتمرين</string>
+    <string name="result_weak">عمل متوسط حاول التمرن أكثر لتصبح أفضل</string>
+    <string name="excellent">ممتاز</string>
+    <string name="medium">حسن</string>
+    <string name="weak">متوسط</string>
+    <string name="agree">موافق</string>
+    <string name="alert_excellent">يجب الحصول على علامة ممتاز</string>
+    <string name="save_done">تم الحفظ</string>
+    <string name="alert_steps_learn">يجب إكمال جميع مراحل التعليم</string>
+    <string name="date">التاريخ :</string>
+    <string name="directory">جداء</string>
 
 </resources>

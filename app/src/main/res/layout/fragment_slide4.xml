@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_slides4"
-    tools:context="com.academyatinfo.multtable.ui.fragments.Slide4Fragment">
+    tools:context="com.academyatinfo.juda.ui.fragments.Slide4Fragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

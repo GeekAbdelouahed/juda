@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.operation.OperationActivity">
+    tools:context="com.academyatinfo.juda.operation.OperationActivity">
 
 
     <RelativeLayout
@@ -87,15 +87,15 @@
 
                     <ImageView
                         android:id="@+id/first_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_weight="0.5"
                         android:src="@drawable/ic_one_g" />
 
                     <ImageView
                         android:id="@+id/ic_mul_operation"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
                         android:layout_weight="0.75"
                         android:padding="@dimen/padding_small_big"
                         android:src="@drawable/ic_mul"
@@ -103,8 +103,8 @@
 
                     <ImageView
                         android:id="@+id/second_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:layout_weight="0.5"
                         android:src="@drawable/ic_one_b" />
                 </LinearLayout>

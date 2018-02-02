@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.academyatinfo.multtable">
+    package="com.academyatinfo.juda">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -12,7 +12,7 @@
     <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED" />
 
     <application
-        android:name=".application.App"
+        android:name="com.academyatinfo.juda.application.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,11 +20,11 @@
         android:theme="@style/AppTheme"
         tools:replace="supportsRtl">
         <activity
-            android:name=".appintro.IntroActivity"
+            android:name="com.academyatinfo.juda.appintro.IntroActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".home.HomeActivity"
+            android:name="com.academyatinfo.juda.home.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,45 +33,45 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".tables.TablesActivity"
+            android:name="com.academyatinfo.juda.tables.TablesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".tablelevels.TableLevels"
+            android:name="com.academyatinfo.juda.tablelevels.TableLevels"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".operation.OperationActivity"
+            android:name="com.academyatinfo.juda.operation.OperationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".exam.ExamActivity"
+            android:name="com.academyatinfo.juda.exam.ExamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".results.mvp.ResultsActivity"
+            android:name="com.academyatinfo.juda.results.ResultsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".about.AboutActivity"
+            android:name="com.academyatinfo.juda.about.AboutActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".levels.LevelsActivity"
+            android:name="com.academyatinfo.juda.levels.LevelsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".learn.LearnActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".settings.SettingsActivity"
+            android:name="com.academyatinfo.juda.learn.LearnActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name=".certification.CertificationActivity"
+            android:name="com.academyatinfo.juda.settings.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.academyatinfo.juda.certification.CertificationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

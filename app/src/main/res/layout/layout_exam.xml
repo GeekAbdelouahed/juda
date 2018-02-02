@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.exam.ExamActivity">
+    tools:context="com.academyatinfo.juda.exam.ExamActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_exam"

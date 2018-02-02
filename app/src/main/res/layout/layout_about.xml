@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.about.AboutActivity">
+    tools:context="com.academyatinfo.juda.about.AboutActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_about"

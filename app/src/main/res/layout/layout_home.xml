@@ -6,7 +6,7 @@
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
     android:padding="@dimen/padding_large"
-    tools:context="com.academyatinfo.multtable.home.HomeActivity">
+    tools:context="com.academyatinfo.juda.home.HomeActivity">
 
 
     <ImageView

@@ -5,14 +5,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.multtable.tablelevels.TableLevels">
+    tools:context="com.academyatinfo.juda.tablelevels.TableLevels">
 
     <RelativeLayout
         android:id="@+id/toolBar_tables_levels"
         style="@style/mToolBar">
 
-        <ImageView style="@style/ImageView.ImageBack"
-            android:onClick="click_back"/>
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:onClick="click_back" />
 
         <TextView
             style="@style/mTextToolBar"
@@ -23,8 +24,8 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="none"
-        android:layout_below="@+id/toolBar_tables_levels">
+        android:layout_below="@+id/toolBar_tables_levels"
+        android:scrollbars="none">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,7 +42,8 @@
 
                     <ImageView
                         android:id="@+id/check_zero"
-                        style="@style/ImageView.Lock" />
+                        style="@style/ImageView.Lock"
+                        android:src="@drawable/ic_check_false" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
