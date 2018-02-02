@@ -25,5 +25,4 @@
 الكود الخاص بالتطبيق مبسط لدرجة بكبيرة بحيث يمكن لأي شخص التعديل عليه وفهم طريقة عمله
 
 ---
- ### Developer
-[Abdelouahed Medjoudja](https://www.facebook.com/Th3GeekAbdelouahed)
+ ### Developer [Abdelouahed Medjoudja](https://www.facebook.com/Th3GeekAbdelouahed)
