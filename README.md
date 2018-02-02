@@ -1,4 +1,4 @@
-### جداء
+# جداء
 
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/0.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/1.png" width="200"></kbd>
@@ -20,5 +20,5 @@
  ---
  الكود الخاص بالتطبيق مبسط لدرجة بكبيرة بحيث يمكن لأي شخص التعديل عليه وفهم طريقة عمله
  ---
- ### Developers
+ ### Developer
 [Abdelouahed Medjoudja](https://www.facebook.com/Th3GeekAbdelouahed)
