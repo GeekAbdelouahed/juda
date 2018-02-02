@@ -1,9 +1,5 @@
 package com.academyatinfo.juda.tools;
 
-/**
- * Created by geek on 03/09/17.
- */
-
 public class Constants {
 
 

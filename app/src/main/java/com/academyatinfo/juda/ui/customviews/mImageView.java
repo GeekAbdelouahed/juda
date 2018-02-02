@@ -10,11 +10,6 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.widget.ImageView;
 
-
-/**
- * Created by geek on 11/09/17.
- */
-
 public class mImageView extends ImageView {
     Matrix matrix;
     // We can be in one of these 3 states

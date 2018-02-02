@@ -11,10 +11,6 @@ import com.academyatinfo.juda.R;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-/**
- * Created by geek on 09/09/17.
- */
-
 public class ResultHolder extends RecyclerView.ViewHolder {
 
     @BindView(R.id.result_layout)

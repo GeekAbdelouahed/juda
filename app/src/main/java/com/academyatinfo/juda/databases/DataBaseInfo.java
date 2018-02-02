@@ -3,10 +3,6 @@ package com.academyatinfo.juda.databases;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-/**
- * Created by geek on 02/09/17.
- */
-
 public class DataBaseInfo {
 
     private SharedPreferences sharedPreferences;

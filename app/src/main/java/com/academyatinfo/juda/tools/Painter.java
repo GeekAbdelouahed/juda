@@ -10,10 +10,6 @@ import android.graphics.Typeface;
 
 import com.academyatinfo.juda.R;
 
-/**
- * Created by geek on 03/09/17.
- */
-
 public class Painter {
 
 

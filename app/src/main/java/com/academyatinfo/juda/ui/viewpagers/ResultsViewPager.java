@@ -7,10 +7,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.academyatinfo.juda.ui.fragments.FragmentCertificates;
 import com.academyatinfo.juda.ui.fragments.FragmentResultsTables;
 
-/**
- * Created by geek on 10/09/17.
- */
-
 public class ResultsViewPager extends FragmentPagerAdapter {
 
     public ResultsViewPager(FragmentManager fm) {

@@ -19,7 +19,7 @@ public class AboutActivity extends BaseActivity {
     }
 
     public void send_mail(View view) {
-        String[] TO = {"abdeluached@gmail.com"};
+        String[] TO = {"your_email@gmail.com"};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
         emailIntent.setData(Uri.parse("mailto:"));
         emailIntent.setType("text/plain");

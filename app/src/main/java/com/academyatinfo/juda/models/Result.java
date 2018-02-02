@@ -3,10 +3,6 @@ package com.academyatinfo.juda.models;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
-/**
- * Created by geek on 14/02/17.
- */
-
 public class Result extends RealmObject {
 
     @PrimaryKey

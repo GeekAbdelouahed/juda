@@ -7,10 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
-/**
- * Created by abde on 21/02/17.
- */
-
 public class DataTableLevel extends SQLiteAssetHelper {
     private static final String DATABASE_NAME = "table_level.db";
     private final String TABLE_NAME = "table_level";

@@ -16,10 +16,6 @@ import com.academyatinfo.juda.tools.Constants;
 
 import io.realm.RealmResults;
 
-/**
- * Created by abde on 14/02/17.
- */
-
 public class ResultsAdapter extends RecyclerView.Adapter<ResultHolder> {
 
     private RealmResults<Result> results;
