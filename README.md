@@ -1,6 +1,6 @@
 # جداء
-![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/0.png)
-![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/1.png)
+<kbd>![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/0.png)</kbd>
+<kbd>![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/1.png)</kbd>
 ![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/2.png)
 ![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/3.png)
 ![alt text](https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/4.png)
