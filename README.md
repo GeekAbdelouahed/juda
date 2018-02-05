@@ -30,6 +30,7 @@
 
 ## Librarys :
 - [Realm Java](https://github.com/realm/realm-java)
+- [Glide](https://github.com/bumptech/glide)
 - [Calligraphy](https://github.com/chrisjenx/Calligraphy)
 - [Android Sqlite Asset Helper](https://github.com/jgilfelt/android-sqlite-asset-helper)
 - [Awesome Dialog](https://github.com/blennerSilva/AwesomeDialog)
