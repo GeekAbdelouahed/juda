@@ -28,7 +28,7 @@
 - [FireBase](https://firebase.google.com/)
 - [Final Android Resizer](https://github.com/asystat/Final-Android-Resizer)
 
-## Librarys :
+## Libraries :
 - [Realm Java](https://github.com/realm/realm-java)
 - [Glide](https://github.com/bumptech/glide)
 - [Calligraphy](https://github.com/chrisjenx/Calligraphy)
