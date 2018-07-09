@@ -13,12 +13,6 @@
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/8.png" width="200"></kbd>
 
 ---
-<p dir='rtl' algin='right' >
-جداء تطبيق مفتوح المصدر موجه للأطفال وطلاب المدارس الإبتدائية لتعليمهم جدول الضرب بطريقة سهلة ومبسطة
-مع منحهم شهادة بعد إجتياز جميع الإمتحانات قصد التشجيع والتحفيز :wink:
- </p>
- 
----
 
 ## Tools :
 - [Android Studio](https://developer.android.com/studio/index.html)
