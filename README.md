@@ -1,5 +1,8 @@
-# جداء
 
+<p align='center'>
+<a href="https://play.google.com/store/apps/details?id=com.academyatinfo.multtable" alt="GitHub release"><img src="https://github.com/GeekAbdelouahed/juda/blob/master/google%20play.png"/ width='40%'></a>
+ </p>
+ 
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/0.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/1.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/2.png" width="200"></kbd>
@@ -10,16 +13,14 @@
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/8.png" width="200"></kbd>
 
 ---
-
+<p dir='rtl' algin='right' >
 جداء تطبيق مفتوح المصدر موجه للأطفال وطلاب المدارس الإبتدائية لتعليمهم جدول الضرب بطريقة سهلة ومبسطة
-مع منحهم شهادة بعد إجتياز جميع الإمتحانات قصد التشجيع والتحفيز ;)
- 
+مع منحهم شهادة بعد إجتياز جميع الإمتحانات قصد التشجيع والتحفيز :wink:
+ </p>
+ <p dir='rtl' algin='right' >
 الكود الخاص بالتطبيق مبسط بحيث يمكن لأي شخص التعديل عليه وفهم طريقة عمله
 سيتم تحديث الكود وإصلاح أي مشاكل دوريا إن شاء الله 
-
-التطبيق متوافر للتحميل والمعاينة على :
- - المتجر : [من هنا](https://play.google.com/store/apps/details?id=com.academyatinfo.multtable)
- - متجر الألكسو : [من هنا](http://store.alecsoapps.com/site/store/education/1254-)
+ </p>
  
 ---
 
