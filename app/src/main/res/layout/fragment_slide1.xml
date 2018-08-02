@@ -1,46 +1,43 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/padding_xxxl"
     android:background="@color/color_slides1"
-    tools:context="com.academyatinfo.juda.ui.fragments.Slide1Fragment">
+    tools:context="com.academyatinfo.juda.ui.fragment.Slide1Fragment">
 
-    <RelativeLayout
+
+    <ImageView
         android:layout_width="match_parent"
+        android:contentDescription="@string/desc_slide1"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_medium_big">
+        android:layout_above="@id/text_slide1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_xxxl"
+        android:src="@drawable/ic_learn" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/text_slide1"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin_medium_big"
-            android:src="@drawable/ic_learn" />
+    <TextView
+        android:id="@+id/text_slide1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_l"
+        android:gravity="center"
+        android:text="@string/slide11"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_xl" />
 
-        <TextView
-            android:id="@+id/text_slide1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_margin="@dimen/margin_small_big"
-            android:gravity="center"
-            android:text="التعليم الممتع"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_large" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_slide1"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin_small_big"
-            android:gravity="center"
-            android:lineSpacingMultiplier="1.2"
-            android:text="تعلم جدول الضرب بطريقة سهلة وممتعة مع تطبيق جداء وفق منهاج مدروس لتحقيق أكبر فائدة في أسرع وقت"
-            android:textColor="@color/text_gray"
-            android:textSize="@dimen/text_small" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_slide1"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_l"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/slide12"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_m" />
 
 
-    </RelativeLayout>
-</FrameLayout>
+</RelativeLayout>

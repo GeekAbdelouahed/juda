@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.levels.LevelsActivity">
+    tools:context="com.academyatinfo.juda.ui.activity.LevelsActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_Levels"
@@ -14,7 +14,8 @@
 
         <ImageView
             style="@style/ImageView.ImageBack"
-            android:onClick="click_back" />
+            android:contentDescription="@string/desc_levels"
+            android:onClick="clickFinish" />
 
         <TextView
             android:id="@+id/table_number"
@@ -31,7 +32,7 @@
         <android.support.v7.widget.CardView
             android:id="@+id/layout_level_one"
             style="@style/mCardView.Levels"
-            android:onClick="level_one">
+            android:onClick="clickLevelOne">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -40,11 +41,12 @@
                 <ImageView
                     android:id="@+id/result_one"
                     style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels"
                     android:src="@drawable/ic_check_false" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@id/result_one"
+                    android:layout_toEndOf="@id/result_one"
                     android:text="@string/save_mult_table" />
 
             </RelativeLayout>
@@ -54,7 +56,7 @@
             android:id="@+id/layout_level_two"
             style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_one"
-            android:onClick="level_two">
+            android:onClick="clickLevelTwo">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -62,11 +64,12 @@
 
                 <ImageView
                     android:id="@+id/result_two"
-                    style="@style/ImageView.Lock" />
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@id/result_two"
+                    android:layout_toEndOf="@id/result_two"
                     android:text="@string/solve_mut_table" />
             </RelativeLayout>
         </android.support.v7.widget.CardView>
@@ -75,7 +78,7 @@
             android:id="@+id/layout_level_three"
             style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_two"
-            android:onClick="level_three">
+            android:onClick="clickLevelThree">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -83,11 +86,12 @@
 
                 <ImageView
                     android:id="@+id/result_three"
-                    style="@style/ImageView.Lock" />
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@+id/result_three"
+                    android:layout_toEndOf="@+id/result_three"
                     android:text="@string/first_exam" />
 
             </RelativeLayout>
@@ -98,7 +102,7 @@
             android:id="@+id/layout_level_four"
             style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_three"
-            android:onClick="level_four">
+            android:onClick="clickLevelFour">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -106,11 +110,12 @@
 
                 <ImageView
                     android:id="@+id/result_four"
-                    style="@style/ImageView.Lock" />
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@id/result_four"
+                    android:layout_toEndOf="@id/result_four"
                     android:text="@string/second_exam" />
             </RelativeLayout>
         </android.support.v7.widget.CardView>
@@ -119,7 +124,7 @@
             android:id="@+id/layout_level_five"
             style="@style/mCardView.Levels"
             android:layout_below="@+id/layout_level_four"
-            android:onClick="level_five">
+            android:onClick="clickLevelFive">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -127,11 +132,12 @@
 
                 <ImageView
                     android:id="@+id/result_five"
-                    style="@style/ImageView.Lock" />
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@id/result_five"
+                    android:layout_toEndOf="@id/result_five"
                     android:text="@string/third_exam" />
             </RelativeLayout>
         </android.support.v7.widget.CardView>
@@ -147,12 +153,13 @@
 
                 <ImageView
                     android:id="@+id/img_review"
-                    style="@style/ImageView.Lock" />
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@+id/img_review"
-                    android:onClick="review"
+                    android:layout_toEndOf="@+id/img_review"
+                    android:onClick="clickReview"
                     android:text="@string/review" />
 
             </RelativeLayout>

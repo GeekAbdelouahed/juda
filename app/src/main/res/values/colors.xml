@@ -30,4 +30,14 @@
 
     <color name="white_light">#f5f5f5</color>
 
+    <color name="background_default">#00000000</color>
+    <color name="text_default">#30af94</color>
+
+    <color name="background_wrong">#FFFF4046</color>
+    <color name="text_wrong">#FFF1F1F1</color>
+
+    <color name="background_success">#30af94</color>
+    <color name="text_success">#FFF1F1F1</color>
+    <color name="semi_transparent">#25000000</color>
+
 </resources>

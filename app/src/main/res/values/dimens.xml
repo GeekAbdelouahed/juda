@@ -1,53 +1,55 @@
 <resources>
 
     <!-- text Sizes -->
-    <dimen name="text_small">15sp</dimen>
-    <dimen name="text_medium">18sp</dimen>
-    <dimen name="text_large">23sp</dimen>
-    <dimen name="text_very_large">40sp</dimen>
-    <dimen name="text_learn">27sp</dimen>
-    <dimen name="text_exam">50sp</dimen>
-    <dimen name="text_toolBar">18sp</dimen>
+    <dimen name="text_m">15sp</dimen>
+    <dimen name="text_l">18sp</dimen>
+    <dimen name="text_xl">23sp</dimen>
+    <dimen name="text_xxl">40sp</dimen>
+    <dimen name="text_xxxl">27sp</dimen>
+    <dimen name="text_xxxxl">50sp</dimen>
+    <dimen name="text_xxxxxl">18sp</dimen>
 
 
     <!-- dimens -->
-    <dimen name="dimen_small">40dp</dimen>
-    <dimen name="dimen_medium">50dp</dimen>
-    <dimen name="dimen_large">85dp</dimen>
-    <dimen name="dimen_ic_toolbar">40dp</dimen>
+    <dimen name="dimen_m">40dp</dimen>
+    <dimen name="dimen_l">50dp</dimen>
+    <dimen name="dimen_xl">85dp</dimen>
+    <dimen name="dimen_xxl">40dp</dimen>
 
 
     <!-- margins -->
-    <dimen name="margin_small">3dp</dimen>
-    <dimen name="margin_small_big">5dp</dimen>
-    <dimen name="margin_small_very_big">10dp</dimen>
-    <dimen name="margin_medium">16dp</dimen>
-    <dimen name="margin_medium_big">20dp</dimen>
-    <dimen name="margin_medium_very_big">50dp</dimen>
-    <dimen name="margin_large">100dp</dimen>
-    <dimen name="margin_large_big">120dp</dimen>
+    <dimen name="margin_m">3dp</dimen>
+    <dimen name="margin_l">5dp</dimen>
+    <dimen name="margin_xl">10dp</dimen>
+    <dimen name="margin_xxl">16dp</dimen>
+    <dimen name="margin_xxxl">20dp</dimen>
+    <dimen name="margin_xxxxl">50dp</dimen>
+    <dimen name="margin_xxxxxl">100dp</dimen>
+    <dimen name="margin_xxxxxxl">120dp</dimen>
 
 
     <!-- padding -->
-    <dimen name="padding_small">5dp</dimen>
-    <dimen name="padding_small_big">7dp</dimen>
-    <dimen name="padding_medium">10dp</dimen>
-    <dimen name="padding_medium_big">20dp</dimen>
-    <dimen name="padding_large">50dp</dimen>
+    <dimen name="padding_m">5dp</dimen>
+    <dimen name="padding_l">7dp</dimen>
+    <dimen name="padding_xl">10dp</dimen>
+    <dimen name="padding_xxl">20dp</dimen>
+    <dimen name="padding_xxxl">50dp</dimen>
 
 
     <!-- height -->
-    <dimen name="height_small">50dp</dimen>
-    <dimen name="height_medium">80dp</dimen>
-    <dimen name="height_large">240dp</dimen>
+    <dimen name="height_m">50dp</dimen>
+    <dimen name="height_l">80dp</dimen>
+    <dimen name="height_xl">240dp</dimen>
 
 
     <!-- width -->
-    <dimen name="width_medium">100dp</dimen>
-    <dimen name="width_small">50dp</dimen>
+    <dimen name="width_m">50dp</dimen>
+    <dimen name="width_l">100dp</dimen>
+
 
     <!-- radius -->
-    <dimen name="radius_small">10dp</dimen>
-    <dimen name="radius_medium">20dp</dimen>
+    <dimen name="radius_m">10dp</dimen>
+    <dimen name="radius_l">20dp</dimen>
+    <dimen name="dimen_avatar">100dp</dimen>
 
 </resources>

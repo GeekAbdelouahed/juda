@@ -3,7 +3,7 @@
 
     <item android:drawable="@drawable/layer_exit_1" />
     <item
-        android:bottom="@dimen/margin_small_big"
+        android:bottom="@dimen/margin_l"
         android:drawable="@drawable/layer_exit_2" />
 
 </layer-list>

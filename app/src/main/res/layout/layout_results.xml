@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.results.ResultsActivity">
+    tools:context="com.academyatinfo.juda.ui.activity.ResultsActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_results"
@@ -14,7 +14,8 @@
 
         <ImageView
             style="@style/ImageView.ImageBack"
-            android:onClick="click_back" />
+            android:contentDescription="@string/desc_results"
+            android:onClick="clickFinish" />
 
         <TextView
             style="@style/mTextToolBar"
@@ -29,7 +30,7 @@
         android:layout_below="@id/toolBar_results"
         android:background="@color/colorPrimary"
         android:layoutDirection="ltr"
-        app:tabIndicatorColor="#fff"
+        app:tabIndicatorColor="@color/white"
         app:tabIndicatorHeight="2dp"
         app:tabMode="fixed" />
 

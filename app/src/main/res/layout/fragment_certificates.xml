@@ -1,32 +1,27 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.academyatinfo.juda.ui.fragments.FragmentCertificates">
+    tools:context="com.academyatinfo.juda.ui.fragment.FragmentCertificates">
 
-    <RelativeLayout
+
+    <TextView
+        android:id="@+id/empty_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/not_found"
+        android:textColor="#efefef"
+        android:textSize="@dimen/text_xl" />
 
-        <TextView
-            android:id="@+id/text_checkdata"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:background="@color/colorAccent"
-            android:gravity="center"
-            android:text="@string/not_found"
-            android:textColor="#efefef"
-            android:textSize="@dimen/text_large" />
+    <com.academyatinfo.juda.ui.customview.EmptyRecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_xxl" />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/recycler"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_margin="@dimen/margin_medium"
-            android:visibility="invisible" />
-
-    </RelativeLayout>
-</FrameLayout>
+</RelativeLayout>

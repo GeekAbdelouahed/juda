@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.exam.ExamActivity">
+    tools:context=".ui.activity.ExamActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_exam"
@@ -14,17 +14,18 @@
 
         <ImageView
             style="@style/ImageView.ImageBack"
-            android:onClick="click_back" />
+            android:contentDescription="@string/desc_exam"
+            android:onClick="clickFinish" />
 
         <Chronometer
             android:id="@+id/chrono"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:enabled="false"
             android:layout_centerInParent="true"
+            android:enabled="false"
             android:gravity="center"
             android:textColor="@color/colorButtonKeyboard"
-            android:textSize="@dimen/text_large" />
+            android:textSize="@dimen/text_xl" />
 
     </RelativeLayout>
 
@@ -32,8 +33,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolBar_exam"
-        android:layout_margin="@dimen/margin_medium_big"
-        app:cardCornerRadius="@dimen/radius_medium"
+        android:layout_margin="@dimen/margin_xxxl"
+        app:cardCornerRadius="@dimen/radius_l"
         app:cardElevation="5dp">
 
         <RelativeLayout
@@ -45,36 +46,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/padding_medium"
-                android:paddingRight="@dimen/padding_medium">
+                android:paddingLeft="@dimen/padding_xl"
+                android:paddingRight="@dimen/padding_xl">
 
                 <TextView
-                    android:id="@+id/soccer_table_exam"
+                    android:id="@+id/points_table_exam"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginBottom="@dimen/margin_small_big"
-                    android:layout_marginTop="@dimen/margin_small_big"
+                    android:layout_marginBottom="@dimen/margin_l"
+                    android:layout_marginTop="@dimen/margin_l"
                     android:gravity="center"
-                    android:paddingRight="@dimen/padding_medium"
-                    android:text="0"
+                    android:paddingEnd="@dimen/padding_xl"
+                    android:paddingStart="0dp"
                     android:textColor="@color/text_white"
-                    android:textSize="@dimen/text_medium" />
+                    android:textSize="@dimen/text_l" />
 
                 <TextView
-                    android:id="@+id/full_soccer"
+                    android:id="@+id/full_points"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginBottom="@dimen/margin_small_big"
-                    android:layout_marginTop="@dimen/margin_small_big"
+                    android:layout_marginBottom="@dimen/margin_l"
+                    android:layout_marginTop="@dimen/margin_l"
                     android:gravity="center"
-                    android:paddingLeft="@dimen/padding_medium"
-                    android:text="90"
+                    android:paddingEnd="0dp"
+                    android:paddingStart="@dimen/padding_xl"
                     android:textColor="@color/text_white"
-                    android:textSize="@dimen/text_medium" />
+                    android:textSize="@dimen/text_l" />
 
 
             </RelativeLayout>
@@ -82,7 +83,7 @@
             <LinearLayout
                 android:id="@+id/layout_answer"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/height_large"
+                android:layout_height="@dimen/height_xl"
                 android:layout_below="@id/layout_info_exam"
                 android:background="@color/colorLevels"
                 android:gravity="center"
@@ -93,13 +94,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:src="@mipmap/ic_launcher" />
+                    android:contentDescription="@string/desc_exam"
+                    android:src="@drawable/ic_five_b" />
 
                 <ImageView
                     android:id="@+id/ic_mult_exam"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.75"
+                    android:contentDescription="@string/desc_exam"
                     android:src="@drawable/ic_mul"
                     android:tint="@color/colorButtonHelp" />
 
@@ -108,7 +111,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
-                    android:src="@mipmap/ic_launcher" />
+                    android:contentDescription="@string/desc_exam"
+                    android:src="@drawable/ic_four_b" />
 
             </LinearLayout>
 
@@ -119,7 +123,7 @@
                 android:layout_below="@id/layout_answer"
                 android:background="@color/colorAnswerButton"
                 android:orientation="vertical"
-                android:padding="@dimen/padding_small">
+                android:padding="@dimen/padding_m">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -129,7 +133,7 @@
 
                     <android.support.v7.widget.CardView
                         style="@style/mCardView.Exam"
-                        android:onClick="click_card_two">
+                        android:onClick="clickAnswerTwo">
 
                         <TextView
                             android:id="@+id/text_card_two"
@@ -137,12 +141,12 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:textColor="@color/colorTextAnswer"
-                            android:textSize="@dimen/text_exam" />
+                            android:textSize="@dimen/text_xxxxl" />
                     </android.support.v7.widget.CardView>
 
                     <android.support.v7.widget.CardView
                         style="@style/mCardView.Exam"
-                        android:onClick="click_card_one">
+                        android:onClick="clickAnswerOne">
 
                         <TextView
                             android:id="@+id/text_card_one"
@@ -150,7 +154,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:textColor="@color/colorTextAnswer"
-                            android:textSize="@dimen/text_exam" />
+                            android:textSize="@dimen/text_xxxxl" />
                     </android.support.v7.widget.CardView>
 
                 </LinearLayout>
@@ -163,7 +167,7 @@
 
                     <android.support.v7.widget.CardView
                         style="@style/mCardView.Exam"
-                        android:onClick="click_card_four">
+                        android:onClick="clickAnswerFour">
 
                         <TextView
                             android:id="@+id/text_card_four"
@@ -171,12 +175,12 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:textColor="@color/colorTextAnswer"
-                            android:textSize="@dimen/text_exam" />
+                            android:textSize="@dimen/text_xxxxl" />
                     </android.support.v7.widget.CardView>
 
                     <android.support.v7.widget.CardView
                         style="@style/mCardView.Exam"
-                        android:onClick="click_card_three">
+                        android:onClick="clickAnswerThree">
 
                         <TextView
                             android:id="@+id/text_card_three"
@@ -184,7 +188,7 @@
                             android:layout_height="match_parent"
                             android:gravity="center"
                             android:textColor="@color/colorTextAnswer"
-                            android:textSize="@dimen/text_exam" />
+                            android:textSize="@dimen/text_xxxxl" />
                     </android.support.v7.widget.CardView>
 
                 </LinearLayout>
@@ -192,4 +196,5 @@
             </LinearLayout>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
+
 </RelativeLayout>

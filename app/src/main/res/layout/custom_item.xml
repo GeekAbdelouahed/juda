@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/mCardView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="@dimen/margin_medium"
-    app:cardCornerRadius="@dimen/radius_small">
+    android:layout_marginBottom="@dimen/margin_xxl"
+    app:cardCornerRadius="@dimen/radius_m">
 
     <RelativeLayout
+        android:id="@+id/result_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/result_layout"
         android:background="@color/white_light"
         android:gravity="center">
 
@@ -19,60 +20,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@id/result_time"
+            android:layout_toEndOf="@id/result_time"
             android:background="@color/color_slides1"
-            android:gravity="right"
-            android:padding="@dimen/padding_small"
+            android:gravity="end"
+            android:padding="@dimen/padding_m"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_small" />
+            android:textSize="@dimen/text_m"
+            tools:text="@tools:sample/date/mmddyy" />
 
         <TextView
             android:id="@+id/result_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:background="@color/color_slides1"
-            android:gravity="right"
-            android:padding="@dimen/padding_small"
+            android:gravity="center"
+            android:padding="@dimen/padding_m"
             android:textColor="@color/white"
-            android:textSize="@dimen/text_small" />
+            android:textSize="@dimen/text_m"
+            tools:text="@tools:sample/date/hhmm" />
 
         <ImageView
             android:id="@+id/result_avatar"
-            android:layout_width="@dimen/dimen_small"
-            android:layout_height="@dimen/dimen_small"
-            android:layout_alignParentLeft="true"
+            android:layout_width="@dimen/dimen_m"
+            android:layout_height="@dimen/dimen_m"
+            android:layout_alignParentStart="true"
             android:layout_below="@+id/result_date"
             android:layout_centerVertical="true"
-            android:layout_margin="@dimen/margin_medium" />
+            android:layout_margin="@dimen/margin_xxl"
+            android:contentDescription="@string/desc_avatar"
+            tools:src="@tools:sample/avatars" />
 
         <TextView
             android:id="@+id/result_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@+id/result_date"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:layout_marginTop="@dimen/margin_medium"
-            android:layout_toRightOf="@id/result_avatar"
-            android:gravity="right"
+            android:layout_marginEnd="@dimen/margin_xxl"
+            android:layout_marginTop="@dimen/margin_xxl"
+            android:layout_toEndOf="@id/result_avatar"
+            android:gravity="end"
             android:textColor="@color/colorAccent"
-            android:textSize="@dimen/text_medium" />
+            android:textSize="@dimen/text_l"
+            tools:text="@tools:sample/full_names" />
 
         <TextView
             android:id="@+id/result_degree"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_below="@+id/result_name"
-            android:layout_marginBottom="@dimen/margin_medium"
-            android:layout_marginLeft="@dimen/margin_medium"
-            android:layout_marginRight="@dimen/margin_medium"
-            android:layout_toRightOf="@id/result_avatar"
-            android:gravity="right"
+            android:layout_marginBottom="@dimen/margin_xxl"
+            android:layout_marginLeft="@dimen/margin_xxl"
+            android:layout_marginRight="@dimen/margin_xxl"
+            android:layout_toEndOf="@id/result_avatar"
+            android:gravity="start"
+            android:text="@string/medium"
             android:textColor="@color/colorPrimaryDark"
-            android:textSize="@dimen/text_medium" />
+            android:textSize="@dimen/text_l" />
 
     </RelativeLayout>
 

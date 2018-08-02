@@ -1,49 +1,43 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_slides2"
-    tools:context="com.academyatinfo.juda.ui.fragments.Slide2Fragment">
+    android:padding="@dimen/padding_xxxl"
+    tools:context="com.academyatinfo.juda.ui.fragment.Slide2Fragment">
 
 
-    <RelativeLayout
+    <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_medium_big">
+        android:layout_above="@id/text_slide2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_xxxxl"
+        android:contentDescription="@string/desc_slide2"
+        android:src="@drawable/ic_certificate" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@id/text_slide2"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin_medium_very_big"
-            android:src="@drawable/ic_certificate" />
+    <TextView
+        android:id="@+id/text_slide2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_l"
+        android:gravity="center"
+        android:text="@string/slide21"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_xl" />
 
-        <TextView
-            android:id="@+id/text_slide2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_margin="@dimen/margin_small_big"
-            android:gravity="center"
-            android:text="شهادة نجاح"
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_large" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/text_slide2"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin_small_big"
-            android:gravity="center"
-            android:lineSpacingMultiplier="1.2"
-            android:text="إجتز الإمتحان النهائي وأحصل على شهادة بإسمك الخاص"
-            android:textColor="@color/text_gray"
-            android:textSize="@dimen/text_small" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_slide2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_l"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.2"
+        android:text="@string/slide22"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_m" />
 
 
-    </RelativeLayout>
-
-
-</FrameLayout>
+</RelativeLayout>

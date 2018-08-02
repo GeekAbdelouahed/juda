@@ -4,76 +4,77 @@
 
     <!-- CardView -->
     <style name="mCardView" parent="CardView">
-        <item name="cardCornerRadius">@dimen/radius_small</item>
+        <item name="cardCornerRadius">@dimen/radius_m</item>
     </style>
 
     <style name="mCardView.Tables" parent="mCardView">
-        <item name="android:layout_width">@dimen/dimen_large</item>
-        <item name="android:layout_height">@dimen/dimen_large</item>
-        <item name="android:layout_margin">@dimen/margin_small_big</item>
+        <item name="android:layout_width">@dimen/dimen_xl</item>
+        <item name="android:layout_height">@dimen/dimen_xl</item>
+        <item name="android:layout_margin">@dimen/margin_l</item>
     </style>
 
     <style name="mCardView.Levels" parent="mCardView">
-        <item name="android:layout_height">@dimen/height_small</item>
+        <item name="android:layout_height">@dimen/height_m</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_marginTop">@dimen/margin_small_very_big</item>
-        <item name="android:layout_marginBottom">@dimen/margin_small_very_big</item>
-        <item name="android:layout_marginRight">@dimen/margin_medium_big</item>
-        <item name="android:layout_marginLeft">@dimen/margin_medium_big</item>
+        <item name="android:layout_marginTop">@dimen/margin_xl</item>
+        <item name="android:layout_marginBottom">@dimen/margin_xl</item>
+        <item name="android:layout_marginRight">@dimen/margin_xxxl</item>
+        <item name="android:layout_marginLeft">@dimen/margin_xxxl</item>
         <item name="cardBackgroundColor">@color/colorLevels</item>
     </style>
 
     <style name="mCardView.Exam" parent="mCardView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_margin">@dimen/margin_small_big</item>
+        <item name="android:layout_margin">@dimen/margin_l</item>
         <item name="android:layout_weight">0.1</item>
     </style>
 
     <!-- ImageView -->
-    <style name="ImageView" parent="ImageView">
+    <style name="ImageView">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
     <style name="ImageView.Lock">
-        <item name="android:layout_width">@dimen/dimen_medium</item>
+        <item name="android:layout_width">@dimen/dimen_l</item>
         <item name="android:background">@color/color_icLock</item>
         <item name="android:src">@drawable/ic_lock</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:padding">@dimen/padding_small_big</item>
+        <item name="android:padding">@dimen/padding_l</item>
         <item name="android:layout_alignParentLeft">true</item>
     </style>
 
     <style name="ImageView.ImageBack">
-        <item name="android:layout_height">@dimen/dimen_ic_toolbar</item>
-        <item name="android:layout_width">@dimen/dimen_ic_toolbar</item>
-        <item name="android:padding">@dimen/padding_small</item>
+        <item name="android:layout_height">@dimen/dimen_xxl</item>
+        <item name="android:layout_width">@dimen/dimen_xxl</item>
+        <item name="android:padding">@dimen/padding_m</item>
+        <item name="android:layout_margin">@dimen/margin_l</item>
         <item name="android:src">@drawable/ic_back</item>
         <item name="android:layout_alignParentRight">true</item>
         <item name="android:layout_centerVertical">true</item>
     </style>
 
-    <style name="ImageView.MultiSymbol" parent="ImageView.MultiSymbol">
-        <item name="android:layout_width">@dimen/dimen_medium</item>
+    <style name="ImageView.MultiSymbol">
+        <item name="android:layout_width">@dimen/dimen_l</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:src">@drawable/ic_mul</item>
-        <item name="android:padding">@dimen/padding_small_big</item>
+        <item name="android:padding">@dimen/padding_l</item>
         <item name="android:tint">@color/colorButtonHelp</item>
     </style>
 
-    <style name="ImageView.ButtonClick" parent="ImageView.ButtonClick">
-        <item name="android:layout_width">@dimen/dimen_small</item>
-        <item name="android:layout_height">@dimen/dimen_small</item>
-        <item name="android:layout_marginTop">@dimen/margin_small_big</item>
-        <item name="android:layout_marginBottom">@dimen/margin_small_big</item>
-        <item name="android:layout_marginRight">@dimen/margin_medium</item>
-        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+    <style name="ImageView.ButtonClick">
+        <item name="android:layout_width">@dimen/dimen_m</item>
+        <item name="android:layout_height">@dimen/dimen_m</item>
+        <item name="android:layout_marginTop">@dimen/margin_l</item>
+        <item name="android:layout_marginBottom">@dimen/margin_l</item>
+        <item name="android:layout_marginRight">@dimen/margin_xxl</item>
+        <item name="android:layout_marginLeft">@dimen/margin_xxl</item>
     </style>
 
     <!-- RelativeLayout -->
-    <style name="mToolBar" parent="mToolBar">
-        <item name="android:layout_height">?actionBarSize</item>
+    <style name="mToolBar">
+        <item name="android:layout_height">?android:actionBarSize</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:layout_alignParentTop">true</item>
@@ -82,29 +83,29 @@
 
     <!-- TextView -->
 
-    <style name="mTextToolBar" parent="mTextToolBar">
+    <style name="mTextToolBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">@dimen/text_toolBar</item>
+        <item name="android:textSize">@dimen/text_xxxxxl</item>
     </style>
 
-    <style name="mTextViewLevels" parent="mTextViewLevels">
+    <style name="mTextViewLevels">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@color/text_white</item>
-        <item name="android:textSize">@dimen/text_medium</item>
+        <item name="android:textSize">@dimen/text_l</item>
     </style>
 
-    <style name="mTextViewSaveTables" parent="mTextViewSaveTables">
+    <style name="mTextViewSaveTables">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/text_learn</item>
+        <item name="android:textSize">@dimen/text_xxxl</item>
         <item name="android:textColor">@color/text_white</item>
-        <item name="android:layout_marginRight">@dimen/margin_small_big</item>
-        <item name="android:layout_marginLeft">@dimen/margin_small_big</item>
+        <item name="android:layout_marginRight">@dimen/margin_l</item>
+        <item name="android:layout_marginLeft">@dimen/margin_l</item>
         <item name="fontPath">fonts/num_font.ttf</item>
     </style>
 </resources>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.academyatinfo.juda.ui.activity.OperationsTableActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_tables_levels"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_table_levels"
+            android:onClick="clickFinish" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/solve_mut_table" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_tables_levels"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_zero"
+                style="@style/mCardView.Levels"
+                android:onClick="clickZero">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_zero"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels"
+                        android:src="@drawable/ic_check_false" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_zero"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_zero"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_zero_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_zero"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_zero"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_zero_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_zero_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_one"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_zero"
+                android:onClick="clickOne">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_one"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_one"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_one"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_one_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_one"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_one"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_one_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_one_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_two"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_one"
+                android:onClick="clickTwo">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_two"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_two"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_two"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_two_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_two"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_two"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_two_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_two_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_three"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_two"
+                android:onClick="clickThree">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_three"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_three"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_three"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_three_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_three"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_three"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_three_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_three_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_four"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_three"
+                android:onClick="clickFour">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_four"
+                        style="@style/ImageView.Lock"
+
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_four"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_four"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_four_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_four"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_four"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_four_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_four_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_five"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_four"
+                android:onClick="clickFive">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_five"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_five"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_five"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_five_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_five"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_five"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_five_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_five_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_six"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_five"
+                android:onClick="clickSix">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_six"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_six"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_six"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_six_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_six"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_six"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_six_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_six_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_seven"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_six"
+                android:onClick="clickSeven">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_seven"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_seven"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_seven"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_seven_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_seven"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_seven"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_seven_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_seven_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/layout_table_eight"
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_seven"
+                android:onClick="clickEight">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_eight"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_eight"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_eight"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_eight_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_eight"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_eight"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_eight_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_eight_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/mCardView.Levels"
+                android:layout_below="@id/layout_table_eight"
+                android:onClick="clickNine">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_nine"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_table_levels" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/check_nine"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_l">
+
+                        <ImageView
+                            android:id="@+id/ic_mul_nine"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <ImageView
+                            android:id="@+id/level_nine_symbol"
+                            style="@style/ImageView.MultiSymbol"
+                            android:layout_toStartOf="@id/ic_mul_nine"
+                            android:contentDescription="@string/desc_table_levels" />
+
+                        <ImageView
+                            android:id="@+id/level_nine"
+                            android:layout_width="@dimen/dimen_l"
+                            android:layout_height="match_parent"
+                            android:layout_toStartOf="@id/level_nine_symbol"
+                            android:contentDescription="@string/desc_table_levels"
+                            android:src="@drawable/ic_nine_b" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

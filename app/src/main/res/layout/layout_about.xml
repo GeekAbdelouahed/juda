@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.about.AboutActivity">
+    tools:context="com.academyatinfo.juda.ui.activity.AboutActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_about"
@@ -14,7 +14,8 @@
 
         <ImageView
             style="@style/ImageView.ImageBack"
-            android:onClick="click_back" />
+            android:contentDescription="@string/desc_about"
+            android:onClick="clickFinish" />
 
         <TextView
             style="@style/mTextToolBar"
@@ -27,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolBar_about"
-        android:layout_margin="@dimen/margin_medium_big"
+        android:layout_margin="@dimen/margin_xxxl"
         app:cardBackgroundColor="@color/colorPrimary">
 
         <RelativeLayout
@@ -47,33 +48,33 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/padding_medium">
+                    android:padding="@dimen/padding_xl">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="right"
+                        android:gravity="start"
                         android:lineSpacingMultiplier="1.2"
-                        android:text="تعلم جدول الضرب أصبح سهلا سريعا وممتعا مع تطبيق"
+                        android:text="@string/about1"
                         android:textColor="#efefef"
-                        android:textSize="@dimen/text_medium" />
+                        android:textSize="@dimen/text_l" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="right"
+                        android:gravity="start"
                         android:text="@string/app_name"
                         android:textColor="#ffffff"
-                        android:textSize="@dimen/text_very_large" />
+                        android:textSize="@dimen/text_xxl" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="right"
+                        android:gravity="start"
                         android:lineSpacingMultiplier="1.2"
-                        android:text="حيث يتوافر على العديد من الميزات التي تجعلك تستمتع وتتعلم في نفس الوقت من بينها :\nتعلم جدول الضرب خطوة بخطوة بطريقة سهلة وممتعة مع أصوات خاصة بالإجابة الصحيحة أوالخاطئة\nأيضا التطبيق يعطيك تقييما لمستواك خلال التعلم تقيم لكل الجداول معا وتقيم خاص لكل جدول\nكما يمكنك التطبيق من إجراء إمتحان مباشر لتحديد المستوى ويقوم بحفظ كل نتائجك مع التقييم والتاريخ وبالتالي يمكنك الرجوع لها في أي وقت للإطلاع عليها وملاحظة مراحل تطورك مع الوقت وبعد تجاوز الإمتحان يمكنك الحصول على شهادة تشجيعية باسمك الخاص"
+                        android:text="@string/about2"
                         android:textColor="#efefef"
-                        android:textSize="@dimen/text_medium" />
+                        android:textSize="@dimen/text_l" />
                 </LinearLayout>
 
             </ScrollView>
@@ -81,7 +82,7 @@
             <RelativeLayout
                 android:id="@+id/layout_send"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/height_small"
+                android:layout_height="@dimen/height_m"
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAccent">
 
@@ -89,15 +90,16 @@
                     android:id="@+id/ic_splash_learn"
                     style="@style/ImageView.Lock"
                     android:background="#00000000"
+                    android:contentDescription="@string/desc_about"
                     android:src="@drawable/ic_mail" />
 
                 <TextView
                     style="@style/mTextViewLevels"
-                    android:layout_toRightOf="@+id/ic_splash_learn"
+                    android:layout_toEndOf="@+id/ic_splash_learn"
                     android:background="#25000000"
                     android:onClick="send_mail"
-                    android:text="راسلنا عبر الإيميل"
-                    android:textSize="@dimen/text_medium" />
+                    android:text="@string/about3"
+                    android:textSize="@dimen/text_l" />
 
             </RelativeLayout>
 
