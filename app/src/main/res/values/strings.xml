@@ -33,8 +33,6 @@
     <string name="text_certification_female2">لنجاحها في إمتحان جدول الضرب</string>
     <string name="signature">Abdelouahed Medjoudja</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="not_found">لا توجد نتائج</string>
     <string name="send_email">إرسال إيميل</string>
     <string name="duration">المدة</string>
@@ -46,15 +44,53 @@
     <string name="points">النقاط</string>
     <string name="result_excellent">أحسنت عمل ممتاز واصل على هذا المنوال</string>
     <string name="result_medium">عمل جيد يمكنك تحسين مهارتك أكثر بالتمرين</string>
-    <string name="result_weak">عمل متوسط حاول التمرن أكثر لتصبح أفضل</string>
+    <string name="result_low">عمل ضعيف حاول التمرن أكثر لتصبح أفضل</string>
     <string name="excellent">ممتاز</string>
     <string name="medium">حسن</string>
-    <string name="weak">متوسط</string>
+    <string name="low">ضعيف</string>
     <string name="agree">موافق</string>
-    <string name="alert_excellent">يجب الحصول على علامة ممتاز</string>
+    <string name="alert_excellent">يجب الحصول على علامة ممتاز لإجتياز المرحلة</string>
     <string name="save_done">تم الحفظ</string>
     <string name="alert_steps_learn">يجب إكمال جميع مراحل التعليم</string>
     <string name="date">التاريخ :</string>
     <string name="directory">جداء</string>
 
+    <string name="certifications">الشهادات</string>
+
+    <string name="about1">تعلم جدول الضرب أصبح سهلا سريعا وممتعا مع تطبيق</string>
+    <string name="about2">حيث يتوافر على العديد من الميزات التي تجعلك تستمتع وتتعلم في نفس الوقت من بينها :\nتعلم جدول الضرب خطوة بخطوة بطريقة سهلة وممتعة مع أصوات خاصة بالإجابة الصحيحة أوالخاطئة\nأيضا التطبيق يعطيك تقييما لمستواك خلال التعلم تقيم لكل الجداول معا وتقيم خاص لكل جدول\nكما يمكنك التطبيق من إجراء إمتحان مباشر لتحديد المستوى ويقوم بحفظ كل نتائجك مع التقييم والتاريخ وبالتالي يمكنك الرجوع لها في أي وقت للإطلاع عليها وملاحظة مراحل تطورك مع الوقت وبعد تجاوز الإمتحان يمكنك الحصول على شهادة تشجيعية باسمك الخاص</string>
+    <string name="about3">راسلنا عبر الإيميل</string>
+    <string name="desc_img_finish">finish_image</string>
+    <string name="desc_img_tables">img_table</string>
+    <string name="desc_avatar">avatar</string>
+    <string name="table1">جدول رقم 1</string>
+    <string name="table2">جدول رقم 2</string>
+    <string name="table3">جدول رقم 3</string>
+    <string name="table4">جدول رقم 4</string>
+    <string name="table5">جدول رقم 5</string>
+    <string name="table6">جدول رقم 6</string>
+    <string name="table7">جدول رقم 7</string>
+    <string name="table8">جدول رقم 8</string>
+    <string name="table9">جدول رقم 9</string>
+    <string name="slide11">التعليم الممتع</string>
+    <string name="slide12">تعلم جدول الضرب بطريقة سهلة وممتعة مع تطبيق جداء وفق منهاج مدروس لتحقيق أكبر فائدة في أسرع وقت</string>
+    <string name="desc_slide1">img_slide1</string>
+    <string name="desc_slide2">img_slide2</string>
+    <string name="slide21">شهادة نجاح</string>
+    <string name="slide22">إجتز الإمتحان النهائي وأحصل على شهادة بإسمك الخاص</string>
+    <string name="desc_slide3">img_slide3</string>
+    <string name="start">لنبدأ</string>
+    <string name="desc_slide4">img_slide4</string>
+    <string name="desc_about">img_about</string>
+    <string name="desc_certificate">img_certificate</string>
+    <string name="share">مشاركة</string>
+    <string name="desc_exam">img_exam</string>
+    <string name="desc_home">img_home</string>
+    <string name="desc_learn">img_learn</string>
+    <string name="desc_levels">img_levels</string>
+    <string name="desc_operation">img_operation</string>
+    <string name="count_questions10">عدد الأسئلة 10</string>
+    <string name="desc_results">img_results</string>
+    <string name="desc_settings">img_settings</string>
+    <string name="desc_table_levels">img_table_levels</string>
 </resources>

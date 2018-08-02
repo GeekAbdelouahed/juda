@@ -20,11 +20,11 @@
         android:theme="@style/AppTheme"
         tools:replace="supportsRtl">
         <activity
-            android:name="com.academyatinfo.juda.appintro.IntroActivity"
+            android:name="com.academyatinfo.juda.ui.activity.IntroActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.home.HomeActivity"
+            android:name="com.academyatinfo.juda.ui.activity.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -33,45 +33,45 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.academyatinfo.juda.tables.TablesActivity"
+            android:name="com.academyatinfo.juda.ui.activity.TablesActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.tablelevels.TableLevels"
+            android:name="com.academyatinfo.juda.ui.activity.OperationsTableActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.operation.OperationActivity"
+            android:name="com.academyatinfo.juda.ui.activity.OperationsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.exam.ExamActivity"
+            android:name=".ui.activity.ExamActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.results.ResultsActivity"
+            android:name="com.academyatinfo.juda.ui.activity.ResultsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.about.AboutActivity"
+            android:name="com.academyatinfo.juda.ui.activity.AboutActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.levels.LevelsActivity"
+            android:name="com.academyatinfo.juda.ui.activity.LevelsActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.academyatinfo.juda.learn.LearnActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name="com.academyatinfo.juda.settings.SettingsActivity"
+            android:name="com.academyatinfo.juda.ui.activity.ReadingActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.academyatinfo.juda.certification.CertificationActivity"
+            android:name="com.academyatinfo.juda.ui.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.academyatinfo.juda.ui.activity.CertificationActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>

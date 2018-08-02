@@ -1,38 +1,36 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_slides4"
-    tools:context="com.academyatinfo.juda.ui.fragments.Slide4Fragment">
+    android:padding="@dimen/padding_xl"
+    tools:context="com.academyatinfo.juda.ui.fragment.Slide4Fragment">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin_medium_big">
 
-        <ImageView
-            android:id="@+id/ic_slide4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin_medium_very_big"
-            android:layout_marginBottom="@dimen/margin_small_very_big"
-            android:layout_marginTop="@dimen/margin_small_very_big"
-            android:background="@drawable/background_logo"
-            android:src="@drawable/logo" />
+    <ImageView
+        android:id="@+id/ic_slide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_xxxxl"
+        android:layout_marginBottom="@dimen/margin_xl"
+        android:layout_marginTop="@dimen/margin_xl"
+        android:background="@drawable/background_logo"
+        android:contentDescription="@string/desc_slide4"
+        android:src="@drawable/logo" />
 
-        <TextView
-            android:id="@+id/text_slide4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/ic_slide4"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="@dimen/margin_small_big"
-            android:gravity="center"
-            android:text="لنبدأ ..."
-            android:textColor="@color/text_white"
-            android:textSize="@dimen/text_very_large" />
+    <TextView
+        android:id="@+id/text_slide4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ic_slide4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/margin_l"
+        android:gravity="center"
+        android:text="@string/start"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_xxl"
+        android:textStyle="bold" />
 
-    </RelativeLayout>
-</FrameLayout>
+</RelativeLayout>

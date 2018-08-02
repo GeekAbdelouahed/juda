@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.operation.OperationActivity">
+    tools:context="com.academyatinfo.juda.ui.activity.OperationsActivity">
 
 
     <RelativeLayout
@@ -15,7 +15,8 @@
 
         <ImageView
             style="@style/ImageView.ImageBack"
-            android:onClick="click_back" />
+            android:contentDescription="@string/desc_operation"
+            android:onClick="clickFinish" />
 
         <TextView
             style="@style/mTextToolBar"
@@ -27,9 +28,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/toolBar_operation"
-        android:layout_margin="@dimen/margin_medium_big"
+        android:layout_margin="@dimen/margin_xxxl"
         app:cardBackgroundColor="@color/colorLevels"
-        app:cardCornerRadius="@dimen/radius_medium">
+        app:cardCornerRadius="@dimen/radius_l">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -41,30 +42,30 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:background="@color/colorAnswerButton"
-                android:paddingLeft="@dimen/padding_medium"
-                android:paddingRight="@dimen/padding_medium">
+                android:paddingLeft="@dimen/padding_xl"
+                android:paddingRight="@dimen/padding_xl">
 
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginBottom="@dimen/margin_small_big"
-                    android:layout_marginTop="@dimen/margin_small_big"
-                    android:text="عدد الأسئلة 10"
+                    android:layout_marginBottom="@dimen/margin_l"
+                    android:layout_marginTop="@dimen/margin_l"
+                    android:text="@string/count_questions10"
                     android:textColor="@color/text_white"
-                    android:textSize="@dimen/text_medium" />
+                    android:textSize="@dimen/text_l" />
 
                 <TextView
-                    android:id="@+id/soccer_table"
+                    android:id="@+id/points_table"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
-                    android:layout_margin="@dimen/margin_small_big"
+                    android:layout_margin="@dimen/margin_l"
                     android:textColor="@color/text_white"
-                    android:textSize="@dimen/text_medium" />
+                    android:textSize="@dimen/text_l" />
 
             </RelativeLayout>
 
@@ -75,7 +76,7 @@
                 android:layout_above="@+id/layout_buttons_operation"
                 android:layout_below="@+id/layout_info_operation"
                 android:layout_gravity="center"
-                android:layout_margin="@dimen/margin_medium_big"
+                android:layout_margin="@dimen/margin_xxxl"
                 android:gravity="center">
 
                 <LinearLayout
@@ -97,7 +98,7 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_weight="0.75"
-                        android:padding="@dimen/padding_small_big"
+                        android:padding="@dimen/padding_l"
                         android:src="@drawable/ic_mul"
                         android:tint="@color/colorButtonHelp" />
 
@@ -111,13 +112,13 @@
 
                 <android.support.v7.widget.CardView
                     android:id="@+id/cardView_answer"
-                    android:layout_width="@dimen/width_medium"
-                    android:layout_height="@dimen/height_medium"
+                    android:layout_width="@dimen/width_l"
+                    android:layout_height="@dimen/height_l"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/margin_small_big"
+                    android:layout_marginTop="@dimen/margin_l"
                     app:cardBackgroundColor="@color/background_white"
-                    app:cardCornerRadius="@dimen/radius_small">
+                    app:cardCornerRadius="@dimen/radius_m">
 
                     <TextView
                         android:id="@+id/answer"
@@ -125,9 +126,9 @@
                         android:layout_height="match_parent"
                         android:gravity="center"
                         android:maxLength="2"
-                        android:padding="@dimen/padding_small"
+                        android:padding="@dimen/padding_m"
                         android:textColor="@color/colorTextAnswer"
-                        android:textSize="@dimen/text_very_large" />
+                        android:textSize="@dimen/text_xxl" />
 
                 </android.support.v7.widget.CardView>
 
@@ -141,91 +142,102 @@
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAnswerButton"
                 android:gravity="center"
-                android:padding="@dimen/padding_small">
+                android:padding="@dimen/padding_m">
 
                 <ImageView
                     android:id="@+id/ic_one_click"
                     style="@style/ImageView.ButtonClick"
-                    android:layout_alignParentRight="true"
-                    android:onClick="answer_one"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberOne"
                     android:src="@drawable/ic_one_c" />
 
                 <ImageView
                     android:id="@+id/ic_two_click"
                     style="@style/ImageView.ButtonClick"
-                    android:layout_toLeftOf="@id/ic_one_click"
-                    android:onClick="answer_two"
+                    android:layout_toStartOf="@id/ic_one_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberTwo"
                     android:src="@drawable/ic_two_c" />
 
                 <ImageView
                     android:id="@+id/ic_three_click"
                     style="@style/ImageView.ButtonClick"
-                    android:layout_toLeftOf="@id/ic_two_click"
-                    android:onClick="answer_three"
+                    android:layout_toStartOf="@id/ic_two_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberThree"
                     android:src="@drawable/ic_three_c" />
 
                 <ImageView
                     android:id="@+id/ic_four_click"
                     style="@style/ImageView.ButtonClick"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_below="@+id/ic_one_click"
-                    android:onClick="answer_four"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberFour"
                     android:src="@drawable/ic_four_c" />
 
                 <ImageView
                     android:id="@+id/ic_five_click"
                     style="@style/ImageView.ButtonClick"
                     android:layout_below="@+id/ic_two_click"
-                    android:layout_toLeftOf="@+id/ic_four_click"
-                    android:onClick="answer_five"
+                    android:layout_toStartOf="@+id/ic_four_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberFive"
                     android:src="@drawable/ic_five_c" />
 
                 <ImageView
                     android:id="@+id/ic_six_click"
                     style="@style/ImageView.ButtonClick"
                     android:layout_below="@id/ic_three_click"
-                    android:layout_toLeftOf="@+id/ic_five_click"
-                    android:onClick="answer_six"
+                    android:layout_toStartOf="@+id/ic_five_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberSix"
                     android:src="@drawable/ic_six_c" />
 
                 <ImageView
                     android:id="@+id/ic_seven_click"
                     style="@style/ImageView.ButtonClick"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_below="@id/ic_four_click"
-                    android:onClick="answer_seven"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberSeven"
                     android:src="@drawable/ic_seven_c" />
 
                 <ImageView
                     android:id="@+id/ic_eight_click"
                     style="@style/ImageView.ButtonClick"
                     android:layout_below="@+id/ic_five_click"
-                    android:layout_toLeftOf="@+id/ic_seven_click"
-                    android:onClick="answer_eight"
+                    android:layout_toStartOf="@+id/ic_seven_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberEight"
                     android:src="@drawable/ic_eight_c" />
 
                 <ImageView
                     android:id="@+id/ic_nine_click"
                     style="@style/ImageView.ButtonClick"
                     android:layout_below="@+id/ic_six_click"
-                    android:layout_toLeftOf="@+id/ic_eight_click"
-                    android:onClick="answer_nine"
+                    android:layout_toStartOf="@+id/ic_eight_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberNine"
                     android:src="@drawable/ic_nine_c" />
 
 
                 <ImageView
                     android:id="@+id/ic_delete_click"
                     style="@style/ImageView.ButtonClick"
-                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
                     android:layout_below="@+id/ic_seven_click"
-                    android:onClick="click_delete"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickDelete"
                     android:src="@drawable/ic_delete" />
 
                 <ImageView
                     style="@style/ImageView.ButtonClick"
                     android:layout_below="@+id/ic_eight_click"
-                    android:layout_toLeftOf="@id/ic_delete_click"
-                    android:onClick="answer_zero"
+                    android:layout_toStartOf="@id/ic_delete_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberZero"
                     android:src="@drawable/ic_zero_c" />
 
             </RelativeLayout>

@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.academyatinfo.juda.ui.activity.ReadingActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_saveTable"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_learn"
+            android:onClick="clickFinish" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/save_mult_table" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_saveTable"
+        android:layout_margin="@dimen/margin_xxxl"
+        android:background="@drawable/blackboard"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/layout_save_zero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/zero_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_zero"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/zero_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_zero"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_zero"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/equals_zero"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_zero"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/zero_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_zero" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_save_zero"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/one_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_one"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/one_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_one"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_one"
+                android:text="1" />
+
+            <TextView
+                android:id="@+id/equals_one"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_one"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/one_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_one" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_one"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/two_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_two"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/two_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_two"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_two"
+                android:text="2" />
+
+            <TextView
+                android:id="@+id/equals_two"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_two"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/two_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_two" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_two"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/three_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_three"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/three_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_three"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_three"
+                android:text="3" />
+
+            <TextView
+                android:id="@+id/equals_three"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_three"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/three_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_three" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_save_three"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/four_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_four"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/four_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_four"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_four"
+                android:text="4" />
+
+            <TextView
+                android:id="@+id/equals_four"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_four"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/four_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_four" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_four"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/five_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_five"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/five_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_five"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_five"
+                android:text="5" />
+
+            <TextView
+                android:id="@+id/equals_five"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_five"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/five_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_five" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_six"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_five"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/six_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_six"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/six_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_six"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_six"
+                android:text="6" />
+
+            <TextView
+                android:id="@+id/equals_six"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_six"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/six_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_six" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_six"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/seven_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_seven"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/seven_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_seven"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_seven"
+                android:text="7" />
+
+            <TextView
+                android:id="@+id/equals_seven"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_seven"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/seven_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_seven" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_save_eight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_seven"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/eight_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_eight"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/eight_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_eight"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_eight"
+                android:text="8" />
+
+            <TextView
+                android:id="@+id/equals_eight"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_eight"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/eight_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_eight" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_save_eight"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/nine_second"
+                style="@style/mTextViewSaveTables"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/symbol_mult_nine"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/nine_second"
+                android:text="x" />
+
+            <TextView
+                android:id="@+id/value_nine"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/symbol_mult_nine"
+                android:text="9" />
+
+            <TextView
+                android:id="@+id/equals_nine"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@id/value_nine"
+                android:text="=" />
+
+            <TextView
+                android:id="@+id/nine_result"
+                style="@style/mTextViewSaveTables"
+                android:layout_toStartOf="@+id/equals_nine" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
