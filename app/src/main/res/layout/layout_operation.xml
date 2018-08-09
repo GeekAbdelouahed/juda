@@ -86,28 +86,34 @@
                     android:gravity="center"
                     android:orientation="horizontal">
 
-                    <ImageView
-                        android:id="@+id/first_number"
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
-                        android:layout_weight="0.5"
-                        android:src="@drawable/ic_one_g" />
-
-                    <ImageView
-                        android:id="@+id/ic_mul_operation"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_weight="0.75"
-                        android:padding="@dimen/padding_l"
-                        android:src="@drawable/ic_mul"
-                        android:tint="@color/colorButtonHelp" />
 
                     <ImageView
                         android:id="@+id/second_number"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_weight="0.5"
+                        android:contentDescription="@string/desc_operation"
                         android:src="@drawable/ic_one_b" />
+
+                    <ImageView
+                        android:id="@+id/ic_mul_operation"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.75"
+                        android:contentDescription="@string/desc_operation"
+                        android:padding="@dimen/padding_l"
+                        android:src="@drawable/ic_mul"
+                        android:tint="@color/colorButtonHelp" />
+
+
+                    <ImageView
+                        android:id="@+id/first_number"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/desc_operation"
+                        android:src="@drawable/ic_one_g" />
+
                 </LinearLayout>
 
                 <android.support.v7.widget.CardView

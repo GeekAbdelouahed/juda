@@ -8,6 +8,7 @@
     </style>
 
     <style name="mCardView.Tables" parent="mCardView">
+        <item name="android:padding">@dimen/padding_l</item>
         <item name="android:layout_width">@dimen/dimen_xl</item>
         <item name="android:layout_height">@dimen/dimen_xl</item>
         <item name="android:layout_margin">@dimen/margin_l</item>

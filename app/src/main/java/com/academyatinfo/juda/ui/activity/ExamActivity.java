@@ -98,8 +98,8 @@ public class ExamActivity extends BaseActivity {
         addOptionToAnswers(answerIndex, answer);
 
         points = 0;
-        String points = getString(R.string.points) + " 0";
-        tvPoints.setText(points);
+        String sPoints = getString(R.string.points) + " " + points;
+        tvPoints.setText(sPoints);
     }
 
     private void createTable(int answersNumber) {
@@ -138,7 +138,7 @@ public class ExamActivity extends BaseActivity {
             }
         }
 
-        String points = getString(R.string.count_questions) + fullPoints;
+        String points = getString(R.string.count_questions) + " " + fullPoints;
         tvFullPoints.setText(points);
     }
 
@@ -203,7 +203,7 @@ public class ExamActivity extends BaseActivity {
 
         if (isWine) {
             points++;
-            String sc = getString(R.string.points) + points;
+            String sc = getString(R.string.points) + " " + points;
             tvPoints.setText(sc);
             answerText.setBackgroundColor(getResources().getColor(R.color.background_success));
             answerText.setTextColor(getResources().getColor(R.color.text_success));
