@@ -6,7 +6,6 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.academyatinfo.juda.R;
 import com.academyatinfo.juda.model.Result;
@@ -23,7 +22,7 @@ public class FragmentCertificates extends Fragment {
     @BindView(R.id.recyclerview)
     EmptyRecyclerView recyclerView;
     @BindView(R.id.empty_view)
-    TextView emptyView;
+    View emptyView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
