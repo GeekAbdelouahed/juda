@@ -1,8 +1,3 @@
-
-<p align='center'>
-<a href="https://play.google.com/store/apps/details?id=com.academyatinfo.multtable" alt="GitHub release"><img src="https://github.com/GeekAbdelouahed/juda/blob/master/google%20play.png"/ width='40%'></a>
- </p>
- 
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/0.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/1.png" width="200"></kbd>
 <kbd><img src="https://github.com/GeekAbdelouahed/juda/blob/master/screenshot/2.png" width="200"></kbd>
