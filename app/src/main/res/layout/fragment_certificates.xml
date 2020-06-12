@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context="com.academyatinfo.juda.ui.fragment.FragmentCertificates">
+    tools:context="com.abdelouahed.juda.ui.fragments.FragmentCertificates">
 
     <LinearLayout
         android:id="@+id/empty_view"
@@ -30,7 +30,7 @@
             android:textSize="@dimen/text_xl" />
     </LinearLayout>
 
-    <com.academyatinfo.juda.ui.customview.EmptyRecyclerView
+    <com.abdelouahed.juda.ui.common.EmptyRecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

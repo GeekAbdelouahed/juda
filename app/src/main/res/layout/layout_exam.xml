@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context=".ui.activity.ExamActivity">
+    tools:context=".ui.activities.ExamActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_exam"

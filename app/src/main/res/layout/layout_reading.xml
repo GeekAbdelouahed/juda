@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.ui.activity.ReadingActivity">
+    tools:context="com.abdelouahed.juda.ui.activities.ReadingActivity">
 
     <RelativeLayout
         android:id="@+id/toolBar_saveTable"

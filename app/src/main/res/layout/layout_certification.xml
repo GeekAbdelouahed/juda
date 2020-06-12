@@ -5,10 +5,10 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.academyatinfo.juda.ui.activity.CertificationActivity">
+    tools:context="com.abdelouahed.juda.ui.activities.CertificationActivity">
 
 
-    <com.academyatinfo.juda.ui.customview.CertificateImage
+    <com.abdelouahed.juda.ui.common.CertificateImage
         android:id="@+id/image_certificate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
