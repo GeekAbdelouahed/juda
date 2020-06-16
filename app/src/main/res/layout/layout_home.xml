@@ -6,7 +6,7 @@
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
     android:padding="@dimen/padding_xxxl"
-    tools:context="com.abdelouahed.juda.ui.activities.HomeActivity">
+    tools:context="com.ouahiddev.juda.ui.activities.HomeActivity">
 
 
     <ImageView

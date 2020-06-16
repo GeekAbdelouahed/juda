@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:padding="@dimen/padding_xxxl"
     android:background="@color/color_slides1"
-    tools:context="com.abdelouahed.juda.ui.fragments.Slide1Fragment">
+    tools:context="com.ouahiddev.juda.ui.fragments.Slide1Fragment">
 
 
     <ImageView

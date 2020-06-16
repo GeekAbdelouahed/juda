@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:fitsSystemWindows="true"
-    tools:context="com.abdelouahed.juda.ui.activities.TablesActivity">
+    tools:context="com.ouahiddev.juda.ui.activities.TablesActivity">
 
     <RelativeLayout style="@style/mToolBar">
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
     <!-- CardView -->
     <style name="mCardView" parent="CardView">
         <item name="cardCornerRadius">@dimen/radius_m</item>

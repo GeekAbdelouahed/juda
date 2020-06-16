@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 29
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.academyatinfo.multtable"
+        applicationId "com.ouahiddev.juda"
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 29
         versionCode 6
         versionName "1.3.1"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -33,12 +33,10 @@ dependencies {
     })
 
     // Android
-    implementation 'com.android.support:appcompat-v7:27.1.1'
-    implementation 'com.android.support:recyclerview-v7:27.1.1'
-    implementation 'com.android.support:cardview-v7:27.1.1'
-    implementation 'com.android.support:design:27.1.1'
-    implementation 'com.android.support:support-v4:27.1.1'
-    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation "androidx.appcompat:appcompat:1.1.0"
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation 'com.google.android.material:material:1.1.0'
     testImplementation 'junit:junit:4.12'
 
     // Fonts
@@ -48,8 +46,8 @@ dependencies {
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
 
     // ButterKnife
-    implementation 'com.jakewharton:butterknife:8.8.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
 
     // App Intro
     implementation 'com.github.apl-devs:appintro:v4.2.0'
@@ -60,9 +58,5 @@ dependencies {
     // Dialog
     implementation 'com.github.blennerSilva:AwesomeDialog:2.0.1'
 
-    // FireBase Analytics
-    implementation 'com.google.firebase:firebase-core:16.0.1'
-
 }
 apply plugin: 'realm-android'
-apply plugin: 'com.google.gms.google-services'
