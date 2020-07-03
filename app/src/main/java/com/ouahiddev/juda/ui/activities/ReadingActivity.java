@@ -62,7 +62,7 @@ public class ReadingActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_reading);
+        setContentView(R.layout.activity_reading);
 
         ButterKnife.bind(this);
 

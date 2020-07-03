@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.ouahiddev.juda.ui.activities.OperationsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/toolBar_operation"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_operation"
+            android:onClick="clickFinish" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/operation" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolBar_operation"
+        android:layout_margin="@dimen/margin_xxxl"
+        app:cardBackgroundColor="@color/colorLevels"
+        app:cardCornerRadius="@dimen/radius_l">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/layout_info_operation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAnswerButton"
+                android:paddingLeft="@dimen/padding_xl"
+                android:paddingRight="@dimen/padding_xl">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/margin_l"
+                    android:layout_marginTop="@dimen/margin_l"
+                    android:text="@string/count_questions10"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_l" />
+
+                <TextView
+                    android:id="@+id/points_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/margin_l"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_l" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_answer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_buttons_operation"
+                android:layout_below="@+id/layout_info_operation"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_xxxl"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/cardView_answer"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/second_number"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/desc_operation"
+                        app:srcCompat="@drawable/ic_one_b" />
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="0.75"
+                        android:contentDescription="@string/desc_operation"
+                        android:padding="@dimen/padding_l"
+                        app:srcCompat="@drawable/ic_mul"
+                        android:tint="@color/colorButtonHelp" />
+
+
+                    <ImageView
+                        android:id="@+id/first_number"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_weight="0.5"
+                        android:contentDescription="@string/desc_operation"
+                        app:srcCompat="@drawable/ic_one_g" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView_answer"
+                    android:layout_width="@dimen/width_l"
+                    android:layout_height="@dimen/height_l"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_l"
+                    app:cardBackgroundColor="@color/background_white"
+                    app:cardCornerRadius="@dimen/radius_m">
+
+                    <TextView
+                        android:id="@+id/answer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:maxLength="2"
+                        android:padding="@dimen/padding_m"
+                        android:textColor="@color/colorTextAnswer"
+                        android:textSize="@dimen/text_xxl" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout_buttons_operation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAnswerButton"
+                android:gravity="center"
+                android:padding="@dimen/padding_m">
+
+                <ImageView
+                    android:id="@+id/ic_one_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberOne"
+                    app:srcCompat="@drawable/ic_one_c" />
+
+                <ImageView
+                    android:id="@+id/ic_two_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_toStartOf="@id/ic_one_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberTwo"
+                    app:srcCompat="@drawable/ic_two_c" />
+
+                <ImageView
+                    android:id="@+id/ic_three_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_toStartOf="@id/ic_two_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberThree"
+                    app:srcCompat="@drawable/ic_three_c" />
+
+                <ImageView
+                    android:id="@+id/ic_four_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/ic_one_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberFour"
+                    app:srcCompat="@drawable/ic_four_c" />
+
+                <ImageView
+                    android:id="@+id/ic_five_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_two_click"
+                    android:layout_toStartOf="@+id/ic_four_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberFive"
+                    app:srcCompat="@drawable/ic_five_c" />
+
+                <ImageView
+                    android:id="@+id/ic_six_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@id/ic_three_click"
+                    android:layout_toStartOf="@+id/ic_five_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberSix"
+                    app:srcCompat="@drawable/ic_six_c" />
+
+                <ImageView
+                    android:id="@+id/ic_seven_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/ic_four_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberSeven"
+                    app:srcCompat="@drawable/ic_seven_c" />
+
+                <ImageView
+                    android:id="@+id/ic_eight_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_five_click"
+                    android:layout_toStartOf="@+id/ic_seven_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberEight"
+                    app:srcCompat="@drawable/ic_eight_c" />
+
+                <ImageView
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_six_click"
+                    android:layout_toStartOf="@+id/ic_eight_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberNine"
+                    app:srcCompat="@drawable/ic_nine_c" />
+
+
+                <ImageView
+                    android:id="@+id/ic_delete_click"
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/ic_seven_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickDelete"
+                    app:srcCompat="@drawable/ic_delete" />
+
+                <ImageView
+                    style="@style/ImageView.ButtonClick"
+                    android:layout_below="@+id/ic_eight_click"
+                    android:layout_toStartOf="@id/ic_delete_click"
+                    android:contentDescription="@string/desc_operation"
+                    android:onClick="clickNumberZero"
+                    app:srcCompat="@drawable/ic_zero_c" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

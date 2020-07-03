@@ -11,7 +11,6 @@
     <string name="third_exam">الإختبار الثالث</string>
     <string name="operation">حل العملية</string>
     <string name="count_points">النقاط</string>
-    <string name="text_delete">مسح</string>
     <string name="text_result">النتيجة</string>
     <string name="final_exam">الإمتحان النهائي</string>
     <string name="text_exit">خروج</string>
@@ -23,8 +22,6 @@
     <string name="family">اللقب</string>
     <string name="male">ذكر</string>
     <string name="female">أنثى</string>
-    <string name="title_certificate">شهادة نجاح</string>
-    <string name="text_save">حفظ</string>
 
     <string name="text_certification_male1">هنيئا للتلميذ ---</string>
     <string name="text_certification_male2">لنجاحه في إمتحان جدول الضرب</string>

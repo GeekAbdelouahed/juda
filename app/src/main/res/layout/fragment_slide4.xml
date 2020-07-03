@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -18,10 +19,9 @@
         android:layout_marginTop="@dimen/margin_xl"
         android:background="@drawable/background_logo"
         android:contentDescription="@string/desc_slide4"
-        android:src="@drawable/logo" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/text_slide4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/ic_slide4"

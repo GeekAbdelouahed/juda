@@ -15,10 +15,9 @@
         android:layout_height="@dimen/dimen_avatar"
         android:layout_gravity="center"
         android:contentDescription="@string/desc_slide3"
-        android:src="@drawable/ic_boy" />
+        app:srcCompat="@drawable/ic_boy" />
 
-    <android.support.v7.widget.CardView
-        android:id="@+id/layout_info"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/text_gray"
@@ -91,6 +90,6 @@
             </RadioGroup>
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

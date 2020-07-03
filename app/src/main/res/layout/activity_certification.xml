@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.ouahiddev.juda.ui.activities.CertificationActivity">
+
+
+    <com.ouahiddev.juda.ui.common.CertificateImage
+        android:id="@+id/image_certificate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin_xxxl" />
+
+
+    <RelativeLayout style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_certificate"
+            android:onClick="clickFinish" />
+
+
+        <ImageView
+            android:id="@+id/ic_share_certification"
+            android:layout_width="@dimen/dimen_xxl"
+            android:layout_height="@dimen/dimen_xxl"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/padding_m"
+            android:contentDescription="@string/desc_certificate"
+            android:onClick="shareCertification"
+            android:padding="@dimen/padding_m"
+            app:srcCompat="@drawable/ic_share" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/ic_share_certification"
+            android:gravity="center"
+            android:onClick="shareCertification"
+            android:text="@string/share"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_l" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

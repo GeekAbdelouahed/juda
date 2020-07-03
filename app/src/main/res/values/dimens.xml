@@ -16,7 +16,6 @@
     <dimen name="dimen_xl">85dp</dimen>
     <dimen name="dimen_xxl">40dp</dimen>
     <dimen name="dimen_xxxl">100dp</dimen>
-    <dimen name="dimen_xxxxl">200dp</dimen>
 
 
     <!-- margins -->
@@ -26,15 +25,12 @@
     <dimen name="margin_xxl">16dp</dimen>
     <dimen name="margin_xxxl">20dp</dimen>
     <dimen name="margin_xxxxl">50dp</dimen>
-    <dimen name="margin_xxxxxl">100dp</dimen>
-    <dimen name="margin_xxxxxxl">120dp</dimen>
 
 
     <!-- padding -->
     <dimen name="padding_m">5dp</dimen>
     <dimen name="padding_l">7dp</dimen>
     <dimen name="padding_xl">10dp</dimen>
-    <dimen name="padding_xxl">20dp</dimen>
     <dimen name="padding_xxxl">50dp</dimen>
 
 
@@ -45,7 +41,6 @@
 
 
     <!-- width -->
-    <dimen name="width_m">50dp</dimen>
     <dimen name="width_l">100dp</dimen>
 
 

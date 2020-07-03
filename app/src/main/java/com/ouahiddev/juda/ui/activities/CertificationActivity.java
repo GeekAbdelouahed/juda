@@ -37,7 +37,7 @@ public class CertificationActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_certification);
+        setContentView(R.layout.activity_certification);
 
         ButterKnife.bind(this);
 

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.ouahiddev.juda.ui.activities.TablesActivity">
+
+    <RelativeLayout style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_img_finish"
+            android:onClick="clickFinish" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/tables" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout_tables"
+        style="@style/mCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/margin_xxxl"
+        app:cardBackgroundColor="@color/colorLevels">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/margin_l">
+
+            <TableRow>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableThree"
+                        app:srcCompat="@drawable/ic_three_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_three"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableTwo"
+                        app:srcCompat="@drawable/ic_two_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_two"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableOne"
+                        app:srcCompat="@drawable/ic_one_g" />
+
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+
+            <TableRow>
+
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableSix"
+                        app:srcCompat="@drawable/ic_six_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_six"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableFive"
+                        app:srcCompat="@drawable/ic_five_g" />
+
+
+                    <ImageView
+                        android:id="@+id/lock_five"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableFour"
+                        app:srcCompat="@drawable/ic_four_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_four"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+
+            <TableRow>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableNine"
+                        app:srcCompat="@drawable/ic_nine_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_nine"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableEight"
+                        app:srcCompat="@drawable/ic_eight_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_eight"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    style="@style/mCardView.Tables"
+                    app:cardBackgroundColor="@color/color_icLock">
+
+                    <ImageView
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables"
+                        android:onClick="clickTableSeven"
+                        app:srcCompat="@drawable/ic_seven_g" />
+
+                    <ImageView
+                        android:id="@+id/lock_seven"
+                        style="@style/ImageView.Lock"
+                        android:contentDescription="@string/desc_img_tables" />
+                </androidx.cardview.widget.CardView>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/mCardView.Levels"
+        android:layout_below="@+id/layout_tables"
+        android:layout_marginTop="@dimen/margin_xxxl"
+        android:onClick="clickExam"
+        app:cardBackgroundColor="@color/colorAccent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_lock_certification"
+                style="@style/ImageView.Lock"
+                android:contentDescription="@string/desc_img_tables"
+                android:padding="@dimen/padding_l" />
+
+            <TextView
+                style="@style/mTextViewLevels"
+                android:layout_toEndOf="@+id/img_lock_certification"
+                android:text="@string/final_exam" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

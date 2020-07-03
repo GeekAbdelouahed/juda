@@ -48,7 +48,7 @@ public class DataProfile {
         editor.apply();
     }
 
-    public boolean checkFirstLogin() {
+    public boolean isFirstLogin() {
         return sharedPreferences.getBoolean("login", false);
     }
 }

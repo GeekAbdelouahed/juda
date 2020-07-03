@@ -5,9 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
+import com.ouahiddev.juda.BaseActivity;
 import com.ouahiddev.juda.R;
 import com.ouahiddev.juda.data.DataProfile;
-import com.ouahiddev.juda.BaseActivity;
 
 import static com.ouahiddev.juda.utils.Constants.REQUEST_CODE;
 
@@ -16,12 +16,12 @@ public class HomeActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_home);
+        setContentView(R.layout.activity_home);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         DataProfile dataProfile = new DataProfile(this);
 
-        if (!dataProfile.checkFirstLogin())
+        if (!dataProfile.isFirstLogin())
             startActivityForResult(new Intent(this, IntroActivity.class), REQUEST_CODE);
     }
 

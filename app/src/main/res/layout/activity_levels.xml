@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.ouahiddev.juda.ui.activities.LevelsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_Levels"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_levels"
+            android:onClick="clickFinish" />
+
+        <TextView
+            android:id="@+id/table_number"
+            style="@style/mTextToolBar" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_Levels"
+        android:gravity="center">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_level_one"
+            style="@style/mCardView.Levels"
+            android:onClick="clickLevelOne">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_one"
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels"
+                    app:srcCompat="@drawable/ic_check_false" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@id/result_one"
+                    android:text="@string/save_mult_table" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_level_two"
+            style="@style/mCardView.Levels"
+            android:layout_below="@+id/layout_level_one"
+            android:onClick="clickLevelTwo">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_two"
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@id/result_two"
+                    android:text="@string/solve_mut_table" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_level_three"
+            style="@style/mCardView.Levels"
+            android:layout_below="@+id/layout_level_two"
+            android:onClick="clickLevelThree">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_three"
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@+id/result_three"
+                    android:text="@string/first_exam" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_level_four"
+            style="@style/mCardView.Levels"
+            android:layout_below="@+id/layout_level_three"
+            android:onClick="clickLevelFour">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_four"
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@id/result_four"
+                    android:text="@string/second_exam" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/layout_level_five"
+            style="@style/mCardView.Levels"
+            android:layout_below="@+id/layout_level_four"
+            android:onClick="clickLevelFive">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/result_five"
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@id/result_five"
+                    android:text="@string/third_exam" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/mCardView.Levels"
+            android:layout_below="@+id/layout_level_five"
+            app:cardBackgroundColor="@color/colorAccent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_review"
+                    style="@style/ImageView.Lock"
+                    android:contentDescription="@string/desc_levels" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@+id/img_review"
+                    android:onClick="clickReview"
+                    android:text="@string/review" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

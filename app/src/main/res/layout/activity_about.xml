@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.ouahiddev.juda.ui.activities.AboutActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolBar_about"
+        style="@style/mToolBar">
+
+        <ImageView
+            style="@style/ImageView.ImageBack"
+            android:contentDescription="@string/desc_about"
+            android:onClick="clickFinish" />
+
+        <TextView
+            style="@style/mTextToolBar"
+            android:text="@string/text_about" />
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        style="@style/mCardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolBar_about"
+        android:layout_margin="@dimen/margin_xxxl"
+        app:cardBackgroundColor="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_send"
+                android:layout_alignParentTop="true"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_xl">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/about1"
+                        android:textColor="#efefef"
+                        android:textSize="@dimen/text_l" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:text="@string/app_name"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/text_xxl" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="@string/about2"
+                        android:textColor="#efefef"
+                        android:textSize="@dimen/text_l" />
+                </LinearLayout>
+
+            </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/layout_send"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_m"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorAccent">
+
+                <ImageView
+                    android:id="@+id/ic_splash_learn"
+                    style="@style/ImageView.Lock"
+                    android:background="#00000000"
+                    android:contentDescription="@string/desc_about"
+                    app:srcCompat="@drawable/ic_mail" />
+
+                <TextView
+                    style="@style/mTextViewLevels"
+                    android:layout_toEndOf="@+id/ic_splash_learn"
+                    android:background="#25000000"
+                    android:onClick="send_mail"
+                    android:text="@string/about3"
+                    android:textSize="@dimen/text_l" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
