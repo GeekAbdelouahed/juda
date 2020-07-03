@@ -91,7 +91,7 @@
                     style="@style/ImageView.Lock"
                     android:background="#00000000"
                     android:contentDescription="@string/desc_about"
-                    app:srcCompat="@drawable/ic_mail" />
+                    android:src="@drawable/ic_mail" />
 
                 <TextView
                     style="@style/mTextViewLevels"

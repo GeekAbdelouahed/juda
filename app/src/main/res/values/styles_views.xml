@@ -38,7 +38,7 @@
 
     <style name="ImageView.Lock">
         <item name="android:layout_width">@dimen/dimen_l</item>
-        <item name="background">@color/color_icLock</item>
+        <item name="android:background">@color/color_icLock</item>
         <item name="android:src">@drawable/ic_lock</item>
         <item name="android:layout_gravity">center</item>
         <item name="android:padding">@dimen/padding_l</item>
@@ -60,7 +60,7 @@
         <item name="android:layout_height">match_parent</item>
         <item name="android:src">@drawable/ic_mul</item>
         <item name="android:padding">@dimen/padding_l</item>
-        <item name="tint">@color/colorButtonHelp</item>
+        <item name="android:tint">@color/colorButtonHelp</item>
     </style>
 
     <style name="ImageView.ButtonClick">
@@ -76,7 +76,7 @@
     <style name="mToolBar">
         <item name="android:layout_height">?attr/actionBarSize</item>
         <item name="android:layout_width">match_parent</item>
-        <item name="background">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
         <item name="android:layout_alignParentTop">true</item>
     </style>
 

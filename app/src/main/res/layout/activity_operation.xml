@@ -93,7 +93,7 @@
                         android:layout_height="80dp"
                         android:layout_weight="0.5"
                         android:contentDescription="@string/desc_operation"
-                        app:srcCompat="@drawable/ic_one_b" />
+                        android:src="@drawable/ic_one_b" />
 
                     <ImageView
                         android:layout_width="50dp"
@@ -101,7 +101,7 @@
                         android:layout_weight="0.75"
                         android:contentDescription="@string/desc_operation"
                         android:padding="@dimen/padding_l"
-                        app:srcCompat="@drawable/ic_mul"
+                        android:src="@drawable/ic_mul"
                         android:tint="@color/colorButtonHelp" />
 
 
@@ -111,7 +111,7 @@
                         android:layout_height="80dp"
                         android:layout_weight="0.5"
                         android:contentDescription="@string/desc_operation"
-                        app:srcCompat="@drawable/ic_one_g" />
+                        android:src="@drawable/ic_one_g" />
 
                 </LinearLayout>
 
@@ -155,7 +155,7 @@
                     android:layout_alignParentEnd="true"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberOne"
-                    app:srcCompat="@drawable/ic_one_c" />
+                    android:src="@drawable/ic_one_c" />
 
                 <ImageView
                     android:id="@+id/ic_two_click"
@@ -163,7 +163,7 @@
                     android:layout_toStartOf="@id/ic_one_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberTwo"
-                    app:srcCompat="@drawable/ic_two_c" />
+                    android:src="@drawable/ic_two_c" />
 
                 <ImageView
                     android:id="@+id/ic_three_click"
@@ -171,7 +171,7 @@
                     android:layout_toStartOf="@id/ic_two_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberThree"
-                    app:srcCompat="@drawable/ic_three_c" />
+                    android:src="@drawable/ic_three_c" />
 
                 <ImageView
                     android:id="@+id/ic_four_click"
@@ -180,7 +180,7 @@
                     android:layout_below="@+id/ic_one_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberFour"
-                    app:srcCompat="@drawable/ic_four_c" />
+                    android:src="@drawable/ic_four_c" />
 
                 <ImageView
                     android:id="@+id/ic_five_click"
@@ -189,7 +189,7 @@
                     android:layout_toStartOf="@+id/ic_four_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberFive"
-                    app:srcCompat="@drawable/ic_five_c" />
+                    android:src="@drawable/ic_five_c" />
 
                 <ImageView
                     android:id="@+id/ic_six_click"
@@ -198,7 +198,7 @@
                     android:layout_toStartOf="@+id/ic_five_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberSix"
-                    app:srcCompat="@drawable/ic_six_c" />
+                    android:src="@drawable/ic_six_c" />
 
                 <ImageView
                     android:id="@+id/ic_seven_click"
@@ -207,7 +207,7 @@
                     android:layout_below="@id/ic_four_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberSeven"
-                    app:srcCompat="@drawable/ic_seven_c" />
+                    android:src="@drawable/ic_seven_c" />
 
                 <ImageView
                     android:id="@+id/ic_eight_click"
@@ -216,7 +216,7 @@
                     android:layout_toStartOf="@+id/ic_seven_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberEight"
-                    app:srcCompat="@drawable/ic_eight_c" />
+                    android:src="@drawable/ic_eight_c" />
 
                 <ImageView
                     style="@style/ImageView.ButtonClick"
@@ -224,7 +224,7 @@
                     android:layout_toStartOf="@+id/ic_eight_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberNine"
-                    app:srcCompat="@drawable/ic_nine_c" />
+                    android:src="@drawable/ic_nine_c" />
 
 
                 <ImageView
@@ -234,7 +234,7 @@
                     android:layout_below="@+id/ic_seven_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickDelete"
-                    app:srcCompat="@drawable/ic_delete" />
+                    android:src="@drawable/ic_delete" />
 
                 <ImageView
                     style="@style/ImageView.ButtonClick"
@@ -242,7 +242,7 @@
                     android:layout_toStartOf="@id/ic_delete_click"
                     android:contentDescription="@string/desc_operation"
                     android:onClick="clickNumberZero"
-                    app:srcCompat="@drawable/ic_zero_c" />
+                    android:src="@drawable/ic_zero_c" />
 
             </RelativeLayout>
         </RelativeLayout>

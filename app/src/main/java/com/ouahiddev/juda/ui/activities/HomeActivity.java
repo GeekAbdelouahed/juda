@@ -1,6 +1,7 @@
 package com.ouahiddev.juda.ui.activities;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
@@ -53,5 +54,10 @@ public class HomeActivity extends BaseActivity {
 
     public void clickExit(View view) {
         finish();
+    }
+
+    public void clickPrivacyPolicy(View view) {
+        final Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://sites.google.com/view/juda-app-privacy-policy"));
+        startActivity(intent);
     }
 }

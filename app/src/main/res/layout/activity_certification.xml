@@ -35,7 +35,7 @@
             android:contentDescription="@string/desc_certificate"
             android:onClick="shareCertification"
             android:padding="@dimen/padding_m"
-            app:srcCompat="@drawable/ic_share" />
+            android:src="@drawable/ic_share" />
 
 
         <TextView

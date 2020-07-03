@@ -15,7 +15,7 @@
         android:layout_height="@dimen/dimen_avatar"
         android:layout_gravity="center"
         android:contentDescription="@string/desc_slide3"
-        app:srcCompat="@drawable/ic_boy" />
+        android:src="@drawable/ic_boy" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

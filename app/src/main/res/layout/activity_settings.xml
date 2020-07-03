@@ -30,7 +30,7 @@
             android:contentDescription="@string/desc_settings"
             android:onClick="clickSave"
             android:padding="@dimen/padding_m"
-            app:srcCompat="@drawable/ic_save" />
+            android:src="@drawable/ic_save" />
 
     </RelativeLayout>
 
@@ -48,7 +48,7 @@
             android:layout_height="@dimen/dimen_avatar"
             android:layout_gravity="center"
             android:contentDescription="@string/desc_settings"
-            app:srcCompat="@drawable/ic_boy" />
+            android:src="@drawable/ic_boy" />
 
         <androidx.cardview.widget.CardView
             style="@style/mCardView"

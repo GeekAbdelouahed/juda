@@ -42,7 +42,7 @@
                     android:id="@+id/result_one"
                     style="@style/ImageView.Lock"
                     android:contentDescription="@string/desc_levels"
-                    app:srcCompat="@drawable/ic_check_false" />
+                    android:src="@drawable/ic_check_false" />
 
                 <TextView
                     style="@style/mTextViewLevels"

@@ -95,14 +95,14 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:contentDescription="@string/desc_exam"
-                    app:srcCompat="@drawable/ic_five_b" />
+                    android:src="@drawable/ic_five_b" />
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="0.75"
                     android:contentDescription="@string/desc_exam"
-                    app:srcCompat="@drawable/ic_mul"
+                    android:src="@drawable/ic_mul"
                     android:tint="@color/colorButtonHelp" />
 
                 <ImageView
@@ -111,7 +111,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="0.5"
                     android:contentDescription="@string/desc_exam"
-                    app:srcCompat="@drawable/ic_four_b" />
+                    android:src="@drawable/ic_four_b" />
 
             </LinearLayout>
 

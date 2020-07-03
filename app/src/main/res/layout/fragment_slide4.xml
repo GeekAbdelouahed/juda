@@ -19,7 +19,7 @@
         android:layout_marginTop="@dimen/margin_xl"
         android:background="@drawable/background_logo"
         android:contentDescription="@string/desc_slide4"
-        app:srcCompat="@drawable/logo" />
+        android:src="@drawable/logo" />
 
     <TextView
         android:layout_width="wrap_content"

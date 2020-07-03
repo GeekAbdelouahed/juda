@@ -46,7 +46,7 @@
                         android:id="@+id/check_zero"
                         style="@style/ImageView.Lock"
                         android:contentDescription="@string/desc_table_levels"
-                        app:srcCompat="@drawable/ic_check_false" />
+                        android:src="@drawable/ic_check_false" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_zero_symbol"
@@ -74,7 +74,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_zero_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_zero_b" />
+                            android:src="@drawable/ic_zero_b" />
 
                     </RelativeLayout>
 
@@ -110,7 +110,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_one_symbol"
@@ -123,7 +123,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_one_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_one_b" />
+                            android:src="@drawable/ic_one_b" />
 
                     </RelativeLayout>
 
@@ -159,7 +159,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_two_symbol"
@@ -172,7 +172,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_two_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_two_b" />
+                            android:src="@drawable/ic_two_b" />
 
                     </RelativeLayout>
 
@@ -208,7 +208,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_three_symbol"
@@ -221,7 +221,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_three_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_three_b" />
+                            android:src="@drawable/ic_three_b" />
 
                     </RelativeLayout>
 
@@ -258,7 +258,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_four_symbol"
@@ -271,7 +271,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_four_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_four_b" />
+                            android:src="@drawable/ic_four_b" />
 
                     </RelativeLayout>
 
@@ -307,7 +307,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_five_symbol"
@@ -320,7 +320,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_five_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_five_b" />
+                            android:src="@drawable/ic_five_b" />
 
                     </RelativeLayout>
 
@@ -356,7 +356,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_six_symbol"
@@ -369,7 +369,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_six_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_six_b" />
+                            android:src="@drawable/ic_six_b" />
 
                     </RelativeLayout>
 
@@ -405,7 +405,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_seven_symbol"
@@ -418,7 +418,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_seven_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_seven_b" />
+                            android:src="@drawable/ic_seven_b" />
 
                     </RelativeLayout>
 
@@ -455,7 +455,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_eight_symbol"
@@ -468,7 +468,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_eight_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_eight_b" />
+                            android:src="@drawable/ic_eight_b" />
 
                     </RelativeLayout>
 
@@ -504,7 +504,7 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@mipmap/ic_launcher" />
+                            android:src="@mipmap/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/level_nine_symbol"
@@ -517,7 +517,7 @@
                             android:layout_height="match_parent"
                             android:layout_toStartOf="@id/level_nine_symbol"
                             android:contentDescription="@string/desc_table_levels"
-                            app:srcCompat="@drawable/ic_nine_b" />
+                            android:src="@drawable/ic_nine_b" />
 
                     </RelativeLayout>
 

@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/margin_xxxxl"
         android:contentDescription="@string/desc_slide2"
-        app:srcCompat="@drawable/ic_certificate" />
+        android:src="@drawable/ic_certificate" />
 
     <TextView
         android:id="@+id/text_slide2"

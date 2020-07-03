@@ -15,7 +15,7 @@
         android:layout_above="@id/text_slide1"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/margin_xxxl"
-        app:srcCompat="@drawable/ic_learn" />
+        android:src="@drawable/ic_learn" />
 
     <TextView
         android:id="@+id/text_slide1"

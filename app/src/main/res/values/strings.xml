@@ -91,4 +91,5 @@
     <string name="desc_settings">img_settings</string>
     <string name="desc_table_levels">img_table_levels</string>
     <string name="desc_certificate_result">desc certificate result</string>
+    <string name="privacy_policy">سياسة الخصوصية</string>
 </resources>
